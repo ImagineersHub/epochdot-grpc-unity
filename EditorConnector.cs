@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using EpochdotGrpcUnity;
+using Epochdot.Greet.V1;
 using Grpc.Core;
 using UnityEditor;
 using UnityEngine;
@@ -7,8 +7,6 @@ public class EditorConnector : EditorWindow
 {
     private static Server _grpcServer;
     private const int PORT = 50053;
-
-
 
     class GreeterImpl : Greeter.GreeterBase
     {

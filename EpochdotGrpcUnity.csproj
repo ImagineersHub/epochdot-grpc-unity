@@ -4,13 +4,13 @@
     <TargetFramework>net4.5</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-  <Reference Include="Plugins\Unity\2020_3_9f1\UnityEditor.dll" />
-  <Reference Include="Plugins\Unity\2020_3_9f1\UnityEngine.dll" />
-  <Reference Include="Plugins\GRPC\Grpc.Core\lib\net45\Grpc.Core.dll" />
-  <Reference Include="Plugins\GRPC\Google.Protobuf\lib\net45\Google.Protobuf.dll" />
-  <Reference Include="Plugins\GRPC\Grpc.Core.Api\lib\net45\Grpc.Core.Api.dll" />
-  <Reference Include="Plugins\GRPC\System.Buffers\lib\net45\System.Buffers.dll" />
-  <Reference Include="Plugins\GRPC\System.Memory\lib\net45\System.Memory.dll" />
-</ItemGroup>
+    <Reference Include="Plugins\Unity\2020_3_9f1\UnityEditor.dll" />
+    <Reference Include="Plugins\Unity\2020_3_9f1\UnityEngine.dll" />
+    <Reference Include="Plugins\GRPC\Grpc.Core\lib\net45\Grpc.Core.dll" />
+    <Reference Include="Plugins\GRPC\Google.Protobuf\lib\net45\Google.Protobuf.dll" />
+    <Reference Include="Plugins\GRPC\Grpc.Core.Api\lib\net45\Grpc.Core.Api.dll" />
+    <Reference Include="Plugins\GRPC\System.Buffers\lib\net45\System.Buffers.dll" />
+    <Reference Include="Plugins\GRPC\System.Memory\lib\net45\System.Memory.dll" />
+  </ItemGroup>
 
 </Project>
