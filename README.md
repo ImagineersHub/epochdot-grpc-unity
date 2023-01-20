@@ -51,4 +51,4 @@ message HelloReply {
 ```
 
 # Install unity package through git
-https://github.com/ImagineersHub/epochdot-grpc-unity.git?path=src/UGrpc#1.0.0
+https://github.com/ImagineersHub/epochdot-grpc-unity.git?path=src/UGrpc#1.0.2
