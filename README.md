@@ -9,7 +9,7 @@ Download other versions from [link](https://packages.grpc.io/):
 
 ##### 2. Decompress the package
 Decompress the downloaded .zip package to the `Plugins/GRPC/` directory of the Unity project, as shown below:
-![alt text](Doc/Image/epochdot_grpc_unity_intro_install_grpc_lib.png)
+![alt text](doc/Image/epochdot_grpc_unity_intro_install_grpc_lib.png)
 
 #### Add Unity assemble reference (*.dll)
 Current unity version: `2020.3.9f1`. 
@@ -21,7 +21,7 @@ What is a .proto file?
 
 A .proto file is a description of a gRPC API written in the Protocol Buffers language specification. Protocol Buffers is a binary format. It is NOT a self-describing language. Thus, there needs to be a common "dictionary" used by both the gRPC client and server to encode and decode text and numbers into the Protocol Buffers binary format. This common dictionary is the .proto file. While the diagram below that illustrates this shows a single .proto file accessible to both client and server, it's possible for the client and server to have access to their own copies of this file. Such an implementation would involve the dynamic model discussed in the previous part of this series (See the figure below)
 
-![alt text](Doc/Image/epochdot_grpc_unity_intro_install_grpc_proto.png)
+![alt text](doc/Image/epochdot_grpc_unity_intro_install_grpc_proto.png)
 
 The following is an example of a simple .proto file named coolcar.proto This .proto file defines a single data structure, car along with a service, CoolCarService that publishes a procedure GetCar(). The procedure retrieves a car by vehicle identification number (VIN).
 
@@ -49,3 +49,6 @@ message HelloReply {
 }
 
 ```
+
+# Install unity package through git
+https://github.com/ImagineersHub/epochdot-grpc-unity.git?path=src/UGrpc#1.0.0
