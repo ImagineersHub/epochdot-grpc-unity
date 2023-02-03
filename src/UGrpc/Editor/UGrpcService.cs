@@ -56,12 +56,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public void Dispose()
         {
-            if (IsRunning)
-            {
-                mGrpcServer.ShutdownAsync().Wait();
-                mGrpcServer = null;
-            }
-
+            // implement the dispose form inherited class 
         }
 
 
