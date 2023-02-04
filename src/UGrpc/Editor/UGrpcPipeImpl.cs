@@ -116,8 +116,19 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             if (cmdParam.isMethod)
             {
                 // parse the module method by the method name (e.g., MoveAsset / Refresh)
-                var moduleMethod = module.GetMethods(BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.Static)
-                .FirstOrDefault(x => x.Name.Equals(cmdParam.method, StringComparison.OrdinalIgnoreCase));
+                var moduleMethods = module.GetMethods(BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.Static)
+                .Where(x => x.Name.Equals(cmdParam.method, StringComparison.OrdinalIgnoreCase));
+
+                MethodInfo moduleMethod = null;
+                foreach (var loopItem in moduleMethods)
+                {
+                    if (loopItem.GetParameters().Length == cmdParam.parameters.Length)
+                    {
+                        // return the first matched method
+                        moduleMethod = loopItem;
+                        break;
+                    }
+                }
 
                 // retrieve the method return type
                 returnType = moduleMethod.ReturnType;
@@ -148,18 +159,31 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 var payload = CommandParserAsync(cmdParam).Result;
                 // Debug.Log(payload.GetType());
                 // Debug.Log(JsonUtility.ToJson(payload));
-                var imessage_inst = payload as IMessage;
-                if (imessage_inst != null)
+                if (payload is IMessage)
                 {
-                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(imessage_inst);
+                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(payload as IMessage);
+                }
+                else if (payload is string[])
+                {
+                    var payload_list = payload as string[];
+                    var listValue = new Google.Protobuf.WellKnownTypes.ListValue();
+                    listValue.Values.AddRange(payload_list.Select(s => new Google.Protobuf.WellKnownTypes.Value { StringValue = s }));
+                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(listValue);
+                }
+                else
+                {
+                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(
+                        new Google.Protobuf.WellKnownTypes.StringValue { Value = payload.ToString() }
+                    );
+
                 }
 
             }
             catch (Exception ex)
             {
-                Debug.Log(ex.ToString());
+                Debug.LogError(ex.StackTrace);
 
-                response.Status = new Status { Code = Status.Types.StatusCode.Error, Message = ex.Message };
+                response.Status = new Status { Code = Status.Types.StatusCode.Error, Message = ex.StackTrace };
             }
 
             return System.Threading.Tasks.Task.FromResult(response);
