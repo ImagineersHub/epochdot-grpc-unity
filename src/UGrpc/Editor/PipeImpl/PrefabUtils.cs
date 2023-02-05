@@ -1,6 +1,8 @@
 
 using System;
+using System.Diagnostics;
 using System.Linq;
+using System.Security.Policy;
 using UnityEditor;
 using UnityEngine;
 
@@ -13,22 +15,30 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public string Target { get; set; }
         public string Source { get; set; }
 
+        public bool IsUnpack { get; set; }
+
         public PrefabFeeder(string target)
         {
             Instance = new GameObject();
             Target = target;
         }
-        public PrefabFeeder(string source, string target)
+        public PrefabFeeder(string source, string target, bool isUnpack = false)
         {
             var sourcePrefab = AssetDatabase.LoadAssetAtPath(source, typeof(GameObject)) as GameObject;
             Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
             Target = target;
             Source = source;
+            IsUnpack = isUnpack;
         }
 
         public void Dispose()
         {
+            if (IsUnpack)
+            {
+                PrefabUtility.UnpackPrefabInstance(Instance, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+            }
             PrefabUtility.SaveAsPrefabAsset(Instance, Target);
+
             GameObject.DestroyImmediate(Instance, true);
         }
     }
@@ -206,6 +216,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 if (targetPropInfo.PropertyType != sourcePropInfo.PropertyType) throw new Exception("Source and Target property types are not same!");
                 targetPropInfo.SetValue(targetCompInst, sourceValue);
             }
+        }
+
+        public static void CreatePrefabVariant(string source, string target, bool unpack)
+        {
+            var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack);
+            sourceInst.Dispose();
         }
     }
 }
