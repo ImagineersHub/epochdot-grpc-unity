@@ -230,7 +230,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             {
                 if (children?.Length == 0)
                 {
-
+                    sourceInst.Instance.SetActive(isActive);
+                }
+                else
+                {
+                    foreach (var childPath in children)
+                    {
+                        var childTrans = sourceInst.Instance.transform.Find(childPath);
+                        childTrans.gameObject.SetActive(isActive);
+                    }
                 }
             }
         }
