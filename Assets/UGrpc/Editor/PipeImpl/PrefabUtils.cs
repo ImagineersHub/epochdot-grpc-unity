@@ -1,6 +1,5 @@
 
 using System;
-using System.Diagnostics;
 using System.Linq;
 using System.Security.Policy;
 using UnityEditor;
@@ -238,6 +237,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     {
                         var childTrans = sourceInst.Instance.transform.Find(childPath);
                         childTrans.gameObject.SetActive(isActive);
+                    }
+                }
+            }
+        }
+
+        public static void Trim(string source, string[] children)
+        {
+            using (var sourceInst = new PrefabFeeder(source))
+            {
+                foreach (var childPath in children)
+                {
+                    var element = sourceInst.Instance.transform.Find(childPath);
+                    if (element != null)
+                    {
+                        GameObject.DestroyImmediate(element.gameObject, true);
+                        Debug.Log($"Removed child object: {childPath}");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Not found child object: {childPath}");
                     }
                 }
             }
