@@ -49,6 +49,7 @@ message HelloReply {
 }
 
 ```
-
+# Install dependencies in unity
+- UniTask : https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.3.3
 # Install unity package through git
 https://github.com/ImagineersHub/epochdot-grpc-unity.git?path=src/UGrpc#1.0.2
