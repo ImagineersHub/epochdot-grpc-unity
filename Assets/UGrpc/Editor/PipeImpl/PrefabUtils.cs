@@ -13,7 +13,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public string Target { get; set; }
         public string Source { get; set; }
-
         public bool IsUnpack { get; set; }
 
         public PrefabFeeder(string target)
@@ -28,6 +27,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             Target = target;
             Source = source;
             IsUnpack = isUnpack;
+        }
+
+        public void AddChild(Transform child)
+        {
+            child.parent = Instance.transform;
         }
 
         public void Dispose()
