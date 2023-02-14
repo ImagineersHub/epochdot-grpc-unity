@@ -170,6 +170,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     listValue.Values.AddRange(payload_list.Select(s => new Google.Protobuf.WellKnownTypes.Value { StringValue = s }));
                     response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(listValue);
                 }
+                else if (payload is float[])
+                {
+                    FloatArrayRep floatArrayResp = new FloatArrayRep
+                    {
+                        Values = { payload as float[] }
+                    };
+                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(floatArrayResp);
+                }
                 else
                 {
                     response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(
