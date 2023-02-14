@@ -38,6 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             {"UGrpc.SceneUtils",typeof(SceneUtils)},
             {"UGrpc.PrefabUtils",typeof(PrefabUtils)},
             {"UGrpc.MaterialUtils",typeof(MaterialUtils)},
+            {"UGrpc.UnitTestUtils",typeof(UnitTestUtils)},
             {"UnityEngine.Application",typeof(Application)},
             {"UnityEditor.AssetDatabase",typeof(UnityEditor.AssetDatabase)},
             {"UnityEditor.SceneManagement.EditorSceneManager",typeof(UnityEditor.SceneManagement.EditorSceneManager)}
