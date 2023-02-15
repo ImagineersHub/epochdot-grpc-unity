@@ -10,14 +10,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
     public class PrefabFeeder : IDisposable
     {
         public GameObject Instance { get; set; }
-
+        public bool IsReadOnly { get; set; }
         public string Target { get; set; }
         public string Source { get; set; }
         public bool IsUnpack { get; set; }
 
         public PrefabFeeder(string target, bool isReadOnly = false)
         {
-            if (isReadOnly)
+            // keep a copy in self property
+            // it will perform a skip when dispose the object
+            IsReadOnly = IsReadOnly;
+            if (IsReadOnly)
             {
                 Instance = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
             }
@@ -44,13 +47,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public void Dispose()
         {
-            if (IsUnpack)
+            if (!IsReadOnly)
             {
-                PrefabUtility.UnpackPrefabInstance(Instance, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
-            }
-            PrefabUtility.SaveAsPrefabAsset(Instance, Target);
+                if (IsUnpack)
+                {
+                    PrefabUtility.UnpackPrefabInstance(Instance, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
+                }
+                PrefabUtility.SaveAsPrefabAsset(Instance, Target);
 
-            GameObject.DestroyImmediate(Instance, true);
+                GameObject.DestroyImmediate(Instance, true);
+            }
+
         }
     }
     public class PrefabUtils

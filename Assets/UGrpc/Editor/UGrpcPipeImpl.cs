@@ -191,6 +191,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             catch (Exception ex)
             {
                 Debug.LogError(ex.StackTrace);
+                Debug.LogError(ex.Message);
 
                 response.Status = new Status { Code = Status.Types.StatusCode.Error, Message = ex.StackTrace };
             }
