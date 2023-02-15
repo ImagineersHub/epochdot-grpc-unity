@@ -19,7 +19,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         {
             // keep a copy in self property
             // it will perform a skip when dispose the object
-            IsReadOnly = IsReadOnly;
+            IsReadOnly = isReadOnly;
             if (IsReadOnly)
             {
                 Instance = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
