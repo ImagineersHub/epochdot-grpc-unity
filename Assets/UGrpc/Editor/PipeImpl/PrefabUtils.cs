@@ -15,10 +15,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public string Source { get; set; }
         public bool IsUnpack { get; set; }
 
-        public PrefabFeeder(string target)
+        public PrefabFeeder(string target, bool isReadOnly = false)
         {
-            Instance = new GameObject();
-            Target = target;
+            if (isReadOnly)
+            {
+                Instance = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
+            }
+            else
+            {
+                Instance = new GameObject();
+                Target = target;
+            }
+
         }
         public PrefabFeeder(string source, string target, bool isUnpack = false)
         {
