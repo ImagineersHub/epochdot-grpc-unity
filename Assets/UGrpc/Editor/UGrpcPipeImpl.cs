@@ -120,6 +120,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 var moduleMethods = module.GetMethods(BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.Static)
                 .Where(x => x.Name.Equals(cmdParam.method, StringComparison.OrdinalIgnoreCase));
 
+                if (moduleMethods == null)
+                {
+                    throw new Exception($"Not found matched method: {cmdParam.method}. It may be caused by unmatched method name, or unmatched parameter info");
+                }
+
                 MethodInfo moduleMethod = null;
                 foreach (var loopItem in moduleMethods)
                 {
@@ -190,10 +195,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
             catch (Exception ex)
             {
-                Debug.LogError(ex.StackTrace);
-                Debug.LogError(ex.Message);
+                Debug.LogException(ex);
 
-                response.Status = new Status { Code = Status.Types.StatusCode.Error, Message = ex.StackTrace };
+                response.Status = new Status { Code = Status.Types.StatusCode.Error, Message = ex.ToString() };
             }
 
             return System.Threading.Tasks.Task.FromResult(response);
