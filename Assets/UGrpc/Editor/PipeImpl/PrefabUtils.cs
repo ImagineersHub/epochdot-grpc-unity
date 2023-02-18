@@ -1,5 +1,6 @@
 
 using System;
+using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using UnityEditor;
@@ -26,7 +27,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
             else
             {
-                Instance = new GameObject();
+                var assetName = Path.GetFileNameWithoutExtension(target);
+                Instance = new GameObject(assetName);
                 Target = target;
             }
 
