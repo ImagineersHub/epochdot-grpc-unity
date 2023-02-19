@@ -16,11 +16,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public string Source { get; set; }
         public bool IsUnpack { get; set; }
 
-        public PrefabFeeder(string target, bool isReadOnly = false)
+        public bool IsDestroy { get; set; }
+
+        public PrefabFeeder(string target, bool isReadOnly = false, bool isDestroy = true)
         {
             // keep a copy in self property
             // it will perform a skip when dispose the object
             IsReadOnly = isReadOnly;
+
+            IsDestroy = isDestroy;
+
             if (IsReadOnly)
             {
                 Instance = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
@@ -31,15 +36,19 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 Instance = new GameObject(assetName);
                 Target = target;
             }
-
         }
-        public PrefabFeeder(string source, string target, bool isUnpack = false)
+        public PrefabFeeder(string source, string target, bool isUnpack = false, bool isDestroy = true)
         {
+            // unpack the prefab asset before saving a new version (break connection from the original asset)
+            IsUnpack = isUnpack;
+
+            IsDestroy = isDestroy;
+
             var sourcePrefab = AssetDatabase.LoadAssetAtPath(source, typeof(GameObject)) as GameObject;
             Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
             Target = target;
             Source = source;
-            IsUnpack = isUnpack;
+
         }
 
         public void AddChild(Transform child)
@@ -57,9 +66,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 }
                 PrefabUtility.SaveAsPrefabAsset(Instance, Target);
 
-                GameObject.DestroyImmediate(Instance, true);
+                if (IsDestroy)
+                    GameObject.DestroyImmediate(Instance, true);
             }
-
         }
     }
     public class PrefabUtils
