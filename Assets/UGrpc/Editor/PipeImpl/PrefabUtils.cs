@@ -28,7 +28,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             if (IsReadOnly)
             {
-                Instance = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
+                var sourcePrefab = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
+                Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
             }
             else
             {
