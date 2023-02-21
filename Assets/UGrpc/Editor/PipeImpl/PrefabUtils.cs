@@ -11,14 +11,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
     public class PrefabFeeder : IDisposable
     {
         public GameObject Instance { get; set; }
-        public bool IsReadOnly { get; set; }
+
+
         public string Target { get; set; }
         public string Source { get; set; }
+        public bool IsReadOnly { get; set; }
         public bool IsUnpack { get; set; }
-
         public bool IsDestroy { get; set; }
         public bool IsStatic { get; set; }
-
         public PrefabFeeder(string target, bool isReadOnly = false, bool isDestroy = true, bool isStatic = false)
         {
             // keep a copy in self property
@@ -28,6 +28,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             IsDestroy = isDestroy;
 
             IsStatic = isStatic;
+
+
 
             if (IsReadOnly)
             {
@@ -88,10 +90,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 }
 
                 PrefabUtility.SaveAsPrefabAsset(Instance, Target);
-
-                if (IsDestroy)
-                    GameObject.DestroyImmediate(Instance, true);
             }
+
+            if (IsDestroy)
+                GameObject.DestroyImmediate(Instance, true);
         }
     }
     public class PrefabUtils
