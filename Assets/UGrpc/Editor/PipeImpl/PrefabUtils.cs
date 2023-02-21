@@ -17,14 +17,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public bool IsUnpack { get; set; }
 
         public bool IsDestroy { get; set; }
+        public bool IsStatic { get; set; }
 
-        public PrefabFeeder(string target, bool isReadOnly = false, bool isDestroy = true)
+        public PrefabFeeder(string target, bool isReadOnly = false, bool isDestroy = true, bool isStatic = false)
         {
             // keep a copy in self property
             // it will perform a skip when dispose the object
             IsReadOnly = isReadOnly;
 
             IsDestroy = isDestroy;
+
+            IsStatic = isStatic;
 
             if (IsReadOnly)
             {
@@ -38,12 +41,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 Target = target;
             }
         }
-        public PrefabFeeder(string source, string target, bool isUnpack = false, bool isDestroy = true)
+        public PrefabFeeder(string source, string target, bool isUnpack = false, bool isDestroy = true, bool isStatic = false)
         {
             // unpack the prefab asset before saving a new version (break connection from the original asset)
             IsUnpack = isUnpack;
 
             IsDestroy = isDestroy;
+
+            IsStatic = isStatic;
 
             var sourcePrefab = AssetDatabase.LoadAssetAtPath(source, typeof(GameObject)) as GameObject;
             Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
@@ -57,6 +62,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             child.parent = Instance.transform;
         }
 
+        public void SetGameObjectStatic(GameObject obj)
+        {
+            obj.isStatic = true;
+
+            // Recursively set the isStatic flag for all child GameObjects
+            foreach (Transform child in obj.GetComponentsInChildren<Transform>())
+            {
+                child.gameObject.isStatic = true;
+            }
+        }
+
         public void Dispose()
         {
             if (!IsReadOnly)
@@ -65,6 +81,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 {
                     PrefabUtility.UnpackPrefabInstance(Instance, PrefabUnpackMode.OutermostRoot, InteractionMode.AutomatedAction);
                 }
+
+                if (IsStatic)
+                {
+                    SetGameObjectStatic(Instance);
+                }
+
                 PrefabUtility.SaveAsPrefabAsset(Instance, Target);
 
                 if (IsDestroy)
