@@ -43,6 +43,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 Target = target;
             }
         }
+
         public PrefabFeeder(string source, string target, bool isUnpack = false, bool isDestroy = true, bool isStatic = false)
         {
             // unpack the prefab asset before saving a new version (break connection from the original asset)
@@ -52,8 +53,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             IsStatic = isStatic;
 
-            var sourcePrefab = AssetDatabase.LoadAssetAtPath(source, typeof(GameObject)) as GameObject;
-            Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
+            var sourcePrefab = AssetDatabase.LoadAssetAtPath<GameObject>(source);
+            if (sourcePrefab == null)
+            {
+                var assetName = Path.GetFileNameWithoutExtension(source);
+                Instance = new GameObject(assetName);
+            }
+            else
+            {
+                Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
+            }
+
             Target = target;
             Source = source;
 
