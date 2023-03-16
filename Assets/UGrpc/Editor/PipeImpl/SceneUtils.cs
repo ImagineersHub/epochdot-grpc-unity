@@ -97,7 +97,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     {
                         Debug.Log($"Not found asset: {asset}");
                     }
-
                 }
             }
         }
@@ -116,9 +115,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     {
                         Debug.Log($"Not found asset: {asset}");
                     }
-
                 }
             }
+        }
+        public static void SaveCurrentScene()
+        {
+            EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene());
         }
     }
 }
