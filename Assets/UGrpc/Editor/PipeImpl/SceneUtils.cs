@@ -29,18 +29,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public string Target { get; set; }
 
-        public SceneFeeder(string target)
+        public SceneFeeder(string target, bool isForce)
         {
             using (var _ = new LogBlocker())
             {
                 // try to open the existing scene
-                if (EditorSceneManager.GetSceneByPath(target).name != null)
+                var scene = EditorSceneManager.GetSceneByPath(target);
+                if (scene.name != null && !isForce)
                 {
                     Instance = EditorSceneManager.OpenScene(target, OpenSceneMode.Single);
                 }
                 else
                 {
-                    // create a new scene if the given target path doesn't exist
                     Instance = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
                 }
 
@@ -82,9 +82,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
     }
     public class SceneUtils
     {
-        public static void CreateScene(string target, string[] assets)
+        public static void CreateScene(string target, string[] assets, bool isForce)
         {
-            using (var scene = new SceneFeeder(target))
+            using (var scene = new SceneFeeder(target, isForce))
             {
                 foreach (var asset in assets)
                 {
