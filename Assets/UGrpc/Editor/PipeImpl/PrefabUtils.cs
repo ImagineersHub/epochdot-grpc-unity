@@ -19,6 +19,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public bool IsUnpack { get; set; }
         public bool IsDestroy { get; set; }
         public bool IsStatic { get; set; }
+
+        public UnityEngine.Object SourcePrefab { get; set; }
         public PrefabFeeder(string target, bool isReadOnly = false, bool isDestroy = true, bool isStatic = false)
         {
             // keep a copy in self property
@@ -33,8 +35,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             if (IsReadOnly)
             {
-                var sourcePrefab = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
-                Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
+                SourcePrefab = AssetDatabase.LoadAssetAtPath(target, typeof(GameObject)) as GameObject;
+                Instance = PrefabUtility.InstantiatePrefab(SourcePrefab) as GameObject;
             }
             else
             {
@@ -53,15 +55,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             IsStatic = isStatic;
 
-            var sourcePrefab = AssetDatabase.LoadAssetAtPath<GameObject>(source);
-            if (sourcePrefab == null)
+            SourcePrefab = AssetDatabase.LoadAssetAtPath<GameObject>(source);
+            if (SourcePrefab == null)
             {
                 var assetName = Path.GetFileNameWithoutExtension(source);
                 Instance = new GameObject(assetName);
             }
             else
             {
-                Instance = PrefabUtility.InstantiatePrefab(sourcePrefab) as GameObject;
+                Instance = PrefabUtility.InstantiatePrefab(SourcePrefab) as GameObject;
             }
 
             Target = target;
@@ -100,6 +102,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 }
 
                 PrefabUtility.SaveAsPrefabAsset(Instance, Target);
+
             }
 
             if (IsDestroy)
@@ -163,18 +166,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
         }
 
-        private static Type ParseType(string path, bool reportError = true)
+        public static Type ParseType(string componentName, bool reportError = true)
         {
-            var componentName = path;
-
-            var compType = Type.GetType(path);
+            var compType = Type.GetType(componentName);
 
             if (compType == null && reportError) throw new Exception($"Not found component: {componentName}");
 
             return compType;
         }
 
-        private static Component ParseComponentInstance(GameObject obj, string path, bool reportError = true)
+        public static Component ParseComponentInstance(GameObject obj, string path, bool reportError = true)
         {
             Component compInst;
             var compChain = path.Split("/");
