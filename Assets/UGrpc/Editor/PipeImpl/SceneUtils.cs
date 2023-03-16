@@ -34,7 +34,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             using (var _ = new LogBlocker())
             {
                 // try to open the existing scene
-                if (EditorSceneManager.GetSceneByPath(target) != null)
+                if (EditorSceneManager.GetSceneByPath(target).name != null)
                 {
                     Instance = EditorSceneManager.OpenScene(target, OpenSceneMode.Single);
                 }
