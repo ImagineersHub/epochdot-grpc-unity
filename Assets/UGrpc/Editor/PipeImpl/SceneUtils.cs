@@ -34,8 +34,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             using (var _ = new LogBlocker())
             {
                 // try to open the existing scene
-                Instance = EditorSceneManager.OpenScene(target, OpenSceneMode.Single);
-                if (Instance == null)
+                if (EditorSceneManager.GetSceneByPath(target) != null)
+                {
+                    Instance = EditorSceneManager.OpenScene(target, OpenSceneMode.Single);
+                }
+                else
                 {
                     // create a new scene if the given target path doesn't exist
                     Instance = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
