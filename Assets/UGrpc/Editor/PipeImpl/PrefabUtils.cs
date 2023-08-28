@@ -138,7 +138,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 if (material != null)
                 {
                     var materialAsset = AssetDatabase.LoadAssetAtPath(material, typeof(Material)) as Material;
-                    meshRenderer.material = materialAsset;
+                    meshRenderer.sharedMaterial = materialAsset;
                 }
             }
 
