@@ -320,8 +320,44 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
 
         }
-        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths)
+        public static void SetGIModeForMeshRenderer(MeshRenderer meshRenderer, int mode)
         {
+            if (meshRenderer != null)
+            {
+                if (mode == 0)
+                {
+                    // No GI
+                    meshRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+                    meshRenderer.receiveGI = ReceiveGI.LightProbes;
+                }
+                else if (mode == 1)
+                {
+                    // Use Lightmap
+                    meshRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.Off;
+                    meshRenderer.receiveGI = ReceiveGI.Lightmaps;
+                }
+                else if (mode == 2)
+                {
+                    // Use Light Probe
+                    meshRenderer.lightProbeUsage = UnityEngine.Rendering.LightProbeUsage.BlendProbes;
+                    meshRenderer.receiveGI = ReceiveGI.LightProbes;
+                }
+                else
+                {
+                    Debug.LogError("Invalid mode: " + mode);
+                }
+            }
+            else
+            {
+                Debug.LogError("No MeshRenderer attached to this GameObject.");
+            }
+        }
+
+
+        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths, int giMode)
+        {
+            //giMode: 0-> No GI, 1-> Lightmap, 2-> Light Probe 
+
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack, isStatic: isStatic))
             {
                 var param = (CTransform)paramStr ?? throw new Exception("Found Invalid parameter string. failed to cast string to CTransform");
@@ -347,6 +383,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     var matLength = meshRenderer.materials.Count();
                     meshRenderer.materials = materialList.Skip(matIndex).Take(matLength).ToArray();
                     matIndex += matLength;
+
+                    SetGIModeForMeshRenderer(meshRenderer, giMode);
                 }
 
             }
