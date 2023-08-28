@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Policy;
 using UnityEditor;
 using UnityEngine;
+using Unity.Plastic.Newtonsoft.Json;
 
 namespace UGrpc.Pipeline.GrpcPipe.V1
 {
@@ -305,21 +306,29 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             return materialCount;
         }
 
-        public static void CreatePrefabVariant(string source, string target, bool unpack, float[] transform, string[] materialAssetPaths)
+        public class CTransform
+        {
+            public Vector3 scale;
+            public Vector3 translate;
+            public Vector3 rotate;
+
+
+            public static explicit operator CTransform(string jsonString)
+            {
+                return JsonConvert.DeserializeObject<CTransform>(jsonString);
+            }
+        }
+
+        public static void CreatePrefabVariant(string source, string target, bool unpack, CTransform param, string[] materialAssetPaths)
         {
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack))
             {
-                if (transform.Length != 9) throw new Exception("Found invalid transform values");
                 var totalMaterialNumbers = GetTotalMaterialCount(sourceInst.Instance);
                 if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception("The specified material list don't match the total materials of the gameobject renderers");
 
-                var location = new Vector3(transform[0], transform[1], transform[2]);
-                var rotation = new Vector3(transform[3], transform[4], transform[5]);
-                var scale = new Vector3(transform[6], transform[7], transform[8]);
-
-                sourceInst.Instance.transform.localPosition = location;
-                sourceInst.Instance.transform.Rotate(rotation, Space.Self);
-                sourceInst.Instance.transform.localScale = scale;
+                sourceInst.Instance.transform.localPosition = param.translate;
+                sourceInst.Instance.transform.Rotate(param.rotate, Space.Self);
+                sourceInst.Instance.transform.localScale = param.scale;
 
                 var renderers = sourceInst.Instance.GetComponentsInChildren<MeshRenderer>();
                 List<Material> materialList = new();
