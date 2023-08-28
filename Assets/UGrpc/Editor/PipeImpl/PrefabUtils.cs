@@ -307,7 +307,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             return materialCount;
         }
 
-        public class CTransform : TypeConverter
+        public class CTransform
         {
             public Vector3 scale;
             public Vector3 translate;
@@ -319,25 +319,13 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 return JsonConvert.DeserializeObject<CTransform>(jsonString);
             }
 
-            public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
-            {
-                return sourceType == typeof(string);
-            }
-
-            public override object ConvertFrom(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
-            {
-                if (value is string jsonString)
-                {
-                    return JsonConvert.DeserializeObject<CTransform>(jsonString);
-                }
-                return base.ConvertFrom(context, culture, value);
-            }
-
         }
-        public static void CreatePrefabVariant(string source, string target, bool unpack, CTransform param, string[] materialAssetPaths)
+        public static void CreatePrefabVariant(string source, string target, bool unpack, string paramStr, string[] materialAssetPaths)
         {
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack))
             {
+                var param = (CTransform)paramStr ?? throw new Exception("Found Invalid parameter string. failed to cast string to CTransform");
+
                 var totalMaterialNumbers = GetTotalMaterialCount(sourceInst.Instance);
                 if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception("The specified material list don't match the total materials of the gameobject renderers");
 
@@ -349,7 +337,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 List<Material> materialList = new();
                 foreach (var materialPath in materialAssetPaths)
                 {
-                    var mat = Resources.Load<Material>(materialPath) ?? throw new Exception($"Not found material{materialPath}");
+                    var mat = AssetDatabase.LoadAssetAtPath<Material>(materialPath) ?? throw new Exception($"Not found material{materialPath}");
                     materialList.Add(mat);
 
                 }
