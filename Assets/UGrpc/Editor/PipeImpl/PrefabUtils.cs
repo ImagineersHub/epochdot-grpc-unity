@@ -320,9 +320,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
 
         }
-        public static void CreatePrefabVariant(string source, string target, bool unpack, string paramStr, string[] materialAssetPaths)
+        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths)
         {
-            using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack))
+            using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack, isStatic: isStatic))
             {
                 var param = (CTransform)paramStr ?? throw new Exception("Found Invalid parameter string. failed to cast string to CTransform");
 
@@ -330,7 +330,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception("The specified material list don't match the total materials of the gameobject renderers");
 
                 sourceInst.Instance.transform.localPosition = param.translate;
-                sourceInst.Instance.transform.Rotate(param.rotate, Space.Self);
+                sourceInst.Instance.transform.localRotation = Quaternion.Euler(param.rotate.x, param.rotate.y, param.rotate.z);
                 sourceInst.Instance.transform.localScale = param.scale;
 
                 var renderers = sourceInst.Instance.GetComponentsInChildren<MeshRenderer>();
