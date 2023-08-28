@@ -4,6 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
+using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 using Unity.Plastic.Newtonsoft.Json;
@@ -177,9 +178,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             return compType;
         }
 
-        public static Component ParseComponentInstance(GameObject obj, string path, bool reportError = true)
+        public static UnityEngine.Component ParseComponentInstance(GameObject obj, string path, bool reportError = true)
         {
-            Component compInst;
+            UnityEngine.Component compInst;
             var compChain = path.Split("/");
 
             var compType = ParseType(compChain[^1]);
@@ -257,7 +258,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             using (var sourceInst = new PrefabFeeder(source, source))
             {
-                Component compInst = ParseComponentInstance(sourceInst.Instance, componentPath);
+                UnityEngine.Component compInst = ParseComponentInstance(sourceInst.Instance, componentPath);
                 var propertyInfo = compInst.GetType().GetProperties().FirstOrDefault(x => x.Name.Equals(propertyName, StringComparison.OrdinalIgnoreCase));
                 propertyInfo.SetValue(compInst, Convert.ChangeType(value, propertyInfo.PropertyType));
             }
@@ -306,7 +307,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             return materialCount;
         }
 
-        public class CTransform
+        public class CTransform : TypeConverter
         {
             public Vector3 scale;
             public Vector3 translate;
@@ -317,8 +318,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             {
                 return JsonConvert.DeserializeObject<CTransform>(jsonString);
             }
-        }
 
+            public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
+            {
+                return sourceType == typeof(string);
+            }
+
+            public override object ConvertFrom(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value)
+            {
+                if (value is string jsonString)
+                {
+                    return JsonConvert.DeserializeObject<CTransform>(jsonString);
+                }
+                return base.ConvertFrom(context, culture, value);
+            }
+
+        }
         public static void CreatePrefabVariant(string source, string target, bool unpack, CTransform param, string[] materialAssetPaths)
         {
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack))
