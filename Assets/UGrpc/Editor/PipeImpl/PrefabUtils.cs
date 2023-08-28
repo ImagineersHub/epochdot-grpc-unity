@@ -294,7 +294,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
             if (meshRenderer != null)
             {
-                Material[] materials = meshRenderer.materials;
+                Material[] materials = meshRenderer.sharedMaterials;
                 materialCount += materials.Length;
             }
 
@@ -380,8 +380,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 var matIndex = 0;
                 foreach (var meshRenderer in renderers)
                 {
-                    var matLength = meshRenderer.materials.Count();
-                    meshRenderer.materials = materialList.Skip(matIndex).Take(matLength).ToArray();
+                    var matLength = meshRenderer.sharedMaterials.Count();
+                    meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
                     matIndex += matLength;
 
                     SetGIModeForMeshRenderer(meshRenderer, giMode);
