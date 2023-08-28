@@ -1,6 +1,7 @@
 
 using System;
 using System.IO;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Policy;
 using UnityEditor;
@@ -283,10 +284,60 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
         }
 
-        public static void CreatePrefabVariant(string source, string target, bool unpack)
+        private static int GetTotalMaterialCount(GameObject obj)
         {
-            var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack);
-            sourceInst.Dispose();
+            int materialCount = 0;
+
+            // Get the material count of the current object
+            MeshRenderer meshRenderer = obj.GetComponent<MeshRenderer>();
+            if (meshRenderer != null)
+            {
+                Material[] materials = meshRenderer.materials;
+                materialCount += materials.Length;
+            }
+
+            // Recur for all children of the current object
+            foreach (Transform child in obj.transform)
+            {
+                materialCount += GetTotalMaterialCount(child.gameObject);
+            }
+
+            return materialCount;
+        }
+
+        public static void CreatePrefabVariant(string source, string target, bool unpack, float[] transform, string[] materialAssetPaths)
+        {
+            using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack))
+            {
+                if (transform.Length != 9) throw new Exception("Found invalid transform values");
+                var totalMaterialNumbers = GetTotalMaterialCount(sourceInst.Instance);
+                if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception("The specified material list don't match the total materials of the gameobject renderers");
+
+                var location = new Vector3(transform[0], transform[1], transform[2]);
+                var rotation = new Vector3(transform[3], transform[4], transform[5]);
+                var scale = new Vector3(transform[6], transform[7], transform[8]);
+
+                sourceInst.Instance.transform.localPosition = location;
+                sourceInst.Instance.transform.Rotate(rotation, Space.Self);
+                sourceInst.Instance.transform.localScale = scale;
+
+                var renderers = sourceInst.Instance.GetComponentsInChildren<MeshRenderer>();
+                List<Material> materialList = new();
+                foreach (var materialPath in materialAssetPaths)
+                {
+                    var mat = Resources.Load<Material>(materialPath) ?? throw new Exception($"Not found material{materialPath}");
+                    materialList.Add(mat);
+
+                }
+                var matIndex = 0;
+                foreach (var meshRenderer in renderers)
+                {
+                    var matLength = meshRenderer.materials.Count();
+                    meshRenderer.materials = materialList.Skip(matIndex).Take(matLength).ToArray();
+                    matIndex += matLength;
+                }
+
+            }
         }
 
         public static void SetActive(string source, string[] children, bool isActive)
