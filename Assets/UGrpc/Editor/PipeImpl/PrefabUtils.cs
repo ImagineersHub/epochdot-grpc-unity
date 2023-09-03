@@ -363,7 +363,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 var param = (CTransform)paramStr ?? throw new Exception("Found Invalid parameter string. failed to cast string to CTransform");
 
                 var totalMaterialNumbers = GetTotalMaterialCount(sourceInst.Instance);
-                if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception("The specified material list don't match the total materials of the gameobject renderers");
+                if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception(
+                    "The specified material list don't match the total materials of the gameobject renderers" +
+                    $"{totalMaterialNumbers} : {materialAssetPaths.Length}");
 
                 sourceInst.Instance.transform.localPosition = param.translate;
                 sourceInst.Instance.transform.localRotation = Quaternion.Euler(param.rotate.x, param.rotate.y, param.rotate.z);
