@@ -354,7 +354,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
 
 
-        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths, int giMode)
+        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths, int giMode, bool castShadow)
         {
             //giMode: 0-> No GI, 1-> Lightmap, 2-> Light Probe 
 
@@ -380,6 +380,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 var matIndex = 0;
                 foreach (var meshRenderer in renderers)
                 {
+                    if (!castShadow) meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+
                     var matLength = meshRenderer.sharedMaterials.Count();
                     meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
                     matIndex += matLength;
