@@ -354,43 +354,66 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
 
 
-        public static void CreatePrefabVariant(string source, string target, bool unpack, bool isStatic, string paramStr, string[] materialAssetPaths, int giMode, bool castShadow)
+        public static void CreatePrefabVariant(string source,
+                                                string target,
+                                                bool unpack,
+                                                bool isStatic,
+                                                string paramStr,
+                                                string[] materialAssetPaths,
+                                                int giMode,
+                                                bool castShadow)
         {
-            //giMode: 0-> No GI, 1-> Lightmap, 2-> Light Probe 
-
+            //giMode: 0-> No GI, 1-> Lightmap, 2-> Light Probe
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack, isStatic: isStatic))
             {
                 var param = (CTransform)paramStr ?? throw new Exception("Found Invalid parameter string. failed to cast string to CTransform");
-
-                var totalMaterialNumbers = GetTotalMaterialCount(sourceInst.Instance);
-                if (totalMaterialNumbers != materialAssetPaths.Length) throw new Exception(
-                    "The specified material list don't match the total materials of the gameobject renderers" +
-                    $"{totalMaterialNumbers} : {materialAssetPaths.Length}");
-
-                sourceInst.Instance.transform.localPosition = param.translate;
-                sourceInst.Instance.transform.localRotation = Quaternion.Euler(param.rotate.x, param.rotate.y, param.rotate.z);
-                sourceInst.Instance.transform.localScale = param.scale;
-
                 var renderers = sourceInst.Instance.GetComponentsInChildren<MeshRenderer>();
-                List<Material> materialList = new();
-                foreach (var materialPath in materialAssetPaths)
-                {
-                    var mat = AssetDatabase.LoadAssetAtPath<Material>(materialPath) ?? throw new Exception($"Not found material{materialPath}");
-                    materialList.Add(mat);
 
-                }
-                var matIndex = 0;
                 foreach (var meshRenderer in renderers)
                 {
                     if (!castShadow) meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
 
-                    var matLength = meshRenderer.sharedMaterials.Count();
-                    meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
-                    matIndex += matLength;
-
                     SetGIModeForMeshRenderer(meshRenderer, giMode);
                 }
 
+                // update transform
+                sourceInst.Instance.transform.localPosition = param.translate;
+                sourceInst.Instance.transform.localRotation = Quaternion.Euler(param.rotate.x, param.rotate.y, param.rotate.z);
+                sourceInst.Instance.transform.localScale = param.scale;
+
+                if (materialAssetPaths.Length > 0)
+                {
+                    ApplyMaterials(sourceInst.Instance, materialAssetPaths);
+                }
+            }
+        }
+
+        static void ApplyMaterials(GameObject target, string[] materialAssetPaths)
+        {
+            var totalMaterialNumbers = GetTotalMaterialCount(target);
+            if (materialAssetPaths.Length != 0 && totalMaterialNumbers != materialAssetPaths.Length) throw new Exception(
+                "The specified material list don't match the total materials of the gameobject renderers" +
+                $"{totalMaterialNumbers} : {materialAssetPaths.Length}");
+
+            // resolve the material path to object
+            List<Material> materialList = new();
+            foreach (var materialPath in materialAssetPaths)
+            {
+                var mat = AssetDatabase.LoadAssetAtPath<Material>(materialPath) ?? throw new Exception($"Not found material{materialPath}");
+                materialList.Add(mat);
+            }
+
+            var renderers = target.GetComponentsInChildren<MeshRenderer>();
+            var matIndex = 0;
+            foreach (var meshRenderer in renderers)
+            {
+                // skip the material assignment if the specified material list was empty
+                if (materialList.Count > 0)
+                {
+                    var matLength = meshRenderer.sharedMaterials.Count();
+                    meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
+                    matIndex += matLength;
+                }
             }
         }
 
