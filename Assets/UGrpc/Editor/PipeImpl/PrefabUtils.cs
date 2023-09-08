@@ -8,6 +8,7 @@ using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 using Unity.Plastic.Newtonsoft.Json;
+using System.Reflection;
 
 namespace UGrpc.Pipeline.GrpcPipe.V1
 {
@@ -171,10 +172,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public static Type ParseType(string componentName, bool reportError = true)
         {
+            Debug.Log($"Parse component: {componentName}");
             var compType = Type.GetType(componentName);
-
             if (compType == null && reportError) throw new Exception($"Not found component: {componentName}");
-
             return compType;
         }
 
@@ -205,10 +205,63 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             return compInst;
         }
 
+        private static GameObject FetchObjectByPath(GameObject root, string childPath, bool isCreate)
+        {
+            Transform childTrans = root.transform.Find(childPath);
+
+            if (childTrans == null && isCreate)
+            {
+                if (!isCreate) throw new Exception($"Not found child chain: {childPath}");
+
+                // create sub children objects
+                childTrans = root.transform;
+                // create child transform
+                foreach (var childName in childPath.Split("/"))
+                {
+                    var childObj = new GameObject(name: childName);
+                    childObj.transform.parent = childTrans;
+                    childTrans = childObj.transform;
+                }
+            }
+
+            return childTrans.gameObject;
+        }
+
+        public static void ChangeActivate(string source, string path, bool isActive)
+        {
+            using (var sourceInst = new PrefabFeeder(source, source))
+            {
+                var compChain = path.Split("/");
+
+                var compType = ParseType(compChain[^1], reportError: false);
+
+                if (compType == null)
+                {
+                    if (compChain[^1].Contains(","))
+                        throw new Exception("Not found specified component");
+
+                    var gameObject = FetchObjectByPath(sourceInst.Instance, path, false);
+                    gameObject.SetActive(isActive);
+                }
+                else
+                {
+                    var childPath = string.Join("/", compChain[0..^1]);
+                    var gameObject = FetchObjectByPath(sourceInst.Instance, childPath, false);
+                    var compInst = gameObject.GetComponent(compType);
+                    PropertyInfo enabledProperty = compType.GetProperty("enabled");
+                    if (enabledProperty != null && enabledProperty.PropertyType == typeof(bool))
+                    {
+                        enabledProperty.SetValue(compInst, isActive);
+                    }
+                }
+            }
+        }
+
         public static void AddComponent(string source, string componentPath, bool isCreate = true)
         {
             // componentPath represent the full path chain including the nested children path and component name
-            // e.g., Collision/UnityEngine.MeshCollider
+            // e.g., Collision/UnityEngine.MeshCollider, UnityEngine
+            // e.g., <child name>/UnityEngine.MeshRenderer, UnityEngine
             var compChain = componentPath.Split("/");
 
             var compType = ParseType(compChain[^1]);
@@ -221,25 +274,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 {
                     var childPath = string.Join("/", compChain[0..^1]);
 
-                    var childTrans = sourceInst.Instance.transform.Find(childPath);
+                    // var childTrans = sourceInst.Instance.transform.Find(childPath);
 
-                    if (childTrans == null && !isCreate)
-                    {
-                        throw new Exception($"Not found child chain: {childPath}");
-                    }
-                    else
-                    {
-                        // create sub children objects
-                        childTrans = sourceInst.Instance.transform;
-                        // create child transform
-                        foreach (var childName in childPath.Split("/"))
-                        {
-                            var childObj = new GameObject(name: childName);
-                            childObj.transform.parent = childTrans;
-                            childTrans = childObj.transform;
-                        }
-                    }
-                    gameObject = childTrans.gameObject;
+                    // if (childTrans == null && !isCreate)
+                    // {
+                    //     throw new Exception($"Not found child chain: {childPath}");
+                    // }
+                    // else
+                    // {
+                    //     // create sub children objects
+                    //     childTrans = sourceInst.Instance.transform;
+                    //     // create child transform
+                    //     foreach (var childName in childPath.Split("/"))
+                    //     {
+                    //         var childObj = new GameObject(name: childName);
+                    //         childObj.transform.parent = childTrans;
+                    //         childTrans = childObj.transform;
+                    //     }
+                    // }
+                    gameObject = FetchObjectByPath(sourceInst.Instance, childPath, isCreate);
                 }
                 else
                 {
