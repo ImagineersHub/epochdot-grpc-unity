@@ -79,7 +79,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 // TODO: reimplement the array parameter parser
                 if (paramItem.paramInfo.ParameterType == typeof(System.String[]))
                 {
-                    exportParams.Add(Convert.ChangeType(paramItem.value.Split("%@%"), paramItem.paramInfo.ParameterType));
+                    var listParam = paramItem.value.Split("%@%").ToList();
+                    listParam.RemoveAll(str => string.IsNullOrEmpty(str.Trim()));
+                    exportParams.Add(Convert.ChangeType(listParam.ToArray(), paramItem.paramInfo.ParameterType));
                 }
                 else if (paramItem.paramInfo.ParameterType.BaseType == typeof(System.Enum))
                 {
