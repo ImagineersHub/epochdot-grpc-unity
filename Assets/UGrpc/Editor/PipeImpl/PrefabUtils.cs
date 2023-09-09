@@ -414,7 +414,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                                                 string paramStr,
                                                 string[] materialAssetPaths,
                                                 int giMode,
-                                                bool castShadow)
+                                                bool castShadow,
+                                                string layer)
         {
             //giMode: 0-> No GI, 1-> Lightmap, 2-> Light Probe
             using (var sourceInst = new PrefabFeeder(source: source, target: target, isUnpack: unpack, isStatic: isStatic))
@@ -438,6 +439,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 {
                     ApplyMaterials(sourceInst.Instance, materialAssetPaths);
                 }
+
+                GameObjectUtils.SetLayerRecursively(sourceInst.Instance, layer);
             }
         }
 
