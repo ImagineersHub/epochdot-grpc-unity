@@ -435,12 +435,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 sourceInst.Instance.transform.localRotation = Quaternion.Euler(param.rotate.x, param.rotate.y, param.rotate.z);
                 sourceInst.Instance.transform.localScale = param.scale;
 
-                if (materialAssetPaths.Length > 0)
-                {
-                    ApplyMaterials(sourceInst.Instance, materialAssetPaths);
-                }
+                if (materialAssetPaths.Length > 0) ApplyMaterials(sourceInst.Instance, materialAssetPaths);
 
-                GameObjectUtils.SetLayerRecursively(sourceInst.Instance, layer);
+                if (layer != null) GameObjectUtils.SetLayerRecursively(sourceInst.Instance, layer);
             }
         }
 
