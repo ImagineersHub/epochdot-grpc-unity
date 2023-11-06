@@ -83,6 +83,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     listParam.RemoveAll(str => string.IsNullOrEmpty(str.Trim()));
                     exportParams.Add(Convert.ChangeType(listParam.ToArray(), paramItem.paramInfo.ParameterType));
                 }
+                else if (paramItem.paramInfo.ParameterType == typeof(int[]))
+                {
+                    var listParam = paramItem.value.Split("%@%").ToList();
+                    listParam.RemoveAll(str => string.IsNullOrEmpty(str.Trim()));
+                    exportParams.Add(listParam.Select(s => int.Parse(s)).ToArray());
+                }
+                else if (paramItem.paramInfo.ParameterType == typeof(float[]))
+                {
+                    var listParam = paramItem.value.Split("%@%").ToList();
+                    listParam.RemoveAll(str => string.IsNullOrEmpty(str.Trim()));
+                    exportParams.Add(listParam.Select(s => float.Parse(s)).ToArray());
+                }
                 else if (paramItem.paramInfo.ParameterType.BaseType == typeof(System.Enum))
                 {
                     object enumValue;
