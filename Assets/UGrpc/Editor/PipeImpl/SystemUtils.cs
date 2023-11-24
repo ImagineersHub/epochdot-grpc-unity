@@ -15,5 +15,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 Status = new Status()
             };
         }
+
+        public static GenericResp GetServiceStatus()
+        {
+            return new GenericResp()
+            {
+                Status = new Status()
+                {
+                    Code = Status.Types.StatusCode.Success,
+                    Message = "SUCCESS"
+                }
+            };
+        }
     }
 }

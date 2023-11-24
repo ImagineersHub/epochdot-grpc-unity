@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using UGrpc.Pipeline.GrpcPipe.V1;
 using UnityEditor;
 using UnityEngine;
 namespace UGrpc.Pipeline.GrpcPipe.V1

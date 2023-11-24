@@ -198,6 +198,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     };
                     response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(floatArrayResp);
                 }
+                else if (payload is GenericResp)
+                {
+                    response = payload as GenericResp;
+                }
                 else
                 {
                     response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(
