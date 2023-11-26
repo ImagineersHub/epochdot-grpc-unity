@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UGrpc.Runtime;
 public static class AppSceneUtils
 {
     public static string[] FetchSceneHierarchy()
@@ -12,6 +13,12 @@ public static class AppSceneUtils
         {
             hierarchy.Add(obj.name);
             Debug.Log(obj.name);
+        }
+
+        var grpcService = GameObject.Find("gRPC");
+        if (grpcService != null)
+        {
+            Debug.Log(grpcService.GetComponent<UGrpcRuntime>().Service.DefaultPort);
         }
 
         return hierarchy.ToArray();
