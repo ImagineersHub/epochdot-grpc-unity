@@ -1,5 +1,6 @@
+
+#if UNITY_EDITOR
 using System;
-using PlasticGui.Gluon.WorkspaceWindow;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -124,3 +125,4 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
     }
 }
+#endif

@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Google.Protobuf;
-using UnityEditor;
+
 using UnityEngine;
 namespace UGrpc.Pipeline.GrpcPipe.V1
 {
@@ -34,14 +34,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         protected Dictionary<string, System.Type> mAssembles = new Dictionary<string, System.Type>()
         {
-            {"UGrpc.SystemUtils",typeof(SystemUtils)},
-            {"UGrpc.SceneUtils",typeof(SceneUtils)},
-            {"UGrpc.PrefabUtils",typeof(PrefabUtils)},
-            {"UGrpc.MaterialUtils",typeof(MaterialUtils)},
-            {"UGrpc.UnitTestUtils",typeof(UnitTestUtils)},
+            {"UGrpc.AppSceneUtils",typeof(AppSceneUtils)},
             {"UnityEngine.Application",typeof(Application)},
-            {"UnityEditor.AssetDatabase",typeof(UnityEditor.AssetDatabase)},
-            {"UnityEditor.SceneManagement.EditorSceneManager",typeof(UnityEditor.SceneManagement.EditorSceneManager)}
+            {"UnityEngine.SceneManagement.SceneManager",typeof(UnityEngine.SceneManagement.SceneManager)},
+            {"UnityEngine.AssetBundle",typeof(UnityEngine.AssetBundle)}
         };
 
         public virtual Dictionary<string, System.Type> AssemblesMappings
@@ -49,6 +45,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             get
             {
                 return mAssembles;
+            }
+        }
+
+        internal virtual Type defaultModule
+        {
+            get
+            {
+                return typeof(UnityEngine.Object);
             }
         }
 
@@ -118,7 +122,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             await UniTask.SwitchToMainThread();
 
             // Parse the module type from the module name (e.g., UnityEditor.AssetDatabase)
-            var module = AssemblesMappings.GetValueOrDefault(cmdParam.type, typeof(EditorWindow));
+            var module = AssemblesMappings.GetValueOrDefault(cmdParam.type, defaultModule);
             if (module == null)
             {
                 throw new Exception($"Not found the specified module: {cmdParam.type}");

@@ -1,6 +1,8 @@
-using UnityEditor;
-using UnityEngine;
 
+using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 namespace UGrpc.Pipeline.GrpcPipe.V1
 {
     public class SystemUtils
@@ -27,5 +29,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 }
             };
         }
+#if UNITY_EDITOR
+        public static void QuiteWithoutSave()
+        {
+            EditorApplication.Exit(0);
+        }
+#endif
     }
 }

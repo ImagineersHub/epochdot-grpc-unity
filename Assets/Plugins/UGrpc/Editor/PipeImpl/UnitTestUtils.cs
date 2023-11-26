@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
@@ -12,3 +12,4 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
     }
 }
+#endif

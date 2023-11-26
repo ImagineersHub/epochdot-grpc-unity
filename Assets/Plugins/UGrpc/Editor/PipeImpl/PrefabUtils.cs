@@ -1,13 +1,12 @@
-
+#if UNITY_EDITOR
 using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
 using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
-using Unity.Plastic.Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Reflection;
 
 namespace UGrpc.Pipeline.GrpcPipe.V1
@@ -510,3 +509,4 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
     }
 }
+#endif
