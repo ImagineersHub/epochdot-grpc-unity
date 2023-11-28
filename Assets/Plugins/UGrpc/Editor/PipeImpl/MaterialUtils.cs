@@ -1,6 +1,5 @@
-
+#if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace UGrpc.Pipeline.GrpcPipe.V1
@@ -19,3 +18,4 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         }
     }
 }
+#endif

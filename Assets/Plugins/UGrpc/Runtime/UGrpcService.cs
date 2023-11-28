@@ -19,29 +19,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
     }
     public class UGrpcService : IUGrpcService
     {
-        public const string PREFS_KEY_AUTO_START_SERVER = "grpcpipe_auto_start_server";
-
         private Server mGrpcServer;
 
-        private const int DEFAULT_PORT = 50061;
+        private const int DEFAULT_GRPC_PORT = 50061; // 50060 for runtime
 
         public virtual int DefaultPort
         {
             get
             {
-                return DEFAULT_PORT;
-            }
-        }
-
-        public bool IsRegistered
-        {
-            get
-            {
-                return EditorPrefs.GetBool(PREFS_KEY_AUTO_START_SERVER, false);
-            }
-            set
-            {
-                EditorPrefs.SetBool(PREFS_KEY_AUTO_START_SERVER, value);
+                return DEFAULT_GRPC_PORT;
             }
         }
 
@@ -56,23 +42,44 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
         public void Dispose()
         {
             // implement the dispose form inherited class 
+            StopCommandServer();
         }
 
 
-        public void StartCommandServer(UGrpcPipeImpl impl, int startPort)
+        public void StartCommandServer(UGrpcPipeImpl impl, int startPort = -1, bool autoFindPort = true)
         {
             if (!IsRunning)
             {
-                var gRPCPort = UGrpcPipeImpl.GetValidPort(startPort: startPort);
+                if (startPort == -1)
+                {
+                    startPort = DefaultPort;
+                }
+
+                if (autoFindPort)
+                {
+                    startPort = UGrpcPipeImpl.GetValidPort(startPort: startPort);
+                }
+
                 mGrpcServer = new Server
                 {
                     Services = { UGrpcPipe.BindService(impl) },
-                    Ports = { new ServerPort("0.0.0.0", gRPCPort, ServerCredentials.Insecure) }
+                    Ports = { new ServerPort("0.0.0.0", startPort, ServerCredentials.Insecure) }
                 };
 
                 mGrpcServer.Start();
 
-                Debug.Log($"[SynPusher] gRPC service is running on port: {gRPCPort}");
+                Debug.Log($"gRPC service is running on port: {startPort}");
+            }
+        }
+
+        public void StopCommandServer()
+        {
+            if (IsRunning)
+            {
+                Debug.Log("Stopped gRPC service");
+                // release resources
+                mGrpcServer.ShutdownAsync().Wait();
+                mGrpcServer = null;
             }
         }
     }

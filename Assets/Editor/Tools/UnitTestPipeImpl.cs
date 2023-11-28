@@ -6,7 +6,7 @@ using UGrpc.Pipeline.GrpcPipe.V1;
 
 namespace UGrpc
 {
-    public class SynPusherPipeImpl : UGrpcPipeImpl
+    public class UnittestPipeImpl : UGrpcEditorPipeImpl
     {
         private Dictionary<string, System.Type> synPusherAssembles;
 
