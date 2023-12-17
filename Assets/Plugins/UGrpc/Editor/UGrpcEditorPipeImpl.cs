@@ -34,11 +34,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                         {"UGrpc.PrefabUtils",typeof(PrefabUtils)},
                         {"UGrpc.MaterialUtils",typeof(MaterialUtils)},
                         {"UGrpc.UnitTestUtils",typeof(UnitTestUtils)},
-                        {"UnityEngine.Application",typeof(Application)},
                         {"UnityEditor.AssetDatabase",typeof(UnityEditor.AssetDatabase)},
                         {"UnityEditor.SceneManagement.EditorSceneManager",typeof(UnityEditor.SceneManagement.EditorSceneManager)}
                     };
-                    editorPipeAssembles = editorPipeAssembles.Concat(base.mAssembles).ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+                    editorPipeAssembles = editorPipeAssembles.Concat(base.mAssembles.Where(kvp => !editorPipeAssembles.ContainsKey(kvp.Key))).ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
                 }
                 return editorPipeAssembles;
             }
