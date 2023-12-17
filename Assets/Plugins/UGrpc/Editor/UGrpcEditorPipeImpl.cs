@@ -8,7 +8,7 @@ using UnityEngine;
 
 using UnityEditor;
 
-namespace UGrpc
+namespace UGrpc.Pipeline.GrpcPipe.V1
 {
     public class UGrpcEditorPipeImpl : UGrpcPipeImpl
     {
