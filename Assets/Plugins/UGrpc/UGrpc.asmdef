@@ -20,11 +20,10 @@
         "Stadia",
         "Switch",
         "tvOS",
-        "WSA",
         "WebGL",
         "XboxOne"
     ],
-    "allowUnsafeCode": true,
+    "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
