@@ -12,15 +12,7 @@ public static class AppSceneUtils
         foreach (GameObject obj in rootObjects)
         {
             hierarchy.Add(obj.name);
-            Debug.Log(obj.name);
         }
-
-        var grpcService = GameObject.Find("gRPC");
-        if (grpcService != null)
-        {
-            Debug.Log(grpcService.GetComponent<UGrpcRuntime>().Service.DefaultPort);
-        }
-
         return hierarchy.ToArray();
     }
 }
