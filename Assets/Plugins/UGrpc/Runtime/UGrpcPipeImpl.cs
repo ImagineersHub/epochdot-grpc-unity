@@ -189,10 +189,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 }
                 else if (payload is string[])
                 {
-                    var payload_list = payload as string[];
-                    var listValue = new Google.Protobuf.WellKnownTypes.ListValue();
-                    listValue.Values.AddRange(payload_list.Select(s => new Google.Protobuf.WellKnownTypes.Value { StringValue = s }));
-                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(listValue);
+                    // var payload_list = payload as string[];
+                    // var listValue = new Google.Protobuf.WellKnownTypes.ListValue();
+                    // listValue.Values.AddRange(payload_list.Select(s => new Google.Protobuf.WellKnownTypes.Value { StringValue = s }));
+                    // response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(listValue);
+
+                    StringArrayRep stringArrayResp = new StringArrayRep
+                    {
+                        Values = { payload as string[] }
+                    };
+                    response.Payload = Google.Protobuf.WellKnownTypes.Any.Pack(stringArrayResp);
                 }
                 else if (payload is float[])
                 {
