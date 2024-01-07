@@ -1,7 +1,7 @@
  {
      "name": "com.imagineershub.ugrpc",
      "displayName": "Ugrpc",
-     "version": "2.0.3",
+     "version": "2.0.4",
      "unity": "2021.3",
      "description": "gRPC services allow the external pipeline to manipulate the editor scene and project assets integration.",
      "keywords": [
