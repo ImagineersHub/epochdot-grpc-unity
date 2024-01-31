@@ -9,6 +9,7 @@
         "asset pipeline",
         "asset integration"
     ],
+    "author": "Imagineerhub",
     "license": "MIT",
     "dependencies": {
         "com.cysharp.unitask": "file:git+https://github.com/Cysharp/UniTask.git/src/UniTask/Assets/Plugins/UniTask#2.3.3"
