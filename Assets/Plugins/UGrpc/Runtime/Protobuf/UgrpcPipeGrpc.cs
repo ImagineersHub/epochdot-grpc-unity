@@ -49,6 +49,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq> __Marshaller_ugrpc_pipe_CommandParserReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Marshaller_ugrpc_pipe_GenericResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest> __Marshaller_ugrpc_pipe_RenderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> __Marshaller_ugrpc_pipe_RenderReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_CommandParser = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
@@ -57,6 +61,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         "CommandParser",
         __Marshaller_ugrpc_pipe_CommandParserReq,
         __Marshaller_ugrpc_pipe_GenericResp);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> __Method_RenderImage = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RenderImage",
+        __Marshaller_ugrpc_pipe_RenderRequest,
+        __Marshaller_ugrpc_pipe_RenderReply);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -70,6 +82,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     {
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> CommandParser(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> RenderImage(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -123,6 +141,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_CommandParser, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply RenderImage(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RenderImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply RenderImage(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RenderImage, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> RenderImageAsync(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RenderImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> RenderImageAsync(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RenderImage, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override UGrpcPipeClient NewInstance(ClientBaseConfiguration configuration)
@@ -137,7 +175,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     public static grpc::ServerServiceDefinition BindService(UGrpcPipeBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_CommandParser, serviceImpl.CommandParser).Build();
+          .AddMethod(__Method_CommandParser, serviceImpl.CommandParser)
+          .AddMethod(__Method_RenderImage, serviceImpl.RenderImage).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -148,6 +187,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, UGrpcPipeBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_CommandParser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.CommandParser));
+      serviceBinder.AddMethod(__Method_RenderImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(serviceImpl.RenderImage));
     }
 
   }
