@@ -37,16 +37,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "ZGUSCwoHdW5rbm93bhAAEgkKBXVuaXR5EAESCgoGdW5yZWFsEAJCCQoHX3N0",
             "YXR1cyIjChBDb21tYW5kUGFyc2VyUmVxEg8KB3BheWxvYWQYASABKAkiWAoL",
             "R2VuZXJpY1Jlc3ASIgoGc3RhdHVzGAEgASgLMhIudWdycGNfcGlwZS5TdGF0",
-            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnkimwEK",
+            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnkiqQEK",
             "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRIdChVjYW1lcmFf",
-            "dHJhbnNmb3JtYXRpb24YAiADKAISCwoDZm92GAMgASgCEhIKCnJlc29sdXRp",
-            "b24YBCADKAUSEAoIdmRiX3BhdGgYBSABKAkSEAoIbW9kYWxpdHkYBiABKAkS",
-            "EgoKY2xpcF9yYW5nZRgHIAMoAiIhCgtSZW5kZXJSZXBseRISCgppbWFnZV9k",
-            "YXRhGAEgASgMMpgBCglVR3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVn",
-            "cnBjX3BpcGUuQ29tbWFuZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJp",
-            "Y1Jlc3ASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVl",
-            "c3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgBCHaoCGlVHcnBjLlBpcGVs",
-            "aW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
+            "dHJhbnNmb3JtYXRpb24YAiADKAISEgoKY2FtZXJhX2ZvdhgDIAEoAhIZChFj",
+            "YW1lcmFfcmVzb2x1dGlvbhgEIAMoBRIQCgh2ZGJfcGF0aBgFIAEoCRIQCght",
+            "b2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgAygCIiEKC1JlbmRlclJl",
+            "cGx5EhIKCmltYWdlX2RhdGEYASABKAwymAEKCVVHcnBjUGlwZRJGCg1Db21t",
+            "YW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdy",
+            "cGNfcGlwZS5HZW5lcmljUmVzcBJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3Bp",
+            "cGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiAEId",
+            "qgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +57,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "CameraTransformation", "Fov", "Resolution", "VdbPath", "Modality", "ClipRange" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "CameraTransformation", "CameraFov", "CameraResolution", "VdbPath", "Modality", "ClipRange" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null)
           }));
     }
@@ -1646,8 +1646,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     public RenderRequest(RenderRequest other) : this() {
       sceneName_ = other.sceneName_;
       cameraTransformation_ = other.cameraTransformation_.Clone();
-      fov_ = other.fov_;
-      resolution_ = other.resolution_.Clone();
+      cameraFov_ = other.cameraFov_;
+      cameraResolution_ = other.cameraResolution_.Clone();
       vdbPath_ = other.vdbPath_;
       modality_ = other.modality_;
       clipRange_ = other.clipRange_.Clone();
@@ -1683,27 +1683,27 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return cameraTransformation_; }
     }
 
-    /// <summary>Field number for the "fov" field.</summary>
-    public const int FovFieldNumber = 3;
-    private float fov_;
+    /// <summary>Field number for the "camera_fov" field.</summary>
+    public const int CameraFovFieldNumber = 3;
+    private float cameraFov_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Fov {
-      get { return fov_; }
+    public float CameraFov {
+      get { return cameraFov_; }
       set {
-        fov_ = value;
+        cameraFov_ = value;
       }
     }
 
-    /// <summary>Field number for the "resolution" field.</summary>
-    public const int ResolutionFieldNumber = 4;
-    private static readonly pb::FieldCodec<int> _repeated_resolution_codec
+    /// <summary>Field number for the "camera_resolution" field.</summary>
+    public const int CameraResolutionFieldNumber = 4;
+    private static readonly pb::FieldCodec<int> _repeated_cameraResolution_codec
         = pb::FieldCodec.ForInt32(34);
-    private readonly pbc::RepeatedField<int> resolution_ = new pbc::RepeatedField<int>();
+    private readonly pbc::RepeatedField<int> cameraResolution_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> Resolution {
-      get { return resolution_; }
+    public pbc::RepeatedField<int> CameraResolution {
+      get { return cameraResolution_; }
     }
 
     /// <summary>Field number for the "vdb_path" field.</summary>
@@ -1758,8 +1758,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (SceneName != other.SceneName) return false;
       if(!cameraTransformation_.Equals(other.cameraTransformation_)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Fov, other.Fov)) return false;
-      if(!resolution_.Equals(other.resolution_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraFov, other.CameraFov)) return false;
+      if(!cameraResolution_.Equals(other.cameraResolution_)) return false;
       if (VdbPath != other.VdbPath) return false;
       if (Modality != other.Modality) return false;
       if(!clipRange_.Equals(other.clipRange_)) return false;
@@ -1772,8 +1772,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       int hash = 1;
       if (SceneName.Length != 0) hash ^= SceneName.GetHashCode();
       hash ^= cameraTransformation_.GetHashCode();
-      if (Fov != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Fov);
-      hash ^= resolution_.GetHashCode();
+      if (CameraFov != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraFov);
+      hash ^= cameraResolution_.GetHashCode();
       if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
       if (Modality.Length != 0) hash ^= Modality.GetHashCode();
       hash ^= clipRange_.GetHashCode();
@@ -1800,11 +1800,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(SceneName);
       }
       cameraTransformation_.WriteTo(output, _repeated_cameraTransformation_codec);
-      if (Fov != 0F) {
+      if (CameraFov != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Fov);
+        output.WriteFloat(CameraFov);
       }
-      resolution_.WriteTo(output, _repeated_resolution_codec);
+      cameraResolution_.WriteTo(output, _repeated_cameraResolution_codec);
       if (VdbPath.Length != 0) {
         output.WriteRawTag(42);
         output.WriteString(VdbPath);
@@ -1829,11 +1829,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(SceneName);
       }
       cameraTransformation_.WriteTo(ref output, _repeated_cameraTransformation_codec);
-      if (Fov != 0F) {
+      if (CameraFov != 0F) {
         output.WriteRawTag(29);
-        output.WriteFloat(Fov);
+        output.WriteFloat(CameraFov);
       }
-      resolution_.WriteTo(ref output, _repeated_resolution_codec);
+      cameraResolution_.WriteTo(ref output, _repeated_cameraResolution_codec);
       if (VdbPath.Length != 0) {
         output.WriteRawTag(42);
         output.WriteString(VdbPath);
@@ -1857,10 +1857,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SceneName);
       }
       size += cameraTransformation_.CalculateSize(_repeated_cameraTransformation_codec);
-      if (Fov != 0F) {
+      if (CameraFov != 0F) {
         size += 1 + 4;
       }
-      size += resolution_.CalculateSize(_repeated_resolution_codec);
+      size += cameraResolution_.CalculateSize(_repeated_cameraResolution_codec);
       if (VdbPath.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VdbPath);
       }
@@ -1884,10 +1884,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         SceneName = other.SceneName;
       }
       cameraTransformation_.Add(other.cameraTransformation_);
-      if (other.Fov != 0F) {
-        Fov = other.Fov;
+      if (other.CameraFov != 0F) {
+        CameraFov = other.CameraFov;
       }
-      resolution_.Add(other.resolution_);
+      cameraResolution_.Add(other.cameraResolution_);
       if (other.VdbPath.Length != 0) {
         VdbPath = other.VdbPath;
       }
@@ -1920,12 +1920,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 29: {
-            Fov = input.ReadFloat();
+            CameraFov = input.ReadFloat();
             break;
           }
           case 34:
           case 32: {
-            resolution_.AddEntriesFrom(input, _repeated_resolution_codec);
+            cameraResolution_.AddEntriesFrom(input, _repeated_cameraResolution_codec);
             break;
           }
           case 42: {
@@ -1966,12 +1966,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 29: {
-            Fov = input.ReadFloat();
+            CameraFov = input.ReadFloat();
             break;
           }
           case 34:
           case 32: {
-            resolution_.AddEntriesFrom(ref input, _repeated_resolution_codec);
+            cameraResolution_.AddEntriesFrom(ref input, _repeated_cameraResolution_codec);
             break;
           }
           case 42: {
