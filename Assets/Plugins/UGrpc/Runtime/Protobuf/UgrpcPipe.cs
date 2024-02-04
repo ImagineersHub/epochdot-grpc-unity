@@ -37,16 +37,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "ZGUSCwoHdW5rbm93bhAAEgkKBXVuaXR5EAESCgoGdW5yZWFsEAJCCQoHX3N0",
             "YXR1cyIjChBDb21tYW5kUGFyc2VyUmVxEg8KB3BheWxvYWQYASABKAkiWAoL",
             "R2VuZXJpY1Jlc3ASIgoGc3RhdHVzGAEgASgLMhIudWdycGNfcGlwZS5TdGF0",
-            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnkiqQEK",
-            "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRIdChVjYW1lcmFf",
-            "dHJhbnNmb3JtYXRpb24YAiADKAISEgoKY2FtZXJhX2ZvdhgDIAEoAhIZChFj",
-            "YW1lcmFfcmVzb2x1dGlvbhgEIAMoBRIQCgh2ZGJfcGF0aBgFIAEoCRIQCght",
-            "b2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgAygCIiEKC1JlbmRlclJl",
-            "cGx5EhIKCmltYWdlX2RhdGEYASABKAwymAEKCVVHcnBjUGlwZRJGCg1Db21t",
-            "YW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdy",
-            "cGNfcGlwZS5HZW5lcmljUmVzcBJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3Bp",
-            "cGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiAEId",
-            "qgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
+            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5Bbnki4gEK",
+            "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRITCgtvdXRwdXRf",
+            "cGF0aBgCIAEoCRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YAyADKAISEgoK",
+            "Y2FtZXJhX2ZvdhgEIAEoAhIZChFjYW1lcmFfcmVzb2x1dGlvbhgFIAMoBRIQ",
+            "Cghtb2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgAygCEhAKCHZkYl9w",
+            "YXRoGAggASgJEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAkgAygC",
+            "IiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2RhdGEYASABKAwymAEKCVVHcnBj",
+            "UGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFy",
+            "c2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJDCgtSZW5kZXJJbWFn",
+            "ZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3BpcGUuUmVu",
+            "ZGVyUmVwbHkiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -57,7 +59,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "CameraTransformation", "CameraFov", "CameraResolution", "VdbPath", "Modality", "ClipRange" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null)
           }));
     }
@@ -1645,12 +1647,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public RenderRequest(RenderRequest other) : this() {
       sceneName_ = other.sceneName_;
+      outputPath_ = other.outputPath_;
       cameraTransformation_ = other.cameraTransformation_.Clone();
       cameraFov_ = other.cameraFov_;
       cameraResolution_ = other.cameraResolution_.Clone();
-      vdbPath_ = other.vdbPath_;
       modality_ = other.modality_;
       clipRange_ = other.clipRange_.Clone();
+      vdbPath_ = other.vdbPath_;
+      proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1672,10 +1676,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "output_path" field.</summary>
+    public const int OutputPathFieldNumber = 2;
+    private string outputPath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OutputPath {
+      get { return outputPath_; }
+      set {
+        outputPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "camera_transformation" field.</summary>
-    public const int CameraTransformationFieldNumber = 2;
+    public const int CameraTransformationFieldNumber = 3;
     private static readonly pb::FieldCodec<float> _repeated_cameraTransformation_codec
-        = pb::FieldCodec.ForFloat(18);
+        = pb::FieldCodec.ForFloat(26);
     private readonly pbc::RepeatedField<float> cameraTransformation_ = new pbc::RepeatedField<float>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1684,7 +1700,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "camera_fov" field.</summary>
-    public const int CameraFovFieldNumber = 3;
+    public const int CameraFovFieldNumber = 4;
     private float cameraFov_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1696,26 +1712,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "camera_resolution" field.</summary>
-    public const int CameraResolutionFieldNumber = 4;
+    public const int CameraResolutionFieldNumber = 5;
     private static readonly pb::FieldCodec<int> _repeated_cameraResolution_codec
-        = pb::FieldCodec.ForInt32(34);
+        = pb::FieldCodec.ForInt32(42);
     private readonly pbc::RepeatedField<int> cameraResolution_ = new pbc::RepeatedField<int>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<int> CameraResolution {
       get { return cameraResolution_; }
-    }
-
-    /// <summary>Field number for the "vdb_path" field.</summary>
-    public const int VdbPathFieldNumber = 5;
-    private string vdbPath_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string VdbPath {
-      get { return vdbPath_; }
-      set {
-        vdbPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
     }
 
     /// <summary>Field number for the "modality" field.</summary>
@@ -1741,6 +1745,29 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return clipRange_; }
     }
 
+    /// <summary>Field number for the "vdb_path" field.</summary>
+    public const int VdbPathFieldNumber = 8;
+    private string vdbPath_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string VdbPath {
+      get { return vdbPath_; }
+      set {
+        vdbPath_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "proxy_model_transformation" field.</summary>
+    public const int ProxyModelTransformationFieldNumber = 9;
+    private static readonly pb::FieldCodec<float> _repeated_proxyModelTransformation_codec
+        = pb::FieldCodec.ForFloat(74);
+    private readonly pbc::RepeatedField<float> proxyModelTransformation_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> ProxyModelTransformation {
+      get { return proxyModelTransformation_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1757,12 +1784,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         return true;
       }
       if (SceneName != other.SceneName) return false;
+      if (OutputPath != other.OutputPath) return false;
       if(!cameraTransformation_.Equals(other.cameraTransformation_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraFov, other.CameraFov)) return false;
       if(!cameraResolution_.Equals(other.cameraResolution_)) return false;
-      if (VdbPath != other.VdbPath) return false;
       if (Modality != other.Modality) return false;
       if(!clipRange_.Equals(other.clipRange_)) return false;
+      if (VdbPath != other.VdbPath) return false;
+      if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1771,12 +1800,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (SceneName.Length != 0) hash ^= SceneName.GetHashCode();
+      if (OutputPath.Length != 0) hash ^= OutputPath.GetHashCode();
       hash ^= cameraTransformation_.GetHashCode();
       if (CameraFov != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraFov);
       hash ^= cameraResolution_.GetHashCode();
-      if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
       if (Modality.Length != 0) hash ^= Modality.GetHashCode();
       hash ^= clipRange_.GetHashCode();
+      if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
+      hash ^= proxyModelTransformation_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1799,21 +1830,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(10);
         output.WriteString(SceneName);
       }
+      if (OutputPath.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OutputPath);
+      }
       cameraTransformation_.WriteTo(output, _repeated_cameraTransformation_codec);
       if (CameraFov != 0F) {
-        output.WriteRawTag(29);
+        output.WriteRawTag(37);
         output.WriteFloat(CameraFov);
       }
       cameraResolution_.WriteTo(output, _repeated_cameraResolution_codec);
-      if (VdbPath.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(VdbPath);
-      }
       if (Modality.Length != 0) {
         output.WriteRawTag(50);
         output.WriteString(Modality);
       }
       clipRange_.WriteTo(output, _repeated_clipRange_codec);
+      if (VdbPath.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(VdbPath);
+      }
+      proxyModelTransformation_.WriteTo(output, _repeated_proxyModelTransformation_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1828,21 +1864,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(10);
         output.WriteString(SceneName);
       }
+      if (OutputPath.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(OutputPath);
+      }
       cameraTransformation_.WriteTo(ref output, _repeated_cameraTransformation_codec);
       if (CameraFov != 0F) {
-        output.WriteRawTag(29);
+        output.WriteRawTag(37);
         output.WriteFloat(CameraFov);
       }
       cameraResolution_.WriteTo(ref output, _repeated_cameraResolution_codec);
-      if (VdbPath.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(VdbPath);
-      }
       if (Modality.Length != 0) {
         output.WriteRawTag(50);
         output.WriteString(Modality);
       }
       clipRange_.WriteTo(ref output, _repeated_clipRange_codec);
+      if (VdbPath.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(VdbPath);
+      }
+      proxyModelTransformation_.WriteTo(ref output, _repeated_proxyModelTransformation_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1856,18 +1897,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (SceneName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SceneName);
       }
+      if (OutputPath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OutputPath);
+      }
       size += cameraTransformation_.CalculateSize(_repeated_cameraTransformation_codec);
       if (CameraFov != 0F) {
         size += 1 + 4;
       }
       size += cameraResolution_.CalculateSize(_repeated_cameraResolution_codec);
-      if (VdbPath.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(VdbPath);
-      }
       if (Modality.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Modality);
       }
       size += clipRange_.CalculateSize(_repeated_clipRange_codec);
+      if (VdbPath.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(VdbPath);
+      }
+      size += proxyModelTransformation_.CalculateSize(_repeated_proxyModelTransformation_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1883,18 +1928,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (other.SceneName.Length != 0) {
         SceneName = other.SceneName;
       }
+      if (other.OutputPath.Length != 0) {
+        OutputPath = other.OutputPath;
+      }
       cameraTransformation_.Add(other.cameraTransformation_);
       if (other.CameraFov != 0F) {
         CameraFov = other.CameraFov;
       }
       cameraResolution_.Add(other.cameraResolution_);
-      if (other.VdbPath.Length != 0) {
-        VdbPath = other.VdbPath;
-      }
       if (other.Modality.Length != 0) {
         Modality = other.Modality;
       }
       clipRange_.Add(other.clipRange_);
+      if (other.VdbPath.Length != 0) {
+        VdbPath = other.VdbPath;
+      }
+      proxyModelTransformation_.Add(other.proxyModelTransformation_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -1914,22 +1963,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             SceneName = input.ReadString();
             break;
           }
-          case 18:
-          case 21: {
+          case 18: {
+            OutputPath = input.ReadString();
+            break;
+          }
+          case 26:
+          case 29: {
             cameraTransformation_.AddEntriesFrom(input, _repeated_cameraTransformation_codec);
             break;
           }
-          case 29: {
+          case 37: {
             CameraFov = input.ReadFloat();
             break;
           }
-          case 34:
-          case 32: {
+          case 42:
+          case 40: {
             cameraResolution_.AddEntriesFrom(input, _repeated_cameraResolution_codec);
-            break;
-          }
-          case 42: {
-            VdbPath = input.ReadString();
             break;
           }
           case 50: {
@@ -1939,6 +1988,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           case 58:
           case 61: {
             clipRange_.AddEntriesFrom(input, _repeated_clipRange_codec);
+            break;
+          }
+          case 66: {
+            VdbPath = input.ReadString();
+            break;
+          }
+          case 74:
+          case 77: {
+            proxyModelTransformation_.AddEntriesFrom(input, _repeated_proxyModelTransformation_codec);
             break;
           }
         }
@@ -1960,22 +2018,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             SceneName = input.ReadString();
             break;
           }
-          case 18:
-          case 21: {
+          case 18: {
+            OutputPath = input.ReadString();
+            break;
+          }
+          case 26:
+          case 29: {
             cameraTransformation_.AddEntriesFrom(ref input, _repeated_cameraTransformation_codec);
             break;
           }
-          case 29: {
+          case 37: {
             CameraFov = input.ReadFloat();
             break;
           }
-          case 34:
-          case 32: {
+          case 42:
+          case 40: {
             cameraResolution_.AddEntriesFrom(ref input, _repeated_cameraResolution_codec);
-            break;
-          }
-          case 42: {
-            VdbPath = input.ReadString();
             break;
           }
           case 50: {
@@ -1985,6 +2043,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           case 58:
           case 61: {
             clipRange_.AddEntriesFrom(ref input, _repeated_clipRange_codec);
+            break;
+          }
+          case 66: {
+            VdbPath = input.ReadString();
+            break;
+          }
+          case 74:
+          case 77: {
+            proxyModelTransformation_.AddEntriesFrom(ref input, _repeated_proxyModelTransformation_codec);
             break;
           }
         }
