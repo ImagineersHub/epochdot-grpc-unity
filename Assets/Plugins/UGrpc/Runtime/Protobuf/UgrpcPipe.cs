@@ -41,7 +41,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRITCgtvdXRwdXRf",
             "cGF0aBgCIAEoCRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YAyADKAISEgoK",
             "Y2FtZXJhX2ZvdhgEIAEoAhIZChFjYW1lcmFfcmVzb2x1dGlvbhgFIAMoBRIQ",
-            "Cghtb2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgAygCEhAKCHZkYl9w",
+            "Cghtb2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgASgCEhAKCHZkYl9w",
             "YXRoGAggASgJEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAkgAygC",
             "IiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2RhdGEYASABKAwymAEKCVVHcnBj",
             "UGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFy",
@@ -1652,7 +1652,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraFov_ = other.cameraFov_;
       cameraResolution_ = other.cameraResolution_.Clone();
       modality_ = other.modality_;
-      clipRange_ = other.clipRange_.Clone();
+      clipRange_ = other.clipRange_;
       vdbPath_ = other.vdbPath_;
       proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1736,13 +1736,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     /// <summary>Field number for the "clip_range" field.</summary>
     public const int ClipRangeFieldNumber = 7;
-    private static readonly pb::FieldCodec<float> _repeated_clipRange_codec
-        = pb::FieldCodec.ForFloat(58);
-    private readonly pbc::RepeatedField<float> clipRange_ = new pbc::RepeatedField<float>();
+    private float clipRange_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> ClipRange {
+    public float ClipRange {
       get { return clipRange_; }
+      set {
+        clipRange_ = value;
+      }
     }
 
     /// <summary>Field number for the "vdb_path" field.</summary>
@@ -1789,7 +1790,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraFov, other.CameraFov)) return false;
       if(!cameraResolution_.Equals(other.cameraResolution_)) return false;
       if (Modality != other.Modality) return false;
-      if(!clipRange_.Equals(other.clipRange_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipRange, other.ClipRange)) return false;
       if (VdbPath != other.VdbPath) return false;
       if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1805,7 +1806,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (CameraFov != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraFov);
       hash ^= cameraResolution_.GetHashCode();
       if (Modality.Length != 0) hash ^= Modality.GetHashCode();
-      hash ^= clipRange_.GetHashCode();
+      if (ClipRange != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipRange);
       if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
       hash ^= proxyModelTransformation_.GetHashCode();
       if (_unknownFields != null) {
@@ -1844,7 +1845,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(50);
         output.WriteString(Modality);
       }
-      clipRange_.WriteTo(output, _repeated_clipRange_codec);
+      if (ClipRange != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(ClipRange);
+      }
       if (VdbPath.Length != 0) {
         output.WriteRawTag(66);
         output.WriteString(VdbPath);
@@ -1878,7 +1882,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(50);
         output.WriteString(Modality);
       }
-      clipRange_.WriteTo(ref output, _repeated_clipRange_codec);
+      if (ClipRange != 0F) {
+        output.WriteRawTag(61);
+        output.WriteFloat(ClipRange);
+      }
       if (VdbPath.Length != 0) {
         output.WriteRawTag(66);
         output.WriteString(VdbPath);
@@ -1908,7 +1915,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Modality.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Modality);
       }
-      size += clipRange_.CalculateSize(_repeated_clipRange_codec);
+      if (ClipRange != 0F) {
+        size += 1 + 4;
+      }
       if (VdbPath.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VdbPath);
       }
@@ -1939,7 +1948,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (other.Modality.Length != 0) {
         Modality = other.Modality;
       }
-      clipRange_.Add(other.clipRange_);
+      if (other.ClipRange != 0F) {
+        ClipRange = other.ClipRange;
+      }
       if (other.VdbPath.Length != 0) {
         VdbPath = other.VdbPath;
       }
@@ -1985,9 +1996,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             Modality = input.ReadString();
             break;
           }
-          case 58:
           case 61: {
-            clipRange_.AddEntriesFrom(input, _repeated_clipRange_codec);
+            ClipRange = input.ReadFloat();
             break;
           }
           case 66: {
@@ -2040,9 +2050,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             Modality = input.ReadString();
             break;
           }
-          case 58:
           case 61: {
-            clipRange_.AddEntriesFrom(ref input, _repeated_clipRange_codec);
+            ClipRange = input.ReadFloat();
             break;
           }
           case 66: {
