@@ -37,18 +37,20 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "ZGUSCwoHdW5rbm93bhAAEgkKBXVuaXR5EAESCgoGdW5yZWFsEAJCCQoHX3N0",
             "YXR1cyIjChBDb21tYW5kUGFyc2VyUmVxEg8KB3BheWxvYWQYASABKAkiWAoL",
             "R2VuZXJpY1Jlc3ASIgoGc3RhdHVzGAEgASgLMhIudWdycGNfcGlwZS5TdGF0",
-            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5Bbnki4gEK",
+            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnkizgIK",
             "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRITCgtvdXRwdXRf",
             "cGF0aBgCIAEoCRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YAyADKAISEgoK",
             "Y2FtZXJhX2ZvdhgEIAEoAhIZChFjYW1lcmFfcmVzb2x1dGlvbhgFIAMoBRIQ",
             "Cghtb2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgASgCEhAKCHZkYl9w",
             "YXRoGAggASgJEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAkgAygC",
-            "IiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2RhdGEYASABKAwymAEKCVVHcnBj",
-            "UGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFy",
-            "c2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJDCgtSZW5kZXJJbWFn",
-            "ZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3BpcGUuUmVu",
-            "ZGVyUmVwbHkiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnBy",
-            "b3RvMw=="));
+            "Eg8KB3NwYWNpbmcYCiABKAISMgoHcXVhbGl0eRgLIAEoDjIhLnVncnBjX3Bp",
+            "cGUuUmVuZGVyUmVxdWVzdC5RdWFsaXR5IiUKB1F1YWxpdHkSBwoDTE9XEAAS",
+            "BwoDTUVEEAESCAoESElHSBACIiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2Rh",
+            "dGEYASABKAwymAEKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdy",
+            "cGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmlj",
+            "UmVzcBJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVz",
+            "dBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiAEIdqgIaVUdycGMuUGlwZWxp",
+            "bmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -59,7 +61,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null)
           }));
     }
@@ -1655,6 +1657,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       clipRange_ = other.clipRange_;
       vdbPath_ = other.vdbPath_;
       proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
+      spacing_ = other.spacing_;
+      quality_ = other.quality_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1769,6 +1773,30 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return proxyModelTransformation_; }
     }
 
+    /// <summary>Field number for the "spacing" field.</summary>
+    public const int SpacingFieldNumber = 10;
+    private float spacing_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Spacing {
+      get { return spacing_; }
+      set {
+        spacing_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "quality" field.</summary>
+    public const int QualityFieldNumber = 11;
+    private global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality quality_ = global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality Quality {
+      get { return quality_; }
+      set {
+        quality_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1793,6 +1821,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipRange, other.ClipRange)) return false;
       if (VdbPath != other.VdbPath) return false;
       if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Spacing, other.Spacing)) return false;
+      if (Quality != other.Quality) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1809,6 +1839,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (ClipRange != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipRange);
       if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
       hash ^= proxyModelTransformation_.GetHashCode();
+      if (Spacing != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Spacing);
+      if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) hash ^= Quality.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1854,6 +1886,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(VdbPath);
       }
       proxyModelTransformation_.WriteTo(output, _repeated_proxyModelTransformation_codec);
+      if (Spacing != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(Spacing);
+      }
+      if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) Quality);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1891,6 +1931,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(VdbPath);
       }
       proxyModelTransformation_.WriteTo(ref output, _repeated_proxyModelTransformation_codec);
+      if (Spacing != 0F) {
+        output.WriteRawTag(85);
+        output.WriteFloat(Spacing);
+      }
+      if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) Quality);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1922,6 +1970,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(VdbPath);
       }
       size += proxyModelTransformation_.CalculateSize(_repeated_proxyModelTransformation_codec);
+      if (Spacing != 0F) {
+        size += 1 + 4;
+      }
+      if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Quality);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1955,6 +2009,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         VdbPath = other.VdbPath;
       }
       proxyModelTransformation_.Add(other.proxyModelTransformation_);
+      if (other.Spacing != 0F) {
+        Spacing = other.Spacing;
+      }
+      if (other.Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
+        Quality = other.Quality;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2007,6 +2067,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           case 74:
           case 77: {
             proxyModelTransformation_.AddEntriesFrom(input, _repeated_proxyModelTransformation_codec);
+            break;
+          }
+          case 85: {
+            Spacing = input.ReadFloat();
+            break;
+          }
+          case 88: {
+            Quality = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) input.ReadEnum();
             break;
           }
         }
@@ -2063,10 +2131,32 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             proxyModelTransformation_.AddEntriesFrom(ref input, _repeated_proxyModelTransformation_codec);
             break;
           }
+          case 85: {
+            Spacing = input.ReadFloat();
+            break;
+          }
+          case 88: {
+            Quality = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) input.ReadEnum();
+            break;
+          }
         }
       }
     }
     #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the RenderRequest message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      public enum Quality {
+        [pbr::OriginalName("LOW")] Low = 0,
+        [pbr::OriginalName("MED")] Med = 1,
+        [pbr::OriginalName("HIGH")] High = 2,
+      }
+
+    }
+    #endregion
 
   }
 
