@@ -53,6 +53,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest> __Marshaller_ugrpc_pipe_RenderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> __Marshaller_ugrpc_pipe_RenderReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq> __Marshaller_ugrpc_pipe_PointCloudCaptureReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> __Marshaller_ugrpc_pipe_PointCloudCaptureResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_CommandParser = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
@@ -69,6 +73,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         "RenderImage",
         __Marshaller_ugrpc_pipe_RenderRequest,
         __Marshaller_ugrpc_pipe_RenderReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> __Method_PointCloudCapture = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "PointCloudCapture",
+        __Marshaller_ugrpc_pipe_PointCloudCaptureReq,
+        __Marshaller_ugrpc_pipe_PointCloudCaptureResp);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -88,6 +100,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> RenderImage(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -161,6 +179,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_RenderImage, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PointCloudCapture(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_PointCloudCapture, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return PointCloudCaptureAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_PointCloudCapture, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override UGrpcPipeClient NewInstance(ClientBaseConfiguration configuration)
@@ -176,7 +214,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CommandParser, serviceImpl.CommandParser)
-          .AddMethod(__Method_RenderImage, serviceImpl.RenderImage).Build();
+          .AddMethod(__Method_RenderImage, serviceImpl.RenderImage)
+          .AddMethod(__Method_PointCloudCapture, serviceImpl.PointCloudCapture).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -188,6 +227,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     {
       serviceBinder.AddMethod(__Method_CommandParser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.CommandParser));
       serviceBinder.AddMethod(__Method_RenderImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(serviceImpl.RenderImage));
+      serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp>(serviceImpl.PointCloudCapture));
     }
 
   }

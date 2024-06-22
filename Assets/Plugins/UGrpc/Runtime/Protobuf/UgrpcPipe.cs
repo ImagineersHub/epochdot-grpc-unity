@@ -46,11 +46,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "Eg8KB3NwYWNpbmcYCiABKAISMgoHcXVhbGl0eRgLIAEoDjIhLnVncnBjX3Bp",
             "cGUuUmVuZGVyUmVxdWVzdC5RdWFsaXR5IiUKB1F1YWxpdHkSBwoDTE9XEAAS",
             "BwoDTUVEEAESCAoESElHSBACIiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2Rh",
-            "dGEYASABKAwymAEKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdy",
-            "cGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmlj",
-            "UmVzcBJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVz",
-            "dBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiAEIdqgIaVUdycGMuUGlwZWxp",
-            "bmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
+            "dGEYASABKAwijwEKFFBvaW50Q2xvdWRDYXB0dXJlUmVxEh0KFWNhbWVyYV90",
+            "cmFuc2Zvcm1hdGlvbhgBIAMoAhIiChpwcm94eV9tb2RlbF90cmFuc2Zvcm1h",
+            "dGlvbhgCIAMoAhIaChJ0YXJnZXRfcG9pbnRfY2xvdWQYAyADKAISGAoQcHJv",
+            "eHlfbW9kZWxfbmFtZRgEIAEoCSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3AS",
+            "GAoQdHJhbnNmb3JtX21hdHJpeBgBIAMoAjL0AQoJVUdycGNQaXBlEkYKDUNv",
+            "bW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51",
+            "Z3JwY19waXBlLkdlbmVyaWNSZXNwEkMKC1JlbmRlckltYWdlEhkudWdycGNf",
+            "cGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIA",
+            "EloKEVBvaW50Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3Vk",
+            "Q2FwdHVyZVJlcRohLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXNw",
+            "IgBCHaoCGlVHcnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -62,7 +68,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "ProxyModelName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
     #endregion
@@ -2340,6 +2348,459 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           case 10: {
             ImageData = input.ReadBytes();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PointCloudCaptureReq : pb::IMessage<PointCloudCaptureReq>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PointCloudCaptureReq> _parser = new pb::MessageParser<PointCloudCaptureReq>(() => new PointCloudCaptureReq());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PointCloudCaptureReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureReq(PointCloudCaptureReq other) : this() {
+      cameraTransformation_ = other.cameraTransformation_.Clone();
+      proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
+      targetPointCloud_ = other.targetPointCloud_.Clone();
+      proxyModelName_ = other.proxyModelName_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureReq Clone() {
+      return new PointCloudCaptureReq(this);
+    }
+
+    /// <summary>Field number for the "camera_transformation" field.</summary>
+    public const int CameraTransformationFieldNumber = 1;
+    private static readonly pb::FieldCodec<float> _repeated_cameraTransformation_codec
+        = pb::FieldCodec.ForFloat(10);
+    private readonly pbc::RepeatedField<float> cameraTransformation_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> CameraTransformation {
+      get { return cameraTransformation_; }
+    }
+
+    /// <summary>Field number for the "proxy_model_transformation" field.</summary>
+    public const int ProxyModelTransformationFieldNumber = 2;
+    private static readonly pb::FieldCodec<float> _repeated_proxyModelTransformation_codec
+        = pb::FieldCodec.ForFloat(18);
+    private readonly pbc::RepeatedField<float> proxyModelTransformation_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> ProxyModelTransformation {
+      get { return proxyModelTransformation_; }
+    }
+
+    /// <summary>Field number for the "target_point_cloud" field.</summary>
+    public const int TargetPointCloudFieldNumber = 3;
+    private static readonly pb::FieldCodec<float> _repeated_targetPointCloud_codec
+        = pb::FieldCodec.ForFloat(26);
+    private readonly pbc::RepeatedField<float> targetPointCloud_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> TargetPointCloud {
+      get { return targetPointCloud_; }
+    }
+
+    /// <summary>Field number for the "proxy_model_name" field.</summary>
+    public const int ProxyModelNameFieldNumber = 4;
+    private string proxyModelName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProxyModelName {
+      get { return proxyModelName_; }
+      set {
+        proxyModelName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PointCloudCaptureReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PointCloudCaptureReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!cameraTransformation_.Equals(other.cameraTransformation_)) return false;
+      if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
+      if(!targetPointCloud_.Equals(other.targetPointCloud_)) return false;
+      if (ProxyModelName != other.ProxyModelName) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= cameraTransformation_.GetHashCode();
+      hash ^= proxyModelTransformation_.GetHashCode();
+      hash ^= targetPointCloud_.GetHashCode();
+      if (ProxyModelName.Length != 0) hash ^= ProxyModelName.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      cameraTransformation_.WriteTo(output, _repeated_cameraTransformation_codec);
+      proxyModelTransformation_.WriteTo(output, _repeated_proxyModelTransformation_codec);
+      targetPointCloud_.WriteTo(output, _repeated_targetPointCloud_codec);
+      if (ProxyModelName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ProxyModelName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      cameraTransformation_.WriteTo(ref output, _repeated_cameraTransformation_codec);
+      proxyModelTransformation_.WriteTo(ref output, _repeated_proxyModelTransformation_codec);
+      targetPointCloud_.WriteTo(ref output, _repeated_targetPointCloud_codec);
+      if (ProxyModelName.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(ProxyModelName);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += cameraTransformation_.CalculateSize(_repeated_cameraTransformation_codec);
+      size += proxyModelTransformation_.CalculateSize(_repeated_proxyModelTransformation_codec);
+      size += targetPointCloud_.CalculateSize(_repeated_targetPointCloud_codec);
+      if (ProxyModelName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProxyModelName);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PointCloudCaptureReq other) {
+      if (other == null) {
+        return;
+      }
+      cameraTransformation_.Add(other.cameraTransformation_);
+      proxyModelTransformation_.Add(other.proxyModelTransformation_);
+      targetPointCloud_.Add(other.targetPointCloud_);
+      if (other.ProxyModelName.Length != 0) {
+        ProxyModelName = other.ProxyModelName;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 13: {
+            cameraTransformation_.AddEntriesFrom(input, _repeated_cameraTransformation_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            proxyModelTransformation_.AddEntriesFrom(input, _repeated_proxyModelTransformation_codec);
+            break;
+          }
+          case 26:
+          case 29: {
+            targetPointCloud_.AddEntriesFrom(input, _repeated_targetPointCloud_codec);
+            break;
+          }
+          case 34: {
+            ProxyModelName = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 13: {
+            cameraTransformation_.AddEntriesFrom(ref input, _repeated_cameraTransformation_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            proxyModelTransformation_.AddEntriesFrom(ref input, _repeated_proxyModelTransformation_codec);
+            break;
+          }
+          case 26:
+          case 29: {
+            targetPointCloud_.AddEntriesFrom(ref input, _repeated_targetPointCloud_codec);
+            break;
+          }
+          case 34: {
+            ProxyModelName = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PointCloudCaptureResp : pb::IMessage<PointCloudCaptureResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PointCloudCaptureResp> _parser = new pb::MessageParser<PointCloudCaptureResp>(() => new PointCloudCaptureResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PointCloudCaptureResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureResp(PointCloudCaptureResp other) : this() {
+      transformMatrix_ = other.transformMatrix_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PointCloudCaptureResp Clone() {
+      return new PointCloudCaptureResp(this);
+    }
+
+    /// <summary>Field number for the "transform_matrix" field.</summary>
+    public const int TransformMatrixFieldNumber = 1;
+    private static readonly pb::FieldCodec<float> _repeated_transformMatrix_codec
+        = pb::FieldCodec.ForFloat(10);
+    private readonly pbc::RepeatedField<float> transformMatrix_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> TransformMatrix {
+      get { return transformMatrix_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PointCloudCaptureResp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PointCloudCaptureResp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!transformMatrix_.Equals(other.transformMatrix_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= transformMatrix_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      transformMatrix_.WriteTo(output, _repeated_transformMatrix_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      transformMatrix_.WriteTo(ref output, _repeated_transformMatrix_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += transformMatrix_.CalculateSize(_repeated_transformMatrix_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PointCloudCaptureResp other) {
+      if (other == null) {
+        return;
+      }
+      transformMatrix_.Add(other.transformMatrix_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 13: {
+            transformMatrix_.AddEntriesFrom(input, _repeated_transformMatrix_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 13: {
+            transformMatrix_.AddEntriesFrom(ref input, _repeated_transformMatrix_codec);
             break;
           }
         }
