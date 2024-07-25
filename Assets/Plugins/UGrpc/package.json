@@ -1,17 +1,17 @@
 {
-    "name": "com.imagineershub.ugrpc",
-    "displayName": "Ugrpc",
-    "version": "2.0.11",
-    "unity": "2021.3",
-    "description": "gRPC services allow the external pipeline to manipulate the editor scene and project assets integration.",
-    "keywords": [
-        "gRPC",
-        "asset pipeline",
-        "asset integration"
-    ],
-    "author": "Imagineerhub",
-    "license": "MIT",
-    "dependencies": {
-        "com.cysharp.unitask": "file:git+https://github.com/Cysharp/UniTask.git/src/UniTask/Assets/Plugins/UniTask#2.3.3"
-    }
+  "name": "com.imagineershub.ugrpc",
+  "displayName": "Ugrpc",
+  "version": "2.0.12",
+  "unity": "2021.3",
+  "description": "gRPC services allow the external pipeline to manipulate the editor scene and project assets integration.",
+  "keywords": [
+    "gRPC",
+    "asset pipeline",
+    "asset integration"
+  ],
+  "author": "Imagineerhub",
+  "license": "MIT",
+  "dependencies": {
+    "com.cysharp.unitask": "file:git+https://github.com/Cysharp/UniTask.git/src/UniTask/Assets/Plugins/UniTask#2.3.3"
+  }
 }

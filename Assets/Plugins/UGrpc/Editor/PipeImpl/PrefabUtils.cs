@@ -114,14 +114,23 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
     }
     public class PrefabUtils
     {
-
+        public static GenericResp CreatePrefab(string source, string target, bool isUnpack = false, bool isStatic = false)
+        {
+            using (var sourceInst = new PrefabFeeder(source, target, isUnpack, isStatic))
+            {
+                return new GenericResp
+                {
+                    Status = new Status { Code = Status.Types.StatusCode.Success, Message = $"Created prefab: {target}" }
+                };
+            }
+        }
         public static GenericResp CreateModelAsset(string source, string target, bool disableLighting = true, string material = null)
         {
             using (var sourceInst = new PrefabFeeder(source, target))
             {
                 var meshRenderer = sourceInst.Instance.GetComponent<MeshRenderer>();
 
-                if (disableLighting)
+                if (meshRenderer!=null && disableLighting)
                 {
                     meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                     meshRenderer.receiveShadows = false;
@@ -135,7 +144,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 // reset scale
                 sourceInst.Instance.transform.localScale = new Vector3(1, 1, 1);
 
-                if (material != null)
+                if (material != String.Empty && material != null)
                 {
                     var materialAsset = AssetDatabase.LoadAssetAtPath(material, typeof(Material)) as Material;
                     meshRenderer.sharedMaterial = materialAsset;
