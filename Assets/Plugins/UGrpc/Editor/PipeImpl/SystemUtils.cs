@@ -30,7 +30,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             };
         }
 #if UNITY_EDITOR
-        public static void QuiteWithoutSave()
+        public static void QuitWithoutSaving()
         {
             EditorApplication.Exit(0);
         }
