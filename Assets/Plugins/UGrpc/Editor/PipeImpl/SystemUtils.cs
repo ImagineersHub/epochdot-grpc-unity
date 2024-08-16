@@ -14,6 +14,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 DataPath = Application.dataPath,
                 ProjectRoot = Application.dataPath.Substring(0, Application.dataPath.Length - 6 /* Assets */),
                 Platform = ProjectInfoResp.Types.PlatformCode.Unity,
+                BuildVersion = Application.version,
                 Status = new Status()
             };
         }

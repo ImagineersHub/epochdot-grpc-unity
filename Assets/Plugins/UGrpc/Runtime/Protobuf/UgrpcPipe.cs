@@ -30,33 +30,34 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "Ih0KC0ludEFycmF5UmVwEg4KBnZhbHVlcxgBIAMoBSJsCgZTdGF0dXMSKwoE",
             "Y29kZRgBIAEoDjIdLnVncnBjX3BpcGUuU3RhdHVzLlN0YXR1c0NvZGUSDwoH",
             "bWVzc2FnZRgCIAEoCSIkCgpTdGF0dXNDb2RlEgsKB1NVQ0NFU1MQABIJCgVF",
-            "UlJPUhABItwBCg9Qcm9qZWN0SW5mb1Jlc3ASJwoGc3RhdHVzGAEgASgLMhIu",
+            "UlJPUhABIvIBCg9Qcm9qZWN0SW5mb1Jlc3ASJwoGc3RhdHVzGAEgASgLMhIu",
             "dWdycGNfcGlwZS5TdGF0dXNIAIgBARI6CghwbGF0Zm9ybRgCIAEoDjIoLnVn",
             "cnBjX3BpcGUuUHJvamVjdEluZm9SZXNwLlBsYXRmb3JtQ29kZRIQCghkYXRh",
-            "UGF0aBgDIAEoCRITCgtwcm9qZWN0Um9vdBgEIAEoCSIyCgxQbGF0Zm9ybUNv",
-            "ZGUSCwoHdW5rbm93bhAAEgkKBXVuaXR5EAESCgoGdW5yZWFsEAJCCQoHX3N0",
-            "YXR1cyIjChBDb21tYW5kUGFyc2VyUmVxEg8KB3BheWxvYWQYASABKAkiWAoL",
-            "R2VuZXJpY1Jlc3ASIgoGc3RhdHVzGAEgASgLMhIudWdycGNfcGlwZS5TdGF0",
-            "dXMSJQoHcGF5bG9hZBgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnkizgIK",
-            "DVJlbmRlclJlcXVlc3QSEgoKc2NlbmVfbmFtZRgBIAEoCRITCgtvdXRwdXRf",
-            "cGF0aBgCIAEoCRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YAyADKAISEgoK",
-            "Y2FtZXJhX2ZvdhgEIAEoAhIZChFjYW1lcmFfcmVzb2x1dGlvbhgFIAMoBRIQ",
-            "Cghtb2RhbGl0eRgGIAEoCRISCgpjbGlwX3JhbmdlGAcgASgCEhAKCHZkYl9w",
-            "YXRoGAggASgJEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAkgAygC",
-            "Eg8KB3NwYWNpbmcYCiABKAISMgoHcXVhbGl0eRgLIAEoDjIhLnVncnBjX3Bp",
-            "cGUuUmVuZGVyUmVxdWVzdC5RdWFsaXR5IiUKB1F1YWxpdHkSBwoDTE9XEAAS",
-            "BwoDTUVEEAESCAoESElHSBACIiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2Rh",
-            "dGEYASABKAwijwEKFFBvaW50Q2xvdWRDYXB0dXJlUmVxEh0KFWNhbWVyYV90",
-            "cmFuc2Zvcm1hdGlvbhgBIAMoAhIiChpwcm94eV9tb2RlbF90cmFuc2Zvcm1h",
-            "dGlvbhgCIAMoAhIaChJ0YXJnZXRfcG9pbnRfY2xvdWQYAyADKAISGAoQcHJv",
-            "eHlfbW9kZWxfbmFtZRgEIAEoCSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3AS",
-            "GAoQdHJhbnNmb3JtX21hdHJpeBgBIAMoAjL0AQoJVUdycGNQaXBlEkYKDUNv",
-            "bW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51",
-            "Z3JwY19waXBlLkdlbmVyaWNSZXNwEkMKC1JlbmRlckltYWdlEhkudWdycGNf",
-            "cGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIA",
-            "EloKEVBvaW50Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3Vk",
-            "Q2FwdHVyZVJlcRohLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXNw",
-            "IgBCHaoCGlVHcnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
+            "UGF0aBgDIAEoCRITCgtwcm9qZWN0Um9vdBgEIAEoCRIUCgxidWlsZFZlcnNp",
+            "b24YBSABKAkiMgoMUGxhdGZvcm1Db2RlEgsKB3Vua25vd24QABIJCgV1bml0",
+            "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
+            "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
+            "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
+            "b29nbGUucHJvdG9idWYuQW55Is4CCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
+            "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
+            "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
+            "cF9yYW5nZRgHIAEoAhIQCgh2ZGJfcGF0aBgIIAEoCRIiChpwcm94eV9tb2Rl",
+            "bF90cmFuc2Zvcm1hdGlvbhgJIAMoAhIPCgdzcGFjaW5nGAogASgCEjIKB3F1",
+            "YWxpdHkYCyABKA4yIS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QuUXVhbGl0",
+            "eSIlCgdRdWFsaXR5EgcKA0xPVxAAEgcKA01FRBABEggKBEhJR0gQAiIhCgtS",
+            "ZW5kZXJSZXBseRISCgppbWFnZV9kYXRhGAEgASgMIo8BChRQb2ludENsb3Vk",
+            "Q2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASADKAISIgoa",
+            "cHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFyZ2V0X3Bv",
+            "aW50X2Nsb3VkGAMgAygCEhgKEHByb3h5X21vZGVsX25hbWUYBCABKAkiMQoV",
+            "UG9pbnRDbG91ZENhcHR1cmVSZXNwEhgKEHRyYW5zZm9ybV9tYXRyaXgYASAD",
+            "KAIy9AEKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlw",
+            "ZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJD",
+            "CgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVn",
+            "cnBjX3BpcGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIg",
+            "LnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBl",
+            "LlBvaW50Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5H",
+            "cnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -64,7 +65,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.StringArrayRep), global::UGrpc.Pipeline.GrpcPipe.V1.StringArrayRep.Parser, new[]{ "Values" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.IntArrayRep), global::UGrpc.Pipeline.GrpcPipe.V1.IntArrayRep.Parser, new[]{ "Values" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Status), global::UGrpc.Pipeline.GrpcPipe.V1.Status.Parser, new[]{ "Code", "Message" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Status.Types.StatusCode) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) }, null, null),
@@ -892,6 +893,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       platform_ = other.platform_;
       dataPath_ = other.dataPath_;
       projectRoot_ = other.projectRoot_;
+      buildVersion_ = other.buildVersion_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -961,6 +963,21 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "buildVersion" field.</summary>
+    public const int BuildVersionFieldNumber = 5;
+    private string buildVersion_ = "";
+    /// <summary>
+    /// represent the build version
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BuildVersion {
+      get { return buildVersion_; }
+      set {
+        buildVersion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -980,6 +997,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Platform != other.Platform) return false;
       if (DataPath != other.DataPath) return false;
       if (ProjectRoot != other.ProjectRoot) return false;
+      if (BuildVersion != other.BuildVersion) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -991,6 +1009,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Platform != global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode.Unknown) hash ^= Platform.GetHashCode();
       if (DataPath.Length != 0) hash ^= DataPath.GetHashCode();
       if (ProjectRoot.Length != 0) hash ^= ProjectRoot.GetHashCode();
+      if (BuildVersion.Length != 0) hash ^= BuildVersion.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1025,6 +1044,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteString(ProjectRoot);
       }
+      if (BuildVersion.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(BuildVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1051,6 +1074,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteString(ProjectRoot);
       }
+      if (BuildVersion.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(BuildVersion);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1072,6 +1099,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (ProjectRoot.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ProjectRoot);
+      }
+      if (BuildVersion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BuildVersion);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1099,6 +1129,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (other.ProjectRoot.Length != 0) {
         ProjectRoot = other.ProjectRoot;
+      }
+      if (other.BuildVersion.Length != 0) {
+        BuildVersion = other.BuildVersion;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1134,6 +1167,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             ProjectRoot = input.ReadString();
             break;
           }
+          case 42: {
+            BuildVersion = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1166,6 +1203,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 34: {
             ProjectRoot = input.ReadString();
+            break;
+          }
+          case 42: {
+            BuildVersion = input.ReadString();
             break;
           }
         }
