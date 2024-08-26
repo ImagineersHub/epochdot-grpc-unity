@@ -6,6 +6,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 {
     public class GameObjectUtils
     {
+        public static bool AssetExists(string path)
+        {
+            return AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object)) != null;
+        }
+
         public static void SetLayerRecursively(GameObject obj, string layerName)
         {
             var layerID = LayerMask.NameToLayer(layerName);
