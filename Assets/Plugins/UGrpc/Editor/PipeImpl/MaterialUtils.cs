@@ -79,6 +79,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     Debug.LogWarning($"Emission map texture not found at path: {emission}");
                 }
             }
+
+            // Force material to update
+            EditorUtility.SetDirty(materialAsset);
+            AssetDatabase.SaveAssets();
         }
     }
 }
