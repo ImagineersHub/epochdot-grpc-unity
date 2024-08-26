@@ -37,11 +37,5 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 child.gameObject.isStatic = isStatic;
             }
         }
-
-        public static bool AssetExists(string path)
-        {
-            UnityEngine.Object asset = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(path);
-            return asset != null;
-        }
     }
 }
