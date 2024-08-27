@@ -130,7 +130,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             {
                 var meshRenderer = sourceInst.Instance.GetComponent<MeshRenderer>();
 
-                if (meshRenderer!=null && disableLighting)
+                if (meshRenderer != null && disableLighting)
                 {
                     meshRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                     meshRenderer.receiveShadows = false;
@@ -146,7 +146,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
                 if (material != String.Empty && material != null)
                 {
-                    var materialAsset = AssetDatabase.LoadAssetAtPath(material, typeof(Material)) as Material;
+                    var materialAsset = AssetDatabase.LoadAssetAtPath<Material>(material);
                     meshRenderer.sharedMaterial = materialAsset;
                 }
             }
