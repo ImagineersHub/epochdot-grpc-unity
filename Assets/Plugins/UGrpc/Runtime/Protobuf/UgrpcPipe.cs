@@ -38,26 +38,27 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55Is4CCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55IuUCCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
             "cF9yYW5nZRgHIAEoAhIQCgh2ZGJfcGF0aBgIIAEoCRIiChpwcm94eV9tb2Rl",
             "bF90cmFuc2Zvcm1hdGlvbhgJIAMoAhIPCgdzcGFjaW5nGAogASgCEjIKB3F1",
             "YWxpdHkYCyABKA4yIS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QuUXVhbGl0",
-            "eSIlCgdRdWFsaXR5EgcKA0xPVxAAEgcKA01FRBABEggKBEhJR0gQAiIhCgtS",
-            "ZW5kZXJSZXBseRISCgppbWFnZV9kYXRhGAEgASgMIo8BChRQb2ludENsb3Vk",
-            "Q2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASADKAISIgoa",
-            "cHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFyZ2V0X3Bv",
-            "aW50X2Nsb3VkGAMgAygCEhgKEHByb3h5X21vZGVsX25hbWUYBCABKAkiMQoV",
-            "UG9pbnRDbG91ZENhcHR1cmVSZXNwEhgKEHRyYW5zZm9ybV9tYXRyaXgYASAD",
-            "KAIy9AEKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlw",
-            "ZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJD",
-            "CgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVn",
-            "cnBjX3BpcGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIg",
-            "LnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBl",
-            "LlBvaW50Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5H",
-            "cnBjUGlwZS5WMWIGcHJvdG8z"));
+            "eRIVCg1hY3RpdmVfY2FtZXJhGAwgASgJIiUKB1F1YWxpdHkSBwoDTE9XEAAS",
+            "BwoDTUVEEAESCAoESElHSBACIiEKC1JlbmRlclJlcGx5EhIKCmltYWdlX2Rh",
+            "dGEYASABKAwiqwEKFFBvaW50Q2xvdWRDYXB0dXJlUmVxEh0KFWNhbWVyYV90",
+            "cmFuc2Zvcm1hdGlvbhgBIAMoAhIiChpwcm94eV9tb2RlbF90cmFuc2Zvcm1h",
+            "dGlvbhgCIAMoAhIaChJ0YXJnZXRfcG9pbnRfY2xvdWQYAyADKAISGgoSc291",
+            "cmNlX3BvaW50X2Nsb3VkGAQgAygCEhgKEHByb3h5X21vZGVsX25hbWUYBSAB",
+            "KAkiMQoVUG9pbnRDbG91ZENhcHR1cmVSZXNwEhgKEHRyYW5zZm9ybV9tYXRy",
+            "aXgYASADKAIy9AEKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdy",
+            "cGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmlj",
+            "UmVzcBJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVz",
+            "dBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2Fw",
+            "dHVyZRIgLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3Jw",
+            "Y19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
+            "bGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -68,9 +69,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "ImageData" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "ProxyModelName" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
@@ -1708,6 +1709,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
       spacing_ = other.spacing_;
       quality_ = other.quality_;
+      activeCamera_ = other.activeCamera_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1846,6 +1848,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "active_camera" field.</summary>
+    public const int ActiveCameraFieldNumber = 12;
+    private string activeCamera_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ActiveCamera {
+      get { return activeCamera_; }
+      set {
+        activeCamera_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1872,6 +1886,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Spacing, other.Spacing)) return false;
       if (Quality != other.Quality) return false;
+      if (ActiveCamera != other.ActiveCamera) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1890,6 +1905,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       hash ^= proxyModelTransformation_.GetHashCode();
       if (Spacing != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Spacing);
       if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) hash ^= Quality.GetHashCode();
+      if (ActiveCamera.Length != 0) hash ^= ActiveCamera.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1943,6 +1959,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(88);
         output.WriteEnum((int) Quality);
       }
+      if (ActiveCamera.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(ActiveCamera);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1988,6 +2008,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(88);
         output.WriteEnum((int) Quality);
       }
+      if (ActiveCamera.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(ActiveCamera);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2024,6 +2048,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Quality);
+      }
+      if (ActiveCamera.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ActiveCamera);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2063,6 +2090,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (other.Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) {
         Quality = other.Quality;
+      }
+      if (other.ActiveCamera.Length != 0) {
+        ActiveCamera = other.ActiveCamera;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2126,6 +2156,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             Quality = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) input.ReadEnum();
             break;
           }
+          case 98: {
+            ActiveCamera = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -2186,6 +2220,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 88: {
             Quality = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality) input.ReadEnum();
+            break;
+          }
+          case 98: {
+            ActiveCamera = input.ReadString();
             break;
           }
         }
@@ -2435,6 +2473,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraTransformation_ = other.cameraTransformation_.Clone();
       proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
       targetPointCloud_ = other.targetPointCloud_.Clone();
+      sourcePointCloud_ = other.sourcePointCloud_.Clone();
       proxyModelName_ = other.proxyModelName_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2478,8 +2517,19 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return targetPointCloud_; }
     }
 
+    /// <summary>Field number for the "source_point_cloud" field.</summary>
+    public const int SourcePointCloudFieldNumber = 4;
+    private static readonly pb::FieldCodec<float> _repeated_sourcePointCloud_codec
+        = pb::FieldCodec.ForFloat(34);
+    private readonly pbc::RepeatedField<float> sourcePointCloud_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> SourcePointCloud {
+      get { return sourcePointCloud_; }
+    }
+
     /// <summary>Field number for the "proxy_model_name" field.</summary>
-    public const int ProxyModelNameFieldNumber = 4;
+    public const int ProxyModelNameFieldNumber = 5;
     private string proxyModelName_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2508,6 +2558,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if(!cameraTransformation_.Equals(other.cameraTransformation_)) return false;
       if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
       if(!targetPointCloud_.Equals(other.targetPointCloud_)) return false;
+      if(!sourcePointCloud_.Equals(other.sourcePointCloud_)) return false;
       if (ProxyModelName != other.ProxyModelName) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2519,6 +2570,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       hash ^= cameraTransformation_.GetHashCode();
       hash ^= proxyModelTransformation_.GetHashCode();
       hash ^= targetPointCloud_.GetHashCode();
+      hash ^= sourcePointCloud_.GetHashCode();
       if (ProxyModelName.Length != 0) hash ^= ProxyModelName.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2541,8 +2593,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraTransformation_.WriteTo(output, _repeated_cameraTransformation_codec);
       proxyModelTransformation_.WriteTo(output, _repeated_proxyModelTransformation_codec);
       targetPointCloud_.WriteTo(output, _repeated_targetPointCloud_codec);
+      sourcePointCloud_.WriteTo(output, _repeated_sourcePointCloud_codec);
       if (ProxyModelName.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteString(ProxyModelName);
       }
       if (_unknownFields != null) {
@@ -2558,8 +2611,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraTransformation_.WriteTo(ref output, _repeated_cameraTransformation_codec);
       proxyModelTransformation_.WriteTo(ref output, _repeated_proxyModelTransformation_codec);
       targetPointCloud_.WriteTo(ref output, _repeated_targetPointCloud_codec);
+      sourcePointCloud_.WriteTo(ref output, _repeated_sourcePointCloud_codec);
       if (ProxyModelName.Length != 0) {
-        output.WriteRawTag(34);
+        output.WriteRawTag(42);
         output.WriteString(ProxyModelName);
       }
       if (_unknownFields != null) {
@@ -2575,6 +2629,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       size += cameraTransformation_.CalculateSize(_repeated_cameraTransformation_codec);
       size += proxyModelTransformation_.CalculateSize(_repeated_proxyModelTransformation_codec);
       size += targetPointCloud_.CalculateSize(_repeated_targetPointCloud_codec);
+      size += sourcePointCloud_.CalculateSize(_repeated_sourcePointCloud_codec);
       if (ProxyModelName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ProxyModelName);
       }
@@ -2593,6 +2648,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraTransformation_.Add(other.cameraTransformation_);
       proxyModelTransformation_.Add(other.proxyModelTransformation_);
       targetPointCloud_.Add(other.targetPointCloud_);
+      sourcePointCloud_.Add(other.sourcePointCloud_);
       if (other.ProxyModelName.Length != 0) {
         ProxyModelName = other.ProxyModelName;
       }
@@ -2626,7 +2682,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             targetPointCloud_.AddEntriesFrom(input, _repeated_targetPointCloud_codec);
             break;
           }
-          case 34: {
+          case 34:
+          case 37: {
+            sourcePointCloud_.AddEntriesFrom(input, _repeated_sourcePointCloud_codec);
+            break;
+          }
+          case 42: {
             ProxyModelName = input.ReadString();
             break;
           }
@@ -2660,7 +2721,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             targetPointCloud_.AddEntriesFrom(ref input, _repeated_targetPointCloud_codec);
             break;
           }
-          case 34: {
+          case 34:
+          case 37: {
+            sourcePointCloud_.AddEntriesFrom(ref input, _repeated_sourcePointCloud_codec);
+            break;
+          }
+          case 42: {
             ProxyModelName = input.ReadString();
             break;
           }
