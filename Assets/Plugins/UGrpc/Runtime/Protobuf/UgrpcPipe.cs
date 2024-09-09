@@ -38,7 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55IrYFCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55Is0FCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
@@ -52,22 +52,23 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "bmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LlJl",
             "bmRlck1vZGUiJQoHUXVhbGl0eRIHCgNMT1cQABIHCgNNRUQQARIICgRISUdI",
             "EAIiOQoKQ2FtZXJhTW9kZRIICgRNQUlOEAASDwoLU1RFUkVPX0xFRlQQARIQ",
-            "CgxTVEVSRU9fUklHSFQQAiJDCgpSZW5kZXJNb2RlEgsKB0RlZmF1bHQQABIT",
-            "Cg9TaW5nbGVfTW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQAiJnCgtS",
-            "ZW5kZXJSZXBseRIXCg9tYWluX2ltYWdlX2RhdGEYASABKAwSHgoWc3RlcmVv",
-            "X2xlZnRfaW1hZ2VfZGF0YRgCIAEoDBIfChdzdGVyZW9fcmlnaHRfaW1hZ2Vf",
-            "ZGF0YRgDIAEoDCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJh",
-            "X3RyYW5zZm9ybWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9y",
-            "bWF0aW9uGAIgAygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJz",
-            "b3VyY2VfcG9pbnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgF",
-            "IAEoCSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNmb3JtX21h",
-            "dHJpeBgBIAMoAjL0AQoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51",
-            "Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVy",
-            "aWNSZXNwEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1",
-            "ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAEloKEVBvaW50Q2xvdWRD",
-            "YXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRohLnVn",
-            "cnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXNwIgBCHaoCGlVHcnBjLlBp",
-            "cGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
+            "CgxTVEVSRU9fUklHSFQQAiJaCgpSZW5kZXJNb2RlEgsKB0RlZmF1bHQQABIT",
+            "Cg9TaW5nbGVfTW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQAhIVChFN",
+            "b2RhbGl0eV9jbGlwcGluZxADImcKC1JlbmRlclJlcGx5EhcKD21haW5faW1h",
+            "Z2VfZGF0YRgBIAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgM",
+            "Eh8KF3N0ZXJlb19yaWdodF9pbWFnZV9kYXRhGAMgASgMIqsBChRQb2ludENs",
+            "b3VkQ2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASADKAIS",
+            "IgoacHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFyZ2V0",
+            "X3BvaW50X2Nsb3VkGAMgAygCEhoKEnNvdXJjZV9wb2ludF9jbG91ZBgEIAMo",
+            "AhIYChBwcm94eV9tb2RlbF9uYW1lGAUgASgJIjEKFVBvaW50Q2xvdWRDYXB0",
+            "dXJlUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCMvQBCglVR3JwY1Bp",
+            "cGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFuZFBhcnNl",
+            "clJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASQwoLUmVuZGVySW1hZ2US",
+            "GS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJlbmRl",
+            "clJlcGx5IgASWgoRUG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBlLlBv",
+            "aW50Q2xvdWRDYXB0dXJlUmVxGiEudWdycGNfcGlwZS5Qb2ludENsb3VkQ2Fw",
+            "dHVyZVJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -2479,8 +2480,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
       public enum RenderMode {
         [pbr::OriginalName("Default")] Default = 0,
+        /// <summary>
+        /// render image for a single modality of dicom widget 
+        /// </summary>
         [pbr::OriginalName("Single_Modality")] SingleModality = 1,
+        /// <summary>
+        /// render image when activating clipping sphere
+        /// </summary>
         [pbr::OriginalName("Sphere_clipping")] SphereClipping = 2,
+        /// <summary>
+        /// render image when activating dicom viewer manipulator
+        /// </summary>
+        [pbr::OriginalName("Modality_clipping")] ModalityClipping = 3,
       }
 
     }
