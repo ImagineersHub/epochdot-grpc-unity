@@ -38,7 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55ItsDCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55IpwECg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
@@ -46,23 +46,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "bF90cmFuc2Zvcm1hdGlvbhgJIAMoAhIPCgdzcGFjaW5nGAogASgCEjIKB3F1",
             "YWxpdHkYCyABKA4yIS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QuUXVhbGl0",
             "eRIVCg1hY3RpdmVfY2FtZXJhGAwgASgJEjkKC2NhbWVyYV9tb2RlGA0gASgO",
-            "MiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LkNhbWVyYU1vZGUiJQoHUXVh",
-            "bGl0eRIHCgNMT1cQABIHCgNNRUQQARIICgRISUdIEAIiOQoKQ2FtZXJhTW9k",
-            "ZRIICgRNQUlOEAASDwoLU1RFUkVPX0xFRlQQARIQCgxTVEVSRU9fUklHSFQQ",
-            "AiJnCgtSZW5kZXJSZXBseRIXCg9tYWluX2ltYWdlX2RhdGEYASABKAwSHgoW",
-            "c3RlcmVvX2xlZnRfaW1hZ2VfZGF0YRgCIAEoDBIfChdzdGVyZW9fcmlnaHRf",
-            "aW1hZ2VfZGF0YRgDIAEoDCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoV",
-            "Y2FtZXJhX3RyYW5zZm9ybWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3Ry",
-            "YW5zZm9ybWF0aW9uGAIgAygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMo",
-            "AhIaChJzb3VyY2VfcG9pbnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxf",
-            "bmFtZRgFIAEoCSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNm",
-            "b3JtX21hdHJpeBgBIAMoAjL0AQoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJz",
-            "ZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBl",
-            "LkdlbmVyaWNSZXNwEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5k",
-            "ZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAEloKEVBvaW50",
-            "Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJl",
-            "cRohLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXNwIgBCHaoCGlVH",
-            "cnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
+            "MiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LkNhbWVyYU1vZGUSEgoKY2xp",
+            "cF9heGlhbBgOIAEoAhIVCg1jbGlwX3NhZ2l0dGFsGA8gASgCEhQKDGNsaXBf",
+            "Y29yb25hbBgQIAEoAiIlCgdRdWFsaXR5EgcKA0xPVxAAEgcKA01FRBABEggK",
+            "BEhJR0gQAiI5CgpDYW1lcmFNb2RlEggKBE1BSU4QABIPCgtTVEVSRU9fTEVG",
+            "VBABEhAKDFNURVJFT19SSUdIVBACImcKC1JlbmRlclJlcGx5EhcKD21haW5f",
+            "aW1hZ2VfZGF0YRgBIAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIg",
+            "ASgMEh8KF3N0ZXJlb19yaWdodF9pbWFnZV9kYXRhGAMgASgMIqsBChRQb2lu",
+            "dENsb3VkQ2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASAD",
+            "KAISIgoacHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFy",
+            "Z2V0X3BvaW50X2Nsb3VkGAMgAygCEhoKEnNvdXJjZV9wb2ludF9jbG91ZBgE",
+            "IAMoAhIYChBwcm94eV9tb2RlbF9uYW1lGAUgASgJIjEKFVBvaW50Q2xvdWRD",
+            "YXB0dXJlUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCMvQBCglVR3Jw",
+            "Y1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFuZFBh",
+            "cnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASQwoLUmVuZGVySW1h",
+            "Z2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJl",
+            "bmRlclJlcGx5IgASWgoRUG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBl",
+            "LlBvaW50Q2xvdWRDYXB0dXJlUmVxGiEudWdycGNfcGlwZS5Qb2ludENsb3Vk",
+            "Q2FwdHVyZVJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -73,7 +75,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
@@ -1715,6 +1717,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       quality_ = other.quality_;
       activeCamera_ = other.activeCamera_;
       cameraMode_ = other.cameraMode_;
+      clipAxial_ = other.clipAxial_;
+      clipSagittal_ = other.clipSagittal_;
+      clipCoronal_ = other.clipCoronal_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1880,6 +1885,46 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "clip_axial" field.</summary>
+    public const int ClipAxialFieldNumber = 14;
+    private float clipAxial_;
+    /// <summary>
+    /// below values represent the clipping distance for each axis
+    /// It's aimed to render cinematic image when activating dicom viewer manipulator
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ClipAxial {
+      get { return clipAxial_; }
+      set {
+        clipAxial_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clip_sagittal" field.</summary>
+    public const int ClipSagittalFieldNumber = 15;
+    private float clipSagittal_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ClipSagittal {
+      get { return clipSagittal_; }
+      set {
+        clipSagittal_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "clip_coronal" field.</summary>
+    public const int ClipCoronalFieldNumber = 16;
+    private float clipCoronal_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ClipCoronal {
+      get { return clipCoronal_; }
+      set {
+        clipCoronal_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1908,6 +1953,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Quality != other.Quality) return false;
       if (ActiveCamera != other.ActiveCamera) return false;
       if (CameraMode != other.CameraMode) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipAxial, other.ClipAxial)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipSagittal, other.ClipSagittal)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipCoronal, other.ClipCoronal)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1928,6 +1976,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Quality != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality.Low) hash ^= Quality.GetHashCode();
       if (ActiveCamera.Length != 0) hash ^= ActiveCamera.GetHashCode();
       if (CameraMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode.Main) hash ^= CameraMode.GetHashCode();
+      if (ClipAxial != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipAxial);
+      if (ClipSagittal != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipSagittal);
+      if (ClipCoronal != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipCoronal);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1989,6 +2040,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(104);
         output.WriteEnum((int) CameraMode);
       }
+      if (ClipAxial != 0F) {
+        output.WriteRawTag(117);
+        output.WriteFloat(ClipAxial);
+      }
+      if (ClipSagittal != 0F) {
+        output.WriteRawTag(125);
+        output.WriteFloat(ClipSagittal);
+      }
+      if (ClipCoronal != 0F) {
+        output.WriteRawTag(133, 1);
+        output.WriteFloat(ClipCoronal);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2042,6 +2105,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(104);
         output.WriteEnum((int) CameraMode);
       }
+      if (ClipAxial != 0F) {
+        output.WriteRawTag(117);
+        output.WriteFloat(ClipAxial);
+      }
+      if (ClipSagittal != 0F) {
+        output.WriteRawTag(125);
+        output.WriteFloat(ClipSagittal);
+      }
+      if (ClipCoronal != 0F) {
+        output.WriteRawTag(133, 1);
+        output.WriteFloat(ClipCoronal);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2084,6 +2159,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (CameraMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode.Main) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CameraMode);
+      }
+      if (ClipAxial != 0F) {
+        size += 1 + 4;
+      }
+      if (ClipSagittal != 0F) {
+        size += 1 + 4;
+      }
+      if (ClipCoronal != 0F) {
+        size += 2 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2129,6 +2213,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (other.CameraMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode.Main) {
         CameraMode = other.CameraMode;
+      }
+      if (other.ClipAxial != 0F) {
+        ClipAxial = other.ClipAxial;
+      }
+      if (other.ClipSagittal != 0F) {
+        ClipSagittal = other.ClipSagittal;
+      }
+      if (other.ClipCoronal != 0F) {
+        ClipCoronal = other.ClipCoronal;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2200,6 +2293,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             CameraMode = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode) input.ReadEnum();
             break;
           }
+          case 117: {
+            ClipAxial = input.ReadFloat();
+            break;
+          }
+          case 125: {
+            ClipSagittal = input.ReadFloat();
+            break;
+          }
+          case 133: {
+            ClipCoronal = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -2268,6 +2373,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 104: {
             CameraMode = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode) input.ReadEnum();
+            break;
+          }
+          case 117: {
+            ClipAxial = input.ReadFloat();
+            break;
+          }
+          case 125: {
+            ClipSagittal = input.ReadFloat();
+            break;
+          }
+          case 133: {
+            ClipCoronal = input.ReadFloat();
             break;
           }
         }
