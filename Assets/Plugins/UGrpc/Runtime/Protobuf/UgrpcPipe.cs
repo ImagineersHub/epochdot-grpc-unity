@@ -38,37 +38,37 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55Is0FCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55ItMFCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
-            "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
-            "cF9yYW5nZRgHIAEoAhIQCgh2ZGJfcGF0aBgIIAEoCRIiChpwcm94eV9tb2Rl",
-            "bF90cmFuc2Zvcm1hdGlvbhgJIAMoAhIPCgdzcGFjaW5nGAogASgCEjIKB3F1",
-            "YWxpdHkYCyABKA4yIS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QuUXVhbGl0",
-            "eRIVCg1hY3RpdmVfY2FtZXJhGAwgASgJEjkKC2NhbWVyYV9tb2RlGA0gASgO",
-            "MiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LkNhbWVyYU1vZGUSEgoKY2xp",
-            "cF9heGlhbBgOIAEoAhIVCg1jbGlwX3NhZ2l0dGFsGA8gASgCEhQKDGNsaXBf",
-            "Y29yb25hbBgQIAEoAhIYChB2b2x1bWVfZGltZW5zaW9uGBEgAygCEjkKC3Jl",
-            "bmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LlJl",
-            "bmRlck1vZGUiJQoHUXVhbGl0eRIHCgNMT1cQABIHCgNNRUQQARIICgRISUdI",
-            "EAIiOQoKQ2FtZXJhTW9kZRIICgRNQUlOEAASDwoLU1RFUkVPX0xFRlQQARIQ",
-            "CgxTVEVSRU9fUklHSFQQAiJaCgpSZW5kZXJNb2RlEgsKB0RlZmF1bHQQABIT",
-            "Cg9TaW5nbGVfTW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQAhIVChFN",
-            "b2RhbGl0eV9jbGlwcGluZxADImcKC1JlbmRlclJlcGx5EhcKD21haW5faW1h",
-            "Z2VfZGF0YRgBIAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgM",
-            "Eh8KF3N0ZXJlb19yaWdodF9pbWFnZV9kYXRhGAMgASgMIqsBChRQb2ludENs",
-            "b3VkQ2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASADKAIS",
-            "IgoacHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFyZ2V0",
-            "X3BvaW50X2Nsb3VkGAMgAygCEhoKEnNvdXJjZV9wb2ludF9jbG91ZBgEIAMo",
-            "AhIYChBwcm94eV9tb2RlbF9uYW1lGAUgASgJIjEKFVBvaW50Q2xvdWRDYXB0",
-            "dXJlUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCMvQBCglVR3JwY1Bp",
-            "cGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFuZFBhcnNl",
-            "clJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASQwoLUmVuZGVySW1hZ2US",
-            "GS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJlbmRl",
-            "clJlcGx5IgASWgoRUG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBlLlBv",
-            "aW50Q2xvdWRDYXB0dXJlUmVxGiEudWdycGNfcGlwZS5Qb2ludENsb3VkQ2Fw",
-            "dHVyZVJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnBy",
-            "b3RvMw=="));
+            "ZXJhX3Jlc29sdXRpb24YBSADKAUSFgoOcmVuZGVyX3BhdHRlcm4YBiABKAkS",
+            "EgoKY2xpcF9yYW5nZRgHIAEoAhIQCgh2ZGJfcGF0aBgIIAEoCRIiChpwcm94",
+            "eV9tb2RlbF90cmFuc2Zvcm1hdGlvbhgJIAMoAhIPCgdzcGFjaW5nGAogASgC",
+            "EjIKB3F1YWxpdHkYCyABKA4yIS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qu",
+            "UXVhbGl0eRIVCg1hY3RpdmVfY2FtZXJhGAwgASgJEjkKC2NhbWVyYV9tb2Rl",
+            "GA0gASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LkNhbWVyYU1vZGUS",
+            "EgoKY2xpcF9heGlhbBgOIAEoAhIVCg1jbGlwX3NhZ2l0dGFsGA8gASgCEhQK",
+            "DGNsaXBfY29yb25hbBgQIAEoAhIYChB2b2x1bWVfZGltZW5zaW9uGBEgAygC",
+            "EjkKC3JlbmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1",
+            "ZXN0LlJlbmRlck1vZGUiJQoHUXVhbGl0eRIHCgNMT1cQABIHCgNNRUQQARII",
+            "CgRISUdIEAIiOQoKQ2FtZXJhTW9kZRIICgRNQUlOEAASDwoLU1RFUkVPX0xF",
+            "RlQQARIQCgxTVEVSRU9fUklHSFQQAiJaCgpSZW5kZXJNb2RlEgsKB0RlZmF1",
+            "bHQQABITCg9TaW5nbGVfTW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQ",
+            "AhIVChFNb2RhbGl0eV9jbGlwcGluZxADImcKC1JlbmRlclJlcGx5EhcKD21h",
+            "aW5faW1hZ2VfZGF0YRgBIAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRh",
+            "GAIgASgMEh8KF3N0ZXJlb19yaWdodF9pbWFnZV9kYXRhGAMgASgMIqsBChRQ",
+            "b2ludENsb3VkQ2FwdHVyZVJlcRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24Y",
+            "ASADKAISIgoacHJveHlfbW9kZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoS",
+            "dGFyZ2V0X3BvaW50X2Nsb3VkGAMgAygCEhoKEnNvdXJjZV9wb2ludF9jbG91",
+            "ZBgEIAMoAhIYChBwcm94eV9tb2RlbF9uYW1lGAUgASgJIjEKFVBvaW50Q2xv",
+            "dWRDYXB0dXJlUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCMvQBCglV",
+            "R3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFu",
+            "ZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASQwoLUmVuZGVy",
+            "SW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBl",
+            "LlJlbmRlclJlcGx5IgASWgoRUG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19w",
+            "aXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGiEudWdycGNfcGlwZS5Qb2ludENs",
+            "b3VkQ2FwdHVyZVJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUu",
+            "VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -79,7 +79,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
@@ -1713,7 +1713,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       cameraTransformation_ = other.cameraTransformation_.Clone();
       cameraFov_ = other.cameraFov_;
       cameraResolution_ = other.cameraResolution_.Clone();
-      modality_ = other.modality_;
+      renderPattern_ = other.renderPattern_;
       clipRange_ = other.clipRange_;
       vdbPath_ = other.vdbPath_;
       proxyModelTransformation_ = other.proxyModelTransformation_.Clone();
@@ -1793,18 +1793,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return cameraResolution_; }
     }
 
-    /// <summary>Field number for the "modality" field.</summary>
-    public const int ModalityFieldNumber = 6;
-    private string modality_ = "";
+    /// <summary>Field number for the "render_pattern" field.</summary>
+    public const int RenderPatternFieldNumber = 6;
+    private string renderPattern_ = "";
     /// <summary>
     /// apply color pattern to the color ramp node of vdb material 
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Modality {
-      get { return modality_; }
+    public string RenderPattern {
+      get { return renderPattern_; }
       set {
-        modality_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        renderPattern_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -1974,7 +1974,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if(!cameraTransformation_.Equals(other.cameraTransformation_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraFov, other.CameraFov)) return false;
       if(!cameraResolution_.Equals(other.cameraResolution_)) return false;
-      if (Modality != other.Modality) return false;
+      if (RenderPattern != other.RenderPattern) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipRange, other.ClipRange)) return false;
       if (VdbPath != other.VdbPath) return false;
       if(!proxyModelTransformation_.Equals(other.proxyModelTransformation_)) return false;
@@ -1999,7 +1999,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       hash ^= cameraTransformation_.GetHashCode();
       if (CameraFov != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraFov);
       hash ^= cameraResolution_.GetHashCode();
-      if (Modality.Length != 0) hash ^= Modality.GetHashCode();
+      if (RenderPattern.Length != 0) hash ^= RenderPattern.GetHashCode();
       if (ClipRange != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipRange);
       if (VdbPath.Length != 0) hash ^= VdbPath.GetHashCode();
       hash ^= proxyModelTransformation_.GetHashCode();
@@ -2044,9 +2044,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteFloat(CameraFov);
       }
       cameraResolution_.WriteTo(output, _repeated_cameraResolution_codec);
-      if (Modality.Length != 0) {
+      if (RenderPattern.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteString(Modality);
+        output.WriteString(RenderPattern);
       }
       if (ClipRange != 0F) {
         output.WriteRawTag(61);
@@ -2114,9 +2114,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteFloat(CameraFov);
       }
       cameraResolution_.WriteTo(ref output, _repeated_cameraResolution_codec);
-      if (Modality.Length != 0) {
+      if (RenderPattern.Length != 0) {
         output.WriteRawTag(50);
-        output.WriteString(Modality);
+        output.WriteString(RenderPattern);
       }
       if (ClipRange != 0F) {
         output.WriteRawTag(61);
@@ -2181,8 +2181,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         size += 1 + 4;
       }
       size += cameraResolution_.CalculateSize(_repeated_cameraResolution_codec);
-      if (Modality.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Modality);
+      if (RenderPattern.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RenderPattern);
       }
       if (ClipRange != 0F) {
         size += 1 + 4;
@@ -2239,8 +2239,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         CameraFov = other.CameraFov;
       }
       cameraResolution_.Add(other.cameraResolution_);
-      if (other.Modality.Length != 0) {
-        Modality = other.Modality;
+      if (other.RenderPattern.Length != 0) {
+        RenderPattern = other.RenderPattern;
       }
       if (other.ClipRange != 0F) {
         ClipRange = other.ClipRange;
@@ -2312,7 +2312,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 50: {
-            Modality = input.ReadString();
+            RenderPattern = input.ReadString();
             break;
           }
           case 61: {
@@ -2403,7 +2403,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 50: {
-            Modality = input.ReadString();
+            RenderPattern = input.ReadString();
             break;
           }
           case 61: {
