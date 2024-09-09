@@ -38,7 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55IvsECg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55IrYFCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSEAoIbW9kYWxpdHkYBiABKAkSEgoKY2xp",
@@ -48,25 +48,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRIVCg1hY3RpdmVfY2FtZXJhGAwgASgJEjkKC2NhbWVyYV9tb2RlGA0gASgO",
             "MiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LkNhbWVyYU1vZGUSEgoKY2xp",
             "cF9heGlhbBgOIAEoAhIVCg1jbGlwX3NhZ2l0dGFsGA8gASgCEhQKDGNsaXBf",
-            "Y29yb25hbBgQIAEoAhIYChB2b2x1bWVfZGltZW5zaW9uGBEgAygCIiUKB1F1",
-            "YWxpdHkSBwoDTE9XEAASBwoDTUVEEAESCAoESElHSBACIjkKCkNhbWVyYU1v",
-            "ZGUSCAoETUFJThAAEg8KC1NURVJFT19MRUZUEAESEAoMU1RFUkVPX1JJR0hU",
-            "EAIiQwoKUmVuZGVyTW9kZRILCgdEZWZhdWx0EAASEwoPU2luZ2xlX01vZGFs",
-            "aXR5EAESEwoPU3BoZXJlX2NsaXBwaW5nEAIiZwoLUmVuZGVyUmVwbHkSFwoP",
-            "bWFpbl9pbWFnZV9kYXRhGAEgASgMEh4KFnN0ZXJlb19sZWZ0X2ltYWdlX2Rh",
-            "dGEYAiABKAwSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX2RhdGEYAyABKAwiqwEK",
-            "FFBvaW50Q2xvdWRDYXB0dXJlUmVxEh0KFWNhbWVyYV90cmFuc2Zvcm1hdGlv",
-            "bhgBIAMoAhIiChpwcm94eV9tb2RlbF90cmFuc2Zvcm1hdGlvbhgCIAMoAhIa",
-            "ChJ0YXJnZXRfcG9pbnRfY2xvdWQYAyADKAISGgoSc291cmNlX3BvaW50X2Ns",
-            "b3VkGAQgAygCEhgKEHByb3h5X21vZGVsX25hbWUYBSABKAkiMQoVUG9pbnRD",
-            "bG91ZENhcHR1cmVSZXNwEhgKEHRyYW5zZm9ybV9tYXRyaXgYASADKAIy9AEK",
-            "CVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21t",
-            "YW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJDCgtSZW5k",
-            "ZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3Bp",
-            "cGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIgLnVncnBj",
-            "X3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBlLlBvaW50",
-            "Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlw",
-            "ZS5WMWIGcHJvdG8z"));
+            "Y29yb25hbBgQIAEoAhIYChB2b2x1bWVfZGltZW5zaW9uGBEgAygCEjkKC3Jl",
+            "bmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0LlJl",
+            "bmRlck1vZGUiJQoHUXVhbGl0eRIHCgNMT1cQABIHCgNNRUQQARIICgRISUdI",
+            "EAIiOQoKQ2FtZXJhTW9kZRIICgRNQUlOEAASDwoLU1RFUkVPX0xFRlQQARIQ",
+            "CgxTVEVSRU9fUklHSFQQAiJDCgpSZW5kZXJNb2RlEgsKB0RlZmF1bHQQABIT",
+            "Cg9TaW5nbGVfTW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQAiJnCgtS",
+            "ZW5kZXJSZXBseRIXCg9tYWluX2ltYWdlX2RhdGEYASABKAwSHgoWc3RlcmVv",
+            "X2xlZnRfaW1hZ2VfZGF0YRgCIAEoDBIfChdzdGVyZW9fcmlnaHRfaW1hZ2Vf",
+            "ZGF0YRgDIAEoDCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJh",
+            "X3RyYW5zZm9ybWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9y",
+            "bWF0aW9uGAIgAygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJz",
+            "b3VyY2VfcG9pbnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgF",
+            "IAEoCSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNmb3JtX21h",
+            "dHJpeBgBIAMoAjL0AQoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51",
+            "Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVy",
+            "aWNSZXNwEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1",
+            "ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAEloKEVBvaW50Q2xvdWRD",
+            "YXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRohLnVn",
+            "cnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXNwIgBCHaoCGlVHcnBjLlBp",
+            "cGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -77,7 +78,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "Modality", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
@@ -1723,6 +1724,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       clipSagittal_ = other.clipSagittal_;
       clipCoronal_ = other.clipCoronal_;
       volumeDimension_ = other.volumeDimension_.Clone();
+      renderMode_ = other.renderMode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1939,6 +1941,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return volumeDimension_; }
     }
 
+    /// <summary>Field number for the "render_mode" field.</summary>
+    public const int RenderModeFieldNumber = 18;
+    private global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode renderMode_ = global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode RenderMode {
+      get { return renderMode_; }
+      set {
+        renderMode_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1971,6 +1985,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipSagittal, other.ClipSagittal)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ClipCoronal, other.ClipCoronal)) return false;
       if(!volumeDimension_.Equals(other.volumeDimension_)) return false;
+      if (RenderMode != other.RenderMode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1995,6 +2010,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (ClipSagittal != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipSagittal);
       if (ClipCoronal != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ClipCoronal);
       hash ^= volumeDimension_.GetHashCode();
+      if (RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) hash ^= RenderMode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2069,6 +2085,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteFloat(ClipCoronal);
       }
       volumeDimension_.WriteTo(output, _repeated_volumeDimension_codec);
+      if (RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) RenderMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2135,6 +2155,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteFloat(ClipCoronal);
       }
       volumeDimension_.WriteTo(ref output, _repeated_volumeDimension_codec);
+      if (RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) RenderMode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2188,6 +2212,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         size += 2 + 4;
       }
       size += volumeDimension_.CalculateSize(_repeated_volumeDimension_codec);
+      if (RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) RenderMode);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2243,6 +2270,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         ClipCoronal = other.ClipCoronal;
       }
       volumeDimension_.Add(other.volumeDimension_);
+      if (other.RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) {
+        RenderMode = other.RenderMode;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2330,6 +2360,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             volumeDimension_.AddEntriesFrom(input, _repeated_volumeDimension_codec);
             break;
           }
+          case 144: {
+            RenderMode = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -2415,6 +2449,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           case 138:
           case 141: {
             volumeDimension_.AddEntriesFrom(ref input, _repeated_volumeDimension_codec);
+            break;
+          }
+          case 144: {
+            RenderMode = (global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) input.ReadEnum();
             break;
           }
         }
