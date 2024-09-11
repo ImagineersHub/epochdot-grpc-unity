@@ -56,28 +56,28 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "UkVPX1JJR0hUEAIiWgoKUmVuZGVyTW9kZRILCgdEZWZhdWx0EAASEwoPU2lu",
             "Z2xlX01vZGFsaXR5EAESEwoPU3BoZXJlX2NsaXBwaW5nEAISFQoRTW9kYWxp",
             "dHlfY2xpcHBpbmcQAyI+Cg1JbWFnZU1ldGFkYXRhEg0KBXdpZHRoGAEgASgF",
-            "Eg4KBmhlaWdodBgCIAEoBRIOCgZmb3JtYXQYAyABKAkipwEKEFJlbmRlckJ5",
+            "Eg4KBmhlaWdodBgCIAEoBRIOCgZmb3JtYXQYAyABKAkikAEKEFJlbmRlckJ5",
             "dGVzUmVwbHkSFwoPbWFpbl9pbWFnZV9kYXRhGAEgASgMEh4KFnN0ZXJlb19s",
             "ZWZ0X2ltYWdlX2RhdGEYAiABKAwSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX2Rh",
-            "dGEYAyABKAwSIgoGc3RhdHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMS",
-            "FQoNZXJyb3JfbWVzc2FnZRgFIAEoCSKiAQoLUmVuZGVyUmVwbHkSFwoPbWFp",
-            "bl9pbWFnZV9wYXRoGAEgASgJEh4KFnN0ZXJlb19sZWZ0X2ltYWdlX3BhdGgY",
-            "AiABKAkSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX3BhdGgYAyABKAkSIgoGc3Rh",
-            "dHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMSFQoNZXJyb3JfbWVzc2Fn",
-            "ZRgFIAEoCSKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3Ry",
-            "YW5zZm9ybWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0",
-            "aW9uGAIgAygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3Vy",
-            "Y2VfcG9pbnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEo",
-            "CSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNmb3JtX21hdHJp",
-            "eBgBIAMoAjLDAgoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3Jw",
-            "Y19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNS",
-            "ZXNwEk0KEFJlbmRlckltYWdlQnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJl",
-            "cXVlc3QaHC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkiABJDCgtSZW5k",
-            "ZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3Bp",
-            "cGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIgLnVncnBj",
-            "X3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBlLlBvaW50",
-            "Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlw",
-            "ZS5WMWIGcHJvdG8z"));
+            "dGEYAyABKAwSIgoGc3RhdHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMi",
+            "iwEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2VfcGF0aBgBIAEoCRIeChZz",
+            "dGVyZW9fbGVmdF9pbWFnZV9wYXRoGAIgASgJEh8KF3N0ZXJlb19yaWdodF9p",
+            "bWFnZV9wYXRoGAMgASgJEiIKBnN0YXR1cxgEIAEoCzISLnVncnBjX3BpcGUu",
+            "U3RhdHVzIqsBChRQb2ludENsb3VkQ2FwdHVyZVJlcRIdChVjYW1lcmFfdHJh",
+            "bnNmb3JtYXRpb24YASADKAISIgoacHJveHlfbW9kZWxfdHJhbnNmb3JtYXRp",
+            "b24YAiADKAISGgoSdGFyZ2V0X3BvaW50X2Nsb3VkGAMgAygCEhoKEnNvdXJj",
+            "ZV9wb2ludF9jbG91ZBgEIAMoAhIYChBwcm94eV9tb2RlbF9uYW1lGAUgASgJ",
+            "IjEKFVBvaW50Q2xvdWRDYXB0dXJlUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4",
+            "GAEgAygCMo8DCglVR3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBj",
+            "X3BpcGUuQ29tbWFuZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jl",
+            "c3ASTQoQUmVuZGVySW1hZ2VCeXRlcxIZLnVncnBjX3BpcGUuUmVuZGVyUmVx",
+            "dWVzdBocLnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNSZXBseSIAEkoKD1JvdXRl",
+            "SW1hZ2VCeXRlcxIcLnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNSZXBseRoXLnVn",
+            "cnBjX3BpcGUuR2VuZXJpY1Jlc3AiABJDCgtSZW5kZXJJbWFnZRIZLnVncnBj",
+            "X3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHki",
+            "ABJaChFQb2ludENsb3VkQ2FwdHVyZRIgLnVncnBjX3BpcGUuUG9pbnRDbG91",
+            "ZENhcHR1cmVSZXEaIS51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVz",
+            "cCIAQh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -90,8 +90,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata), global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata.Parser, new[]{ "Width", "Height", "Format" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "ErrorMessage" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "ErrorMessage" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
@@ -2842,7 +2842,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       stereoLeftImageData_ = other.stereoLeftImageData_;
       stereoRightImageData_ = other.stereoRightImageData_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
-      errorMessage_ = other.errorMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2903,18 +2902,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
-    /// <summary>Field number for the "error_message" field.</summary>
-    public const int ErrorMessageFieldNumber = 5;
-    private string errorMessage_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ErrorMessage {
-      get { return errorMessage_; }
-      set {
-        errorMessage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2934,7 +2921,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImageData != other.StereoLeftImageData) return false;
       if (StereoRightImageData != other.StereoRightImageData) return false;
       if (!object.Equals(Status, other.Status)) return false;
-      if (ErrorMessage != other.ErrorMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2946,7 +2932,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImageData.Length != 0) hash ^= StereoLeftImageData.GetHashCode();
       if (StereoRightImageData.Length != 0) hash ^= StereoRightImageData.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
-      if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2981,10 +2966,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
-      if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(ErrorMessage);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3011,10 +2992,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
-      if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(ErrorMessage);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3036,9 +3013,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (status_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
-      }
-      if (ErrorMessage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMessage);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3066,9 +3040,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
         }
         Status.MergeFrom(other.Status);
-      }
-      if (other.ErrorMessage.Length != 0) {
-        ErrorMessage = other.ErrorMessage;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3104,10 +3075,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             input.ReadMessage(Status);
             break;
           }
-          case 42: {
-            ErrorMessage = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -3140,10 +3107,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
               Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
             }
             input.ReadMessage(Status);
-            break;
-          }
-          case 42: {
-            ErrorMessage = input.ReadString();
             break;
           }
         }
@@ -3191,7 +3154,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       stereoLeftImagePath_ = other.stereoLeftImagePath_;
       stereoRightImagePath_ = other.stereoRightImagePath_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
-      errorMessage_ = other.errorMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3252,18 +3214,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
-    /// <summary>Field number for the "error_message" field.</summary>
-    public const int ErrorMessageFieldNumber = 5;
-    private string errorMessage_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string ErrorMessage {
-      get { return errorMessage_; }
-      set {
-        errorMessage_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -3283,7 +3233,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImagePath != other.StereoLeftImagePath) return false;
       if (StereoRightImagePath != other.StereoRightImagePath) return false;
       if (!object.Equals(Status, other.Status)) return false;
-      if (ErrorMessage != other.ErrorMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3295,7 +3244,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImagePath.Length != 0) hash ^= StereoLeftImagePath.GetHashCode();
       if (StereoRightImagePath.Length != 0) hash ^= StereoRightImagePath.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
-      if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3330,10 +3278,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
-      if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(ErrorMessage);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3360,10 +3304,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
-      if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(ErrorMessage);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3385,9 +3325,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (status_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
-      }
-      if (ErrorMessage.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMessage);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3415,9 +3352,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
         }
         Status.MergeFrom(other.Status);
-      }
-      if (other.ErrorMessage.Length != 0) {
-        ErrorMessage = other.ErrorMessage;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3453,10 +3387,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             input.ReadMessage(Status);
             break;
           }
-          case 42: {
-            ErrorMessage = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -3489,10 +3419,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
               Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
             }
             input.ReadMessage(Status);
-            break;
-          }
-          case 42: {
-            ErrorMessage = input.ReadString();
             break;
           }
         }

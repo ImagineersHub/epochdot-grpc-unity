@@ -77,6 +77,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         __Marshaller_ugrpc_pipe_RenderBytesReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_RouteImageBytes = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RouteImageBytes",
+        __Marshaller_ugrpc_pipe_RenderBytesReply,
+        __Marshaller_ugrpc_pipe_GenericResp);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply> __Method_RenderImage = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -110,6 +118,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply> RenderImageBytes(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> RouteImageBytes(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -196,6 +210,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RenderImageBytes, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp RouteImageBytes(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RouteImageBytes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp RouteImageBytes(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RouteImageBytes, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> RouteImageBytesAsync(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RouteImageBytesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> RouteImageBytesAsync(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RouteImageBytes, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply RenderImage(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return RenderImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -251,6 +285,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_CommandParser, serviceImpl.CommandParser)
           .AddMethod(__Method_RenderImageBytes, serviceImpl.RenderImageBytes)
+          .AddMethod(__Method_RouteImageBytes, serviceImpl.RouteImageBytes)
           .AddMethod(__Method_RenderImage, serviceImpl.RenderImage)
           .AddMethod(__Method_PointCloudCapture, serviceImpl.PointCloudCapture).Build();
     }
@@ -264,6 +299,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     {
       serviceBinder.AddMethod(__Method_CommandParser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.CommandParser));
       serviceBinder.AddMethod(__Method_RenderImageBytes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply>(serviceImpl.RenderImageBytes));
+      serviceBinder.AddMethod(__Method_RouteImageBytes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.RouteImageBytes));
       serviceBinder.AddMethod(__Method_RenderImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(serviceImpl.RenderImage));
       serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp>(serviceImpl.PointCloudCapture));
     }
