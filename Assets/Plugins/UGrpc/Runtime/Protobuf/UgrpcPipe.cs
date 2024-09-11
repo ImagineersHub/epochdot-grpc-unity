@@ -56,27 +56,28 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "UkVPX1JJR0hUEAIiWgoKUmVuZGVyTW9kZRILCgdEZWZhdWx0EAASEwoPU2lu",
             "Z2xlX01vZGFsaXR5EAESEwoPU3BoZXJlX2NsaXBwaW5nEAISFQoRTW9kYWxp",
             "dHlfY2xpcHBpbmcQAyI+Cg1JbWFnZU1ldGFkYXRhEg0KBXdpZHRoGAEgASgF",
-            "Eg4KBmhlaWdodBgCIAEoBRIOCgZmb3JtYXQYAyABKAkikwEKEFJlbmRlckJ5",
+            "Eg4KBmhlaWdodBgCIAEoBRIOCgZmb3JtYXQYAyABKAkipwEKEFJlbmRlckJ5",
             "dGVzUmVwbHkSFwoPbWFpbl9pbWFnZV9kYXRhGAEgASgMEh4KFnN0ZXJlb19s",
             "ZWZ0X2ltYWdlX2RhdGEYAiABKAwSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX2Rh",
-            "dGEYAyABKAwSDgoGc3RhdHVzGAQgASgJEhUKDWVycm9yX21lc3NhZ2UYBSAB",
-            "KAkijgEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2VfcGF0aBgBIAEoCRIe",
-            "ChZzdGVyZW9fbGVmdF9pbWFnZV9wYXRoGAIgASgJEh8KF3N0ZXJlb19yaWdo",
-            "dF9pbWFnZV9wYXRoGAMgASgJEg4KBnN0YXR1cxgEIAEoCRIVCg1lcnJvcl9t",
-            "ZXNzYWdlGAUgASgJIqsBChRQb2ludENsb3VkQ2FwdHVyZVJlcRIdChVjYW1l",
-            "cmFfdHJhbnNmb3JtYXRpb24YASADKAISIgoacHJveHlfbW9kZWxfdHJhbnNm",
-            "b3JtYXRpb24YAiADKAISGgoSdGFyZ2V0X3BvaW50X2Nsb3VkGAMgAygCEhoK",
-            "EnNvdXJjZV9wb2ludF9jbG91ZBgEIAMoAhIYChBwcm94eV9tb2RlbF9uYW1l",
-            "GAUgASgJIjEKFVBvaW50Q2xvdWRDYXB0dXJlUmVzcBIYChB0cmFuc2Zvcm1f",
-            "bWF0cml4GAEgAygCMsMCCglVR3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIc",
-            "LnVncnBjX3BpcGUuQ29tbWFuZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2Vu",
-            "ZXJpY1Jlc3ASTQoQUmVuZGVySW1hZ2VCeXRlcxIZLnVncnBjX3BpcGUuUmVu",
-            "ZGVyUmVxdWVzdBocLnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNSZXBseSIAEkMK",
-            "C1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdy",
-            "cGNfcGlwZS5SZW5kZXJSZXBseSIAEloKEVBvaW50Q2xvdWRDYXB0dXJlEiAu",
-            "dWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRohLnVncnBjX3BpcGUu",
-            "UG9pbnRDbG91ZENhcHR1cmVSZXNwIgBCHaoCGlVHcnBjLlBpcGVsaW5lLkdy",
-            "cGNQaXBlLlYxYgZwcm90bzM="));
+            "dGEYAyABKAwSIgoGc3RhdHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMS",
+            "FQoNZXJyb3JfbWVzc2FnZRgFIAEoCSKiAQoLUmVuZGVyUmVwbHkSFwoPbWFp",
+            "bl9pbWFnZV9wYXRoGAEgASgJEh4KFnN0ZXJlb19sZWZ0X2ltYWdlX3BhdGgY",
+            "AiABKAkSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX3BhdGgYAyABKAkSIgoGc3Rh",
+            "dHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMSFQoNZXJyb3JfbWVzc2Fn",
+            "ZRgFIAEoCSKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3Ry",
+            "YW5zZm9ybWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0",
+            "aW9uGAIgAygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3Vy",
+            "Y2VfcG9pbnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEo",
+            "CSIxChVQb2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNmb3JtX21hdHJp",
+            "eBgBIAMoAjLDAgoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3Jw",
+            "Y19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNS",
+            "ZXNwEk0KEFJlbmRlckltYWdlQnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJl",
+            "cXVlc3QaHC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkiABJDCgtSZW5k",
+            "ZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3Bp",
+            "cGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIgLnVncnBj",
+            "X3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBlLlBvaW50",
+            "Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlw",
+            "ZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -2840,7 +2841,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       mainImageData_ = other.mainImageData_;
       stereoLeftImageData_ = other.stereoLeftImageData_;
       stereoRightImageData_ = other.stereoRightImageData_;
-      status_ = other.status_;
+      status_ = other.status_ != null ? other.status_.Clone() : null;
       errorMessage_ = other.errorMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -2889,16 +2890,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private string status_ = "";
+    private global::UGrpc.Pipeline.GrpcPipe.V1.Status status_;
     /// <summary>
     /// e.g., "success", "partial_failure", "error"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Status {
+    public global::UGrpc.Pipeline.GrpcPipe.V1.Status Status {
       get { return status_; }
       set {
-        status_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        status_ = value;
       }
     }
 
@@ -2932,7 +2933,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (MainImageData != other.MainImageData) return false;
       if (StereoLeftImageData != other.StereoLeftImageData) return false;
       if (StereoRightImageData != other.StereoRightImageData) return false;
-      if (Status != other.Status) return false;
+      if (!object.Equals(Status, other.Status)) return false;
       if (ErrorMessage != other.ErrorMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -2944,7 +2945,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (MainImageData.Length != 0) hash ^= MainImageData.GetHashCode();
       if (StereoLeftImageData.Length != 0) hash ^= StereoLeftImageData.GetHashCode();
       if (StereoRightImageData.Length != 0) hash ^= StereoRightImageData.GetHashCode();
-      if (Status.Length != 0) hash ^= Status.GetHashCode();
+      if (status_ != null) hash ^= Status.GetHashCode();
       if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -2976,9 +2977,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(26);
         output.WriteBytes(StereoRightImageData);
       }
-      if (Status.Length != 0) {
+      if (status_ != null) {
         output.WriteRawTag(34);
-        output.WriteString(Status);
+        output.WriteMessage(Status);
       }
       if (ErrorMessage.Length != 0) {
         output.WriteRawTag(42);
@@ -3006,9 +3007,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(26);
         output.WriteBytes(StereoRightImageData);
       }
-      if (Status.Length != 0) {
+      if (status_ != null) {
         output.WriteRawTag(34);
-        output.WriteString(Status);
+        output.WriteMessage(Status);
       }
       if (ErrorMessage.Length != 0) {
         output.WriteRawTag(42);
@@ -3033,8 +3034,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoRightImageData.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeBytesSize(StereoRightImageData);
       }
-      if (Status.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Status);
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
       }
       if (ErrorMessage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMessage);
@@ -3060,8 +3061,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (other.StereoRightImageData.Length != 0) {
         StereoRightImageData = other.StereoRightImageData;
       }
-      if (other.Status.Length != 0) {
-        Status = other.Status;
+      if (other.status_ != null) {
+        if (status_ == null) {
+          Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+        }
+        Status.MergeFrom(other.Status);
       }
       if (other.ErrorMessage.Length != 0) {
         ErrorMessage = other.ErrorMessage;
@@ -3094,7 +3098,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 34: {
-            Status = input.ReadString();
+            if (status_ == null) {
+              Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+            }
+            input.ReadMessage(Status);
             break;
           }
           case 42: {
@@ -3129,7 +3136,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 34: {
-            Status = input.ReadString();
+            if (status_ == null) {
+              Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+            }
+            input.ReadMessage(Status);
             break;
           }
           case 42: {
@@ -3180,7 +3190,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       mainImagePath_ = other.mainImagePath_;
       stereoLeftImagePath_ = other.stereoLeftImagePath_;
       stereoRightImagePath_ = other.stereoRightImagePath_;
-      status_ = other.status_;
+      status_ = other.status_ != null ? other.status_.Clone() : null;
       errorMessage_ = other.errorMessage_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3229,16 +3239,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     /// <summary>Field number for the "status" field.</summary>
     public const int StatusFieldNumber = 4;
-    private string status_ = "";
+    private global::UGrpc.Pipeline.GrpcPipe.V1.Status status_;
     /// <summary>
     /// e.g., "success", "partial_failure", "error"
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Status {
+    public global::UGrpc.Pipeline.GrpcPipe.V1.Status Status {
       get { return status_; }
       set {
-        status_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        status_ = value;
       }
     }
 
@@ -3272,7 +3282,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (MainImagePath != other.MainImagePath) return false;
       if (StereoLeftImagePath != other.StereoLeftImagePath) return false;
       if (StereoRightImagePath != other.StereoRightImagePath) return false;
-      if (Status != other.Status) return false;
+      if (!object.Equals(Status, other.Status)) return false;
       if (ErrorMessage != other.ErrorMessage) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3284,7 +3294,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (MainImagePath.Length != 0) hash ^= MainImagePath.GetHashCode();
       if (StereoLeftImagePath.Length != 0) hash ^= StereoLeftImagePath.GetHashCode();
       if (StereoRightImagePath.Length != 0) hash ^= StereoRightImagePath.GetHashCode();
-      if (Status.Length != 0) hash ^= Status.GetHashCode();
+      if (status_ != null) hash ^= Status.GetHashCode();
       if (ErrorMessage.Length != 0) hash ^= ErrorMessage.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3316,9 +3326,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(26);
         output.WriteString(StereoRightImagePath);
       }
-      if (Status.Length != 0) {
+      if (status_ != null) {
         output.WriteRawTag(34);
-        output.WriteString(Status);
+        output.WriteMessage(Status);
       }
       if (ErrorMessage.Length != 0) {
         output.WriteRawTag(42);
@@ -3346,9 +3356,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(26);
         output.WriteString(StereoRightImagePath);
       }
-      if (Status.Length != 0) {
+      if (status_ != null) {
         output.WriteRawTag(34);
-        output.WriteString(Status);
+        output.WriteMessage(Status);
       }
       if (ErrorMessage.Length != 0) {
         output.WriteRawTag(42);
@@ -3373,8 +3383,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoRightImagePath.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(StereoRightImagePath);
       }
-      if (Status.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Status);
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
       }
       if (ErrorMessage.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMessage);
@@ -3400,8 +3410,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (other.StereoRightImagePath.Length != 0) {
         StereoRightImagePath = other.StereoRightImagePath;
       }
-      if (other.Status.Length != 0) {
-        Status = other.Status;
+      if (other.status_ != null) {
+        if (status_ == null) {
+          Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+        }
+        Status.MergeFrom(other.Status);
       }
       if (other.ErrorMessage.Length != 0) {
         ErrorMessage = other.ErrorMessage;
@@ -3434,7 +3447,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 34: {
-            Status = input.ReadString();
+            if (status_ == null) {
+              Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+            }
+            input.ReadMessage(Status);
             break;
           }
           case 42: {
@@ -3469,7 +3485,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 34: {
-            Status = input.ReadString();
+            if (status_ == null) {
+              Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
+            }
+            input.ReadMessage(Status);
             break;
           }
           case 42: {
