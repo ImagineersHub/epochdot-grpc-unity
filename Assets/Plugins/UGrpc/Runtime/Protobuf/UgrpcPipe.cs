@@ -57,29 +57,30 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "RGVmYXVsdBAAEhMKD1NpbmdsZV9Nb2RhbGl0eRABEhMKD1NwaGVyZV9jbGlw",
             "cGluZxACEhUKEU1vZGFsaXR5X2NsaXBwaW5nEAMiPgoNSW1hZ2VNZXRhZGF0",
             "YRINCgV3aWR0aBgBIAEoBRIOCgZoZWlnaHQYAiABKAUSDgoGZm9ybWF0GAMg",
-            "ASgJIpABChBSZW5kZXJCeXRlc1JlcGx5EhcKD21haW5faW1hZ2VfZGF0YRgB",
+            "ASgJIrwBChBSZW5kZXJCeXRlc1JlcGx5EhcKD21haW5faW1hZ2VfZGF0YRgB",
             "IAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgMEh8KF3N0ZXJl",
             "b19yaWdodF9pbWFnZV9kYXRhGAMgASgMEiIKBnN0YXR1cxgEIAEoCzISLnVn",
-            "cnBjX3BpcGUuU3RhdHVzIrcBCgtSZW5kZXJSZXBseRIXCg9tYWluX2ltYWdl",
-            "X3BhdGgYASABKAkSHgoWc3RlcmVvX2xlZnRfaW1hZ2VfcGF0aBgCIAEoCRIf",
-            "ChdzdGVyZW9fcmlnaHRfaW1hZ2VfcGF0aBgDIAEoCRIiCgZzdGF0dXMYBCAB",
-            "KAsyEi51Z3JwY19waXBlLlN0YXR1cxIqCgdyZXF1ZXN0GAUgASgLMhkudWdy",
-            "cGNfcGlwZS5SZW5kZXJSZXF1ZXN0IqsBChRQb2ludENsb3VkQ2FwdHVyZVJl",
-            "cRIdChVjYW1lcmFfdHJhbnNmb3JtYXRpb24YASADKAISIgoacHJveHlfbW9k",
-            "ZWxfdHJhbnNmb3JtYXRpb24YAiADKAISGgoSdGFyZ2V0X3BvaW50X2Nsb3Vk",
-            "GAMgAygCEhoKEnNvdXJjZV9wb2ludF9jbG91ZBgEIAMoAhIYChBwcm94eV9t",
-            "b2RlbF9uYW1lGAUgASgJIjEKFVBvaW50Q2xvdWRDYXB0dXJlUmVzcBIYChB0",
-            "cmFuc2Zvcm1fbWF0cml4GAEgAygCMo8DCglVR3JwY1BpcGUSRgoNQ29tbWFu",
-            "ZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFuZFBhcnNlclJlcRoXLnVncnBj",
-            "X3BpcGUuR2VuZXJpY1Jlc3ASTQoQUmVuZGVySW1hZ2VCeXRlcxIZLnVncnBj",
-            "X3BpcGUuUmVuZGVyUmVxdWVzdBocLnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNS",
-            "ZXBseSIAEkoKD1JvdXRlSW1hZ2VCeXRlcxIcLnVncnBjX3BpcGUuUmVuZGVy",
-            "Qnl0ZXNSZXBseRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3AiABJDCgtSZW5k",
-            "ZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBoXLnVncnBjX3Bp",
-            "cGUuUmVuZGVyUmVwbHkiABJaChFQb2ludENsb3VkQ2FwdHVyZRIgLnVncnBj",
-            "X3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEaIS51Z3JwY19waXBlLlBvaW50",
-            "Q2xvdWRDYXB0dXJlUmVzcCIAQh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlw",
-            "ZS5WMWIGcHJvdG8z"));
+            "cnBjX3BpcGUuU3RhdHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3JwY19waXBl",
+            "LlJlbmRlclJlcXVlc3QitwEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2Vf",
+            "cGF0aBgBIAEoCRIeChZzdGVyZW9fbGVmdF9pbWFnZV9wYXRoGAIgASgJEh8K",
+            "F3N0ZXJlb19yaWdodF9pbWFnZV9wYXRoGAMgASgJEiIKBnN0YXR1cxgEIAEo",
+            "CzISLnVncnBjX3BpcGUuU3RhdHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3Jw",
+            "Y19waXBlLlJlbmRlclJlcXVlc3QiqwEKFFBvaW50Q2xvdWRDYXB0dXJlUmVx",
+            "Eh0KFWNhbWVyYV90cmFuc2Zvcm1hdGlvbhgBIAMoAhIiChpwcm94eV9tb2Rl",
+            "bF90cmFuc2Zvcm1hdGlvbhgCIAMoAhIaChJ0YXJnZXRfcG9pbnRfY2xvdWQY",
+            "AyADKAISGgoSc291cmNlX3BvaW50X2Nsb3VkGAQgAygCEhgKEHByb3h5X21v",
+            "ZGVsX25hbWUYBSABKAkiMQoVUG9pbnRDbG91ZENhcHR1cmVSZXNwEhgKEHRy",
+            "YW5zZm9ybV9tYXRyaXgYASADKAIyjwMKCVVHcnBjUGlwZRJGCg1Db21tYW5k",
+            "UGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNf",
+            "cGlwZS5HZW5lcmljUmVzcBJNChBSZW5kZXJJbWFnZUJ5dGVzEhkudWdycGNf",
+            "cGlwZS5SZW5kZXJSZXF1ZXN0GhwudWdycGNfcGlwZS5SZW5kZXJCeXRlc1Jl",
+            "cGx5IgASSgoPUm91dGVJbWFnZUJ5dGVzEhwudWdycGNfcGlwZS5SZW5kZXJC",
+            "eXRlc1JlcGx5GhcudWdycGNfcGlwZS5HZW5lcmljUmVzcCIAEkMKC1JlbmRl",
+            "ckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdycGNfcGlw",
+            "ZS5SZW5kZXJSZXBseSIAEloKEVBvaW50Q2xvdWRDYXB0dXJlEiAudWdycGNf",
+            "cGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRohLnVncnBjX3BpcGUuUG9pbnRD",
+            "bG91ZENhcHR1cmVSZXNwIgBCHaoCGlVHcnBjLlBpcGVsaW5lLkdycGNQaXBl",
+            "LlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -92,7 +93,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition", "Target" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata), global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata.Parser, new[]{ "Width", "Height", "Format" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
@@ -2884,6 +2885,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       stereoLeftImageData_ = other.stereoLeftImageData_;
       stereoRightImageData_ = other.stereoRightImageData_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
+      request_ = other.request_ != null ? other.request_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2944,6 +2946,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "request" field.</summary>
+    public const int RequestFieldNumber = 5;
+    private global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest request_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest Request {
+      get { return request_; }
+      set {
+        request_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2963,6 +2977,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImageData != other.StereoLeftImageData) return false;
       if (StereoRightImageData != other.StereoRightImageData) return false;
       if (!object.Equals(Status, other.Status)) return false;
+      if (!object.Equals(Request, other.Request)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2974,6 +2989,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoLeftImageData.Length != 0) hash ^= StereoLeftImageData.GetHashCode();
       if (StereoRightImageData.Length != 0) hash ^= StereoRightImageData.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
+      if (request_ != null) hash ^= Request.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3008,6 +3024,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
+      if (request_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Request);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3034,6 +3054,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(34);
         output.WriteMessage(Status);
       }
+      if (request_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Request);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3055,6 +3079,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (status_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (request_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Request);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3082,6 +3109,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
         }
         Status.MergeFrom(other.Status);
+      }
+      if (other.request_ != null) {
+        if (request_ == null) {
+          Request = new global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest();
+        }
+        Request.MergeFrom(other.Request);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3117,6 +3150,13 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             input.ReadMessage(Status);
             break;
           }
+          case 42: {
+            if (request_ == null) {
+              Request = new global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest();
+            }
+            input.ReadMessage(Request);
+            break;
+          }
         }
       }
     #endif
@@ -3149,6 +3189,13 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
               Status = new global::UGrpc.Pipeline.GrpcPipe.V1.Status();
             }
             input.ReadMessage(Status);
+            break;
+          }
+          case 42: {
+            if (request_ == null) {
+              Request = new global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest();
+            }
+            input.ReadMessage(Request);
             break;
           }
         }
