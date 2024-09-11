@@ -59,11 +59,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "Eg4KBmhlaWdodBgCIAEoBRIOCgZmb3JtYXQYAyABKAkikwEKEFJlbmRlckJ5",
             "dGVzUmVwbHkSFwoPbWFpbl9pbWFnZV9kYXRhGAEgASgMEh4KFnN0ZXJlb19s",
             "ZWZ0X2ltYWdlX2RhdGEYAiABKAwSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX2Rh",
-            "dGEYAyABKAwSDgoGc3RhdHVzGAcgASgJEhUKDWVycm9yX21lc3NhZ2UYCCAB",
+            "dGEYAyABKAwSDgoGc3RhdHVzGAQgASgJEhUKDWVycm9yX21lc3NhZ2UYBSAB",
             "KAkijgEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2VfcGF0aBgBIAEoCRIe",
             "ChZzdGVyZW9fbGVmdF9pbWFnZV9wYXRoGAIgASgJEh8KF3N0ZXJlb19yaWdo",
-            "dF9pbWFnZV9wYXRoGAMgASgJEg4KBnN0YXR1cxgHIAEoCRIVCg1lcnJvcl9t",
-            "ZXNzYWdlGAggASgJIqsBChRQb2ludENsb3VkQ2FwdHVyZVJlcRIdChVjYW1l",
+            "dF9pbWFnZV9wYXRoGAMgASgJEg4KBnN0YXR1cxgEIAEoCRIVCg1lcnJvcl9t",
+            "ZXNzYWdlGAUgASgJIqsBChRQb2ludENsb3VkQ2FwdHVyZVJlcRIdChVjYW1l",
             "cmFfdHJhbnNmb3JtYXRpb24YASADKAISIgoacHJveHlfbW9kZWxfdHJhbnNm",
             "b3JtYXRpb24YAiADKAISGgoSdGFyZ2V0X3BvaW50X2Nsb3VkGAMgAygCEhoK",
             "EnNvdXJjZV9wb2ludF9jbG91ZBgEIAMoAhIYChBwcm94eV9tb2RlbF9uYW1l",
@@ -2888,7 +2888,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 7;
+    public const int StatusFieldNumber = 4;
     private string status_ = "";
     /// <summary>
     /// e.g., "success", "partial_failure", "error"
@@ -2903,7 +2903,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "error_message" field.</summary>
-    public const int ErrorMessageFieldNumber = 8;
+    public const int ErrorMessageFieldNumber = 5;
     private string errorMessage_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2977,11 +2977,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteBytes(StereoRightImageData);
       }
       if (Status.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(34);
         output.WriteString(Status);
       }
       if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(42);
         output.WriteString(ErrorMessage);
       }
       if (_unknownFields != null) {
@@ -3007,11 +3007,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteBytes(StereoRightImageData);
       }
       if (Status.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(34);
         output.WriteString(Status);
       }
       if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(42);
         output.WriteString(ErrorMessage);
       }
       if (_unknownFields != null) {
@@ -3093,11 +3093,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             StereoRightImageData = input.ReadBytes();
             break;
           }
-          case 58: {
+          case 34: {
             Status = input.ReadString();
             break;
           }
-          case 66: {
+          case 42: {
             ErrorMessage = input.ReadString();
             break;
           }
@@ -3128,11 +3128,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             StereoRightImageData = input.ReadBytes();
             break;
           }
-          case 58: {
+          case 34: {
             Status = input.ReadString();
             break;
           }
-          case 66: {
+          case 42: {
             ErrorMessage = input.ReadString();
             break;
           }
@@ -3228,7 +3228,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 7;
+    public const int StatusFieldNumber = 4;
     private string status_ = "";
     /// <summary>
     /// e.g., "success", "partial_failure", "error"
@@ -3243,7 +3243,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "error_message" field.</summary>
-    public const int ErrorMessageFieldNumber = 8;
+    public const int ErrorMessageFieldNumber = 5;
     private string errorMessage_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3317,11 +3317,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(StereoRightImagePath);
       }
       if (Status.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(34);
         output.WriteString(Status);
       }
       if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(42);
         output.WriteString(ErrorMessage);
       }
       if (_unknownFields != null) {
@@ -3347,11 +3347,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteString(StereoRightImagePath);
       }
       if (Status.Length != 0) {
-        output.WriteRawTag(58);
+        output.WriteRawTag(34);
         output.WriteString(Status);
       }
       if (ErrorMessage.Length != 0) {
-        output.WriteRawTag(66);
+        output.WriteRawTag(42);
         output.WriteString(ErrorMessage);
       }
       if (_unknownFields != null) {
@@ -3433,11 +3433,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             StereoRightImagePath = input.ReadString();
             break;
           }
-          case 58: {
+          case 34: {
             Status = input.ReadString();
             break;
           }
-          case 66: {
+          case 42: {
             ErrorMessage = input.ReadString();
             break;
           }
@@ -3468,11 +3468,11 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             StereoRightImagePath = input.ReadString();
             break;
           }
-          case 58: {
+          case 34: {
             Status = input.ReadString();
             break;
           }
-          case 66: {
+          case 42: {
             ErrorMessage = input.ReadString();
             break;
           }
