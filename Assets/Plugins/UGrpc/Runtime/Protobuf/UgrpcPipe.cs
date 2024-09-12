@@ -38,7 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55IoUGCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55Ip4GCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSFgoOcmVuZGVyX3BhdHRlcm4YBiABKAkS",
@@ -51,17 +51,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "DGNsaXBfY29yb25hbBgQIAEoAhIYChB2b2x1bWVfZGltZW5zaW9uGBEgAygC",
             "EjkKC3JlbmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1",
             "ZXN0LlJlbmRlck1vZGUSIAoYY2xpcHBpbmdfc3BoZXJlX3Bvc2l0aW9uGBMg",
-            "AygCEg4KBnRhcmdldBgUIAEoCSIlCgdRdWFsaXR5EgcKA0xPVxAAEgcKA01F",
-            "RBABEggKBEhJR0gQAiI5CgpDYW1lcmFNb2RlEggKBE1BSU4QABIPCgtTVEVS",
-            "RU9fTEVGVBABEhAKDFNURVJFT19SSUdIVBACIloKClJlbmRlck1vZGUSCwoH",
-            "RGVmYXVsdBAAEhMKD1NpbmdsZV9Nb2RhbGl0eRABEhMKD1NwaGVyZV9jbGlw",
-            "cGluZxACEhUKEU1vZGFsaXR5X2NsaXBwaW5nEAMiPgoNSW1hZ2VNZXRhZGF0",
-            "YRINCgV3aWR0aBgBIAEoBRIOCgZoZWlnaHQYAiABKAUSDgoGZm9ybWF0GAMg",
-            "ASgJIrwBChBSZW5kZXJCeXRlc1JlcGx5EhcKD21haW5faW1hZ2VfZGF0YRgB",
-            "IAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgMEh8KF3N0ZXJl",
-            "b19yaWdodF9pbWFnZV9kYXRhGAMgASgMEiIKBnN0YXR1cxgEIAEoCzISLnVn",
-            "cnBjX3BpcGUuU3RhdHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3JwY19waXBl",
-            "LlJlbmRlclJlcXVlc3QitwEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2Vf",
+            "AygCEg4KBnRhcmdldBgUIAEoCRIXCg9jYW1lcmFfZGlzdGFuY2UYFSABKAIi",
+            "JQoHUXVhbGl0eRIHCgNMT1cQABIHCgNNRUQQARIICgRISUdIEAIiOQoKQ2Ft",
+            "ZXJhTW9kZRIICgRNQUlOEAASDwoLU1RFUkVPX0xFRlQQARIQCgxTVEVSRU9f",
+            "UklHSFQQAiJaCgpSZW5kZXJNb2RlEgsKB0RlZmF1bHQQABITCg9TaW5nbGVf",
+            "TW9kYWxpdHkQARITCg9TcGhlcmVfY2xpcHBpbmcQAhIVChFNb2RhbGl0eV9j",
+            "bGlwcGluZxADIj4KDUltYWdlTWV0YWRhdGESDQoFd2lkdGgYASABKAUSDgoG",
+            "aGVpZ2h0GAIgASgFEg4KBmZvcm1hdBgDIAEoCSLQAQoQUmVuZGVyQnl0ZXNS",
+            "ZXBseRIXCg9tYWluX2ltYWdlX2RhdGEYASABKAwSHgoWc3RlcmVvX2xlZnRf",
+            "aW1hZ2VfZGF0YRgCIAEoDBIfChdzdGVyZW9fcmlnaHRfaW1hZ2VfZGF0YRgD",
+            "IAEoDBIiCgZzdGF0dXMYBCABKAsyEi51Z3JwY19waXBlLlN0YXR1cxIqCgdy",
+            "ZXF1ZXN0GAUgASgLMhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0EhIKCmlw",
+            "ZF9vZmZzZXQYBiABKAIitwEKC1JlbmRlclJlcGx5EhcKD21haW5faW1hZ2Vf",
             "cGF0aBgBIAEoCRIeChZzdGVyZW9fbGVmdF9pbWFnZV9wYXRoGAIgASgJEh8K",
             "F3N0ZXJlb19yaWdodF9pbWFnZV9wYXRoGAMgASgJEiIKBnN0YXR1cxgEIAEo",
             "CzISLnVncnBjX3BpcGUuU3RhdHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3Jw",
@@ -91,9 +92,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition", "Target" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition", "Target", "CameraDistance" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata), global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata.Parser, new[]{ "Width", "Height", "Format" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
@@ -1742,6 +1743,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       renderMode_ = other.renderMode_;
       clippingSpherePosition_ = other.clippingSpherePosition_.Clone();
       target_ = other.target_;
+      cameraDistance_ = other.cameraDistance_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1996,6 +1998,21 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "camera_distance" field.</summary>
+    public const int CameraDistanceFieldNumber = 21;
+    private float cameraDistance_;
+    /// <summary>
+    /// represents the distance between camera and the proxy model
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float CameraDistance {
+      get { return cameraDistance_; }
+      set {
+        cameraDistance_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2031,6 +2048,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (RenderMode != other.RenderMode) return false;
       if(!clippingSpherePosition_.Equals(other.clippingSpherePosition_)) return false;
       if (Target != other.Target) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraDistance, other.CameraDistance)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2058,6 +2076,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (RenderMode != global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode.Default) hash ^= RenderMode.GetHashCode();
       hash ^= clippingSpherePosition_.GetHashCode();
       if (Target.Length != 0) hash ^= Target.GetHashCode();
+      if (CameraDistance != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraDistance);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2141,6 +2160,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(162, 1);
         output.WriteString(Target);
       }
+      if (CameraDistance != 0F) {
+        output.WriteRawTag(173, 1);
+        output.WriteFloat(CameraDistance);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2216,6 +2239,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(162, 1);
         output.WriteString(Target);
       }
+      if (CameraDistance != 0F) {
+        output.WriteRawTag(173, 1);
+        output.WriteFloat(CameraDistance);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2275,6 +2302,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       size += clippingSpherePosition_.CalculateSize(_repeated_clippingSpherePosition_codec);
       if (Target.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Target);
+      }
+      if (CameraDistance != 0F) {
+        size += 2 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2337,6 +2367,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       clippingSpherePosition_.Add(other.clippingSpherePosition_);
       if (other.Target.Length != 0) {
         Target = other.Target;
+      }
+      if (other.CameraDistance != 0F) {
+        CameraDistance = other.CameraDistance;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2438,6 +2471,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             Target = input.ReadString();
             break;
           }
+          case 173: {
+            CameraDistance = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -2536,6 +2573,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 162: {
             Target = input.ReadString();
+            break;
+          }
+          case 173: {
+            CameraDistance = input.ReadFloat();
             break;
           }
         }
@@ -2886,6 +2927,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       stereoRightImageData_ = other.stereoRightImageData_;
       status_ = other.status_ != null ? other.status_.Clone() : null;
       request_ = other.request_ != null ? other.request_.Clone() : null;
+      ipdOffset_ = other.ipdOffset_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2958,6 +3000,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "ipd_offset" field.</summary>
+    public const int IpdOffsetFieldNumber = 6;
+    private float ipdOffset_;
+    /// <summary>
+    /// represents the canvas material ipd offset
+    /// IPD (Interpupillary Distance):
+    /// This is the distance between the centers of the pupils of the two eyes.
+    /// In VR/AR, it's crucial for creating a proper stereoscopic effect and 
+    /// comfortable viewing experience.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float IpdOffset {
+      get { return ipdOffset_; }
+      set {
+        ipdOffset_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2978,6 +3039,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoRightImageData != other.StereoRightImageData) return false;
       if (!object.Equals(Status, other.Status)) return false;
       if (!object.Equals(Request, other.Request)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(IpdOffset, other.IpdOffset)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2990,6 +3052,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (StereoRightImageData.Length != 0) hash ^= StereoRightImageData.GetHashCode();
       if (status_ != null) hash ^= Status.GetHashCode();
       if (request_ != null) hash ^= Request.GetHashCode();
+      if (IpdOffset != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(IpdOffset);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3028,6 +3091,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Request);
       }
+      if (IpdOffset != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(IpdOffset);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3058,6 +3125,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(42);
         output.WriteMessage(Request);
       }
+      if (IpdOffset != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(IpdOffset);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3082,6 +3153,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (request_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Request);
+      }
+      if (IpdOffset != 0F) {
+        size += 1 + 4;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -3115,6 +3189,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           Request = new global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest();
         }
         Request.MergeFrom(other.Request);
+      }
+      if (other.IpdOffset != 0F) {
+        IpdOffset = other.IpdOffset;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -3157,6 +3234,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             input.ReadMessage(Request);
             break;
           }
+          case 53: {
+            IpdOffset = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -3196,6 +3277,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
               Request = new global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest();
             }
             input.ReadMessage(Request);
+            break;
+          }
+          case 53: {
+            IpdOffset = input.ReadFloat();
             break;
           }
         }
