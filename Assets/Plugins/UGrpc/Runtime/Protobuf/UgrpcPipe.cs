@@ -84,7 +84,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "IgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qa",
             "Fy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENhcHR1",
             "cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdycGNf",
-            "cGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2VzdHJh",
+            "cGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2lzdHJh",
             "dGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRoc",
             "LnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
             "bGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
