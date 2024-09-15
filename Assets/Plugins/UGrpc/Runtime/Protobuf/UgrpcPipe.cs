@@ -71,7 +71,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
             "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSKnAQoZ",
-            "Q29udmVyZ2UzRFJlZ2VzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSEQoJ",
+            "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSEQoJ",
             "ZGlyZWN0aW9uGAIgAygCEhwKFG1vZGVsX3RyYW5zZm9ybWF0aW9uGAMgAygC",
             "Eg4KBnJhZGl1cxgEIAEoAhIVCg10YXJnZXRfcG9pbnRzGAUgAygCEg8KB2Nh",
             "c2VfaWQYBiABKAUSEQoJY2FzZV9ndWlkGAcgASgJIiwKEFJlZ2VzdHJhdGlv",
@@ -85,7 +85,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "Fy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENhcHR1",
             "cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdycGNf",
             "cGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2VzdHJh",
-            "dGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2VzdHJhdGlvblJlcRoc",
+            "dGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRoc",
             "LnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
             "bGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
@@ -103,7 +103,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq.Parser, new[]{ "Models", "Direction", "ModelTransformation", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "Models", "Direction", "ModelTransformation", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
@@ -3996,16 +3996,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
   }
 
-  public sealed partial class Converge3DRegestrationReq : pb::IMessage<Converge3DRegestrationReq>
+  public sealed partial class Converge3DRegistrationReq : pb::IMessage<Converge3DRegistrationReq>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Converge3DRegestrationReq> _parser = new pb::MessageParser<Converge3DRegestrationReq>(() => new Converge3DRegestrationReq());
+    private static readonly pb::MessageParser<Converge3DRegistrationReq> _parser = new pb::MessageParser<Converge3DRegistrationReq>(() => new Converge3DRegistrationReq());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Converge3DRegestrationReq> Parser { get { return _parser; } }
+    public static pb::MessageParser<Converge3DRegistrationReq> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4021,7 +4021,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Converge3DRegestrationReq() {
+    public Converge3DRegistrationReq() {
       OnConstruction();
     }
 
@@ -4029,7 +4029,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Converge3DRegestrationReq(Converge3DRegestrationReq other) : this() {
+    public Converge3DRegistrationReq(Converge3DRegistrationReq other) : this() {
       models_ = other.models_.Clone();
       direction_ = other.direction_.Clone();
       modelTransformation_ = other.modelTransformation_.Clone();
@@ -4042,8 +4042,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Converge3DRegestrationReq Clone() {
-      return new Converge3DRegestrationReq(this);
+    public Converge3DRegistrationReq Clone() {
+      return new Converge3DRegistrationReq(this);
     }
 
     /// <summary>Field number for the "models" field.</summary>
@@ -4081,7 +4081,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         = pb::FieldCodec.ForFloat(26);
     private readonly pbc::RepeatedField<float> modelTransformation_ = new pbc::RepeatedField<float>();
     /// <summary>
-    /// represents the model transformation
+    /// represents the model initial transformation
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4151,12 +4151,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Converge3DRegestrationReq);
+      return Equals(other as Converge3DRegistrationReq);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Converge3DRegestrationReq other) {
+    public bool Equals(Converge3DRegistrationReq other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -4275,7 +4275,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Converge3DRegestrationReq other) {
+    public void MergeFrom(Converge3DRegistrationReq other) {
       if (other == null) {
         return;
       }
