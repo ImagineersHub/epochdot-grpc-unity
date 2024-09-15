@@ -70,23 +70,24 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSKJAQoZ",
+            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSKnAQoZ",
             "Q29udmVyZ2UzRFJlZ2VzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSEQoJ",
-            "ZGlyZWN0aW9uGAIgAygCEg4KBnJhZGl1cxgDIAEoAhIVCg10YXJnZXRfcG9p",
-            "bnRzGAQgAygCEg8KB2Nhc2VfaWQYBSABKAUSEQoJY2FzZV9ndWlkGAYgASgJ",
-            "IiwKEFJlZ2VzdHJhdGlvblJlc3ASGAoQdHJhbnNmb3JtX21hdHJpeBgBIAMo",
-            "AjLrAwoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBl",
-            "LkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0K",
-            "EFJlbmRlckltYWdlQnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qa",
-            "HC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkiABJKCg9Sb3V0ZUltYWdl",
-            "Qnl0ZXMSHC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkaFy51Z3JwY19w",
-            "aXBlLkdlbmVyaWNSZXNwIgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBl",
-            "LlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoR",
-            "UG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0",
-            "dXJlUmVxGhwudWdycGNfcGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29u",
-            "dmVyZ2UzRFJlZ2VzdHJhdGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJl",
-            "Z2VzdHJhdGlvblJlcRocLnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIA",
-            "Qh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
+            "ZGlyZWN0aW9uGAIgAygCEhwKFG1vZGVsX3RyYW5zZm9ybWF0aW9uGAMgAygC",
+            "Eg4KBnJhZGl1cxgEIAEoAhIVCg10YXJnZXRfcG9pbnRzGAUgAygCEg8KB2Nh",
+            "c2VfaWQYBiABKAUSEQoJY2FzZV9ndWlkGAcgASgJIiwKEFJlZ2VzdHJhdGlv",
+            "blJlc3ASGAoQdHJhbnNmb3JtX21hdHJpeBgBIAMoAjLrAwoJVUdycGNQaXBl",
+            "EkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJS",
+            "ZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0KEFJlbmRlckltYWdlQnl0",
+            "ZXMSGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaHC51Z3JwY19waXBlLlJl",
+            "bmRlckJ5dGVzUmVwbHkiABJKCg9Sb3V0ZUltYWdlQnl0ZXMSHC51Z3JwY19w",
+            "aXBlLlJlbmRlckJ5dGVzUmVwbHkaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNw",
+            "IgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qa",
+            "Fy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENhcHR1",
+            "cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdycGNf",
+            "cGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2VzdHJh",
+            "dGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2VzdHJhdGlvblJlcRoc",
+            "LnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
+            "bGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -102,7 +103,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq.Parser, new[]{ "Models", "Direction", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq.Parser, new[]{ "Models", "Direction", "ModelTransformation", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
@@ -4031,6 +4032,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     public Converge3DRegestrationReq(Converge3DRegestrationReq other) : this() {
       models_ = other.models_.Clone();
       direction_ = other.direction_.Clone();
+      modelTransformation_ = other.modelTransformation_.Clone();
       radius_ = other.radius_;
       targetPoints_ = other.targetPoints_.Clone();
       caseId_ = other.caseId_;
@@ -4073,8 +4075,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return direction_; }
     }
 
+    /// <summary>Field number for the "model_transformation" field.</summary>
+    public const int ModelTransformationFieldNumber = 3;
+    private static readonly pb::FieldCodec<float> _repeated_modelTransformation_codec
+        = pb::FieldCodec.ForFloat(26);
+    private readonly pbc::RepeatedField<float> modelTransformation_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the model transformation
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> ModelTransformation {
+      get { return modelTransformation_; }
+    }
+
     /// <summary>Field number for the "radius" field.</summary>
-    public const int RadiusFieldNumber = 3;
+    public const int RadiusFieldNumber = 4;
     private float radius_;
     /// <summary>
     /// represents the radius region
@@ -4089,9 +4105,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "target_points" field.</summary>
-    public const int TargetPointsFieldNumber = 4;
+    public const int TargetPointsFieldNumber = 5;
     private static readonly pb::FieldCodec<float> _repeated_targetPoints_codec
-        = pb::FieldCodec.ForFloat(34);
+        = pb::FieldCodec.ForFloat(42);
     private readonly pbc::RepeatedField<float> targetPoints_ = new pbc::RepeatedField<float>();
     /// <summary>
     /// represents the target points
@@ -4103,7 +4119,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "case_id" field.</summary>
-    public const int CaseIdFieldNumber = 5;
+    public const int CaseIdFieldNumber = 6;
     private int caseId_;
     /// <summary>
     /// represents the case id for fetching case content
@@ -4118,7 +4134,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "case_guid" field.</summary>
-    public const int CaseGuidFieldNumber = 6;
+    public const int CaseGuidFieldNumber = 7;
     private string caseGuid_ = "";
     /// <summary>
     /// represents the case guid for fetching case content
@@ -4149,6 +4165,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if(!models_.Equals(other.models_)) return false;
       if(!direction_.Equals(other.direction_)) return false;
+      if(!modelTransformation_.Equals(other.modelTransformation_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
       if(!targetPoints_.Equals(other.targetPoints_)) return false;
       if (CaseId != other.CaseId) return false;
@@ -4162,6 +4179,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       int hash = 1;
       hash ^= models_.GetHashCode();
       hash ^= direction_.GetHashCode();
+      hash ^= modelTransformation_.GetHashCode();
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
       hash ^= targetPoints_.GetHashCode();
       if (CaseId != 0) hash ^= CaseId.GetHashCode();
@@ -4186,17 +4204,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     #else
       models_.WriteTo(output, _repeated_models_codec);
       direction_.WriteTo(output, _repeated_direction_codec);
+      modelTransformation_.WriteTo(output, _repeated_modelTransformation_codec);
       if (Radius != 0F) {
-        output.WriteRawTag(29);
+        output.WriteRawTag(37);
         output.WriteFloat(Radius);
       }
       targetPoints_.WriteTo(output, _repeated_targetPoints_codec);
       if (CaseId != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(CaseId);
       }
       if (CaseGuid.Length != 0) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteString(CaseGuid);
       }
       if (_unknownFields != null) {
@@ -4211,17 +4230,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       models_.WriteTo(ref output, _repeated_models_codec);
       direction_.WriteTo(ref output, _repeated_direction_codec);
+      modelTransformation_.WriteTo(ref output, _repeated_modelTransformation_codec);
       if (Radius != 0F) {
-        output.WriteRawTag(29);
+        output.WriteRawTag(37);
         output.WriteFloat(Radius);
       }
       targetPoints_.WriteTo(ref output, _repeated_targetPoints_codec);
       if (CaseId != 0) {
-        output.WriteRawTag(40);
+        output.WriteRawTag(48);
         output.WriteInt32(CaseId);
       }
       if (CaseGuid.Length != 0) {
-        output.WriteRawTag(50);
+        output.WriteRawTag(58);
         output.WriteString(CaseGuid);
       }
       if (_unknownFields != null) {
@@ -4236,6 +4256,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       int size = 0;
       size += models_.CalculateSize(_repeated_models_codec);
       size += direction_.CalculateSize(_repeated_direction_codec);
+      size += modelTransformation_.CalculateSize(_repeated_modelTransformation_codec);
       if (Radius != 0F) {
         size += 1 + 4;
       }
@@ -4260,6 +4281,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       models_.Add(other.models_);
       direction_.Add(other.direction_);
+      modelTransformation_.Add(other.modelTransformation_);
       if (other.Radius != 0F) {
         Radius = other.Radius;
       }
@@ -4294,20 +4316,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             direction_.AddEntriesFrom(input, _repeated_direction_codec);
             break;
           }
+          case 26:
           case 29: {
+            modelTransformation_.AddEntriesFrom(input, _repeated_modelTransformation_codec);
+            break;
+          }
+          case 37: {
             Radius = input.ReadFloat();
             break;
           }
-          case 34:
-          case 37: {
+          case 42:
+          case 45: {
             targetPoints_.AddEntriesFrom(input, _repeated_targetPoints_codec);
             break;
           }
-          case 40: {
+          case 48: {
             CaseId = input.ReadInt32();
             break;
           }
-          case 50: {
+          case 58: {
             CaseGuid = input.ReadString();
             break;
           }
@@ -4335,20 +4362,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             direction_.AddEntriesFrom(ref input, _repeated_direction_codec);
             break;
           }
+          case 26:
           case 29: {
+            modelTransformation_.AddEntriesFrom(ref input, _repeated_modelTransformation_codec);
+            break;
+          }
+          case 37: {
             Radius = input.ReadFloat();
             break;
           }
-          case 34:
-          case 37: {
+          case 42:
+          case 45: {
             targetPoints_.AddEntriesFrom(ref input, _repeated_targetPoints_codec);
             break;
           }
-          case 40: {
+          case 48: {
             CaseId = input.ReadInt32();
             break;
           }
-          case 50: {
+          case 58: {
             CaseGuid = input.ReadString();
             break;
           }
