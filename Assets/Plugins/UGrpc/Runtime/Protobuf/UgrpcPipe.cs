@@ -74,7 +74,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSEQoJ",
             "ZGlyZWN0aW9uGAIgAygCEhwKFG1vZGVsX3RyYW5zZm9ybWF0aW9uGAMgAygC",
             "Eg4KBnJhZGl1cxgEIAEoAhIVCg10YXJnZXRfcG9pbnRzGAUgAygCEg8KB2Nh",
-            "c2VfaWQYBiABKAUSEQoJY2FzZV9ndWlkGAcgASgJIiwKEFJlZ2VzdHJhdGlv",
+            "c2VfaWQYBiABKAUSEQoJY2FzZV9ndWlkGAcgASgJIiwKEFJlZ2lzdHJhdGlv",
             "blJlc3ASGAoQdHJhbnNmb3JtX21hdHJpeBgBIAMoAjLrAwoJVUdycGNQaXBl",
             "EkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJS",
             "ZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0KEFJlbmRlckltYWdlQnl0",
@@ -84,9 +84,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "IgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qa",
             "Fy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENhcHR1",
             "cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdycGNf",
-            "cGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2lzdHJh",
+            "cGlwZS5SZWdpc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2lzdHJh",
             "dGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRoc",
-            "LnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
+            "LnVncnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5QaXBl",
             "bGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
@@ -104,7 +104,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "Models", "Direction", "ModelTransformation", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
     #endregion
@@ -4391,16 +4391,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
   }
 
-  public sealed partial class RegestrationResp : pb::IMessage<RegestrationResp>
+  public sealed partial class RegistrationResp : pb::IMessage<RegistrationResp>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<RegestrationResp> _parser = new pb::MessageParser<RegestrationResp>(() => new RegestrationResp());
+    private static readonly pb::MessageParser<RegistrationResp> _parser = new pb::MessageParser<RegistrationResp>(() => new RegistrationResp());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<RegestrationResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<RegistrationResp> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4416,7 +4416,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RegestrationResp() {
+    public RegistrationResp() {
       OnConstruction();
     }
 
@@ -4424,15 +4424,15 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RegestrationResp(RegestrationResp other) : this() {
+    public RegistrationResp(RegistrationResp other) : this() {
       transformMatrix_ = other.transformMatrix_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public RegestrationResp Clone() {
-      return new RegestrationResp(this);
+    public RegistrationResp Clone() {
+      return new RegistrationResp(this);
     }
 
     /// <summary>Field number for the "transform_matrix" field.</summary>
@@ -4449,12 +4449,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as RegestrationResp);
+      return Equals(other as RegistrationResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(RegestrationResp other) {
+    public bool Equals(RegistrationResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -4519,7 +4519,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(RegestrationResp other) {
+    public void MergeFrom(RegistrationResp other) {
       if (other == null) {
         return;
       }
