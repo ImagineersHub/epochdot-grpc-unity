@@ -58,7 +58,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq> __Marshaller_ugrpc_pipe_PointCloudCaptureReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> __Marshaller_ugrpc_pipe_PointCloudCaptureResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser));
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> __Marshaller_ugrpc_pipe_RegestrationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq> __Marshaller_ugrpc_pipe_Converge3DRegestrationReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_CommandParser = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
@@ -93,12 +95,20 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         __Marshaller_ugrpc_pipe_RenderReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> __Method_PointCloudCapture = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp>(
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> __Method_PointCloudCapture = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp>(
         grpc::MethodType.Unary,
         __ServiceName,
         "PointCloudCapture",
         __Marshaller_ugrpc_pipe_PointCloudCaptureReq,
-        __Marshaller_ugrpc_pipe_PointCloudCaptureResp);
+        __Marshaller_ugrpc_pipe_RegestrationResp);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> __Method_Converge3DRegestration = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "Converge3DRegestration",
+        __Marshaller_ugrpc_pipe_Converge3DRegestrationReq,
+        __Marshaller_ugrpc_pipe_RegestrationResp);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -135,7 +145,13 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> Converge3DRegestration(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -250,24 +266,44 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RenderImage, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PointCloudCapture(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp PointCloudCapture(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_PointCloudCapture, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return PointCloudCaptureAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> PointCloudCaptureAsync(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_PointCloudCapture, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp Converge3DRegestration(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Converge3DRegestration(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp Converge3DRegestration(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_Converge3DRegestration, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> Converge3DRegestrationAsync(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return Converge3DRegestrationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp> Converge3DRegestrationAsync(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_Converge3DRegestration, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -287,7 +323,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           .AddMethod(__Method_RenderImageBytes, serviceImpl.RenderImageBytes)
           .AddMethod(__Method_RouteImageBytes, serviceImpl.RouteImageBytes)
           .AddMethod(__Method_RenderImage, serviceImpl.RenderImage)
-          .AddMethod(__Method_PointCloudCapture, serviceImpl.PointCloudCapture).Build();
+          .AddMethod(__Method_PointCloudCapture, serviceImpl.PointCloudCapture)
+          .AddMethod(__Method_Converge3DRegestration, serviceImpl.Converge3DRegestration).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -301,7 +338,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       serviceBinder.AddMethod(__Method_RenderImageBytes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply>(serviceImpl.RenderImageBytes));
       serviceBinder.AddMethod(__Method_RouteImageBytes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.RouteImageBytes));
       serviceBinder.AddMethod(__Method_RenderImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(serviceImpl.RenderImage));
-      serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp>(serviceImpl.PointCloudCapture));
+      serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp>(serviceImpl.PointCloudCapture));
+      serviceBinder.AddMethod(__Method_Converge3DRegestration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp>(serviceImpl.Converge3DRegestration));
     }
 
   }

@@ -70,18 +70,23 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSIxChVQ",
-            "b2ludENsb3VkQ2FwdHVyZVJlc3ASGAoQdHJhbnNmb3JtX21hdHJpeBgBIAMo",
-            "AjKPAwoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBl",
+            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSKJAQoZ",
+            "Q29udmVyZ2UzRFJlZ2VzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSEQoJ",
+            "ZGlyZWN0aW9uGAIgAygCEg4KBnJhZGl1cxgDIAEoAhIVCg10YXJnZXRfcG9p",
+            "bnRzGAQgAygCEg8KB2Nhc2VfaWQYBSABKAUSEQoJY2FzZV9ndWlkGAYgASgJ",
+            "IiwKEFJlZ2VzdHJhdGlvblJlc3ASGAoQdHJhbnNmb3JtX21hdHJpeBgBIAMo",
+            "AjLrAwoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBl",
             "LkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0K",
             "EFJlbmRlckltYWdlQnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3Qa",
             "HC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkiABJKCg9Sb3V0ZUltYWdl",
             "Qnl0ZXMSHC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkaFy51Z3JwY19w",
             "aXBlLkdlbmVyaWNSZXNwIgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBl",
-            "LlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASWgoR",
+            "LlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoR",
             "UG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0",
-            "dXJlUmVxGiEudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlc3AiAEId",
-            "qgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
+            "dXJlUmVxGhwudWdycGNfcGlwZS5SZWdlc3RyYXRpb25SZXNwIgASXwoWQ29u",
+            "dmVyZ2UzRFJlZ2VzdHJhdGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJl",
+            "Z2VzdHJhdGlvblJlcRocLnVncnBjX3BpcGUuUmVnZXN0cmF0aW9uUmVzcCIA",
+            "Qh2qAhpVR3JwYy5QaXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -97,7 +102,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegestrationReq.Parser, new[]{ "Models", "Direction", "Radius", "TargetPoints", "CaseId", "CaseGuid" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegestrationResp.Parser, new[]{ "TransformMatrix" }, null, null, null, null)
           }));
     }
     #endregion
@@ -3989,16 +3995,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
   }
 
-  public sealed partial class PointCloudCaptureResp : pb::IMessage<PointCloudCaptureResp>
+  public sealed partial class Converge3DRegestrationReq : pb::IMessage<Converge3DRegestrationReq>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<PointCloudCaptureResp> _parser = new pb::MessageParser<PointCloudCaptureResp>(() => new PointCloudCaptureResp());
+    private static readonly pb::MessageParser<Converge3DRegestrationReq> _parser = new pb::MessageParser<Converge3DRegestrationReq>(() => new Converge3DRegestrationReq());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<PointCloudCaptureResp> Parser { get { return _parser; } }
+    public static pb::MessageParser<Converge3DRegestrationReq> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4014,7 +4020,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PointCloudCaptureResp() {
+    public Converge3DRegestrationReq() {
       OnConstruction();
     }
 
@@ -4022,15 +4028,379 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PointCloudCaptureResp(PointCloudCaptureResp other) : this() {
+    public Converge3DRegestrationReq(Converge3DRegestrationReq other) : this() {
+      models_ = other.models_.Clone();
+      direction_ = other.direction_.Clone();
+      radius_ = other.radius_;
+      targetPoints_ = other.targetPoints_.Clone();
+      caseId_ = other.caseId_;
+      caseGuid_ = other.caseGuid_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Converge3DRegestrationReq Clone() {
+      return new Converge3DRegestrationReq(this);
+    }
+
+    /// <summary>Field number for the "models" field.</summary>
+    public const int ModelsFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_models_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> models_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// Scan point cloud data from the models by giving ray casting direction
+    /// and radius region
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Models {
+      get { return models_; }
+    }
+
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 2;
+    private static readonly pb::FieldCodec<float> _repeated_direction_codec
+        = pb::FieldCodec.ForFloat(18);
+    private readonly pbc::RepeatedField<float> direction_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the ray casting direction
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> Direction {
+      get { return direction_; }
+    }
+
+    /// <summary>Field number for the "radius" field.</summary>
+    public const int RadiusFieldNumber = 3;
+    private float radius_;
+    /// <summary>
+    /// represents the radius region
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Radius {
+      get { return radius_; }
+      set {
+        radius_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "target_points" field.</summary>
+    public const int TargetPointsFieldNumber = 4;
+    private static readonly pb::FieldCodec<float> _repeated_targetPoints_codec
+        = pb::FieldCodec.ForFloat(34);
+    private readonly pbc::RepeatedField<float> targetPoints_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the target points
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> TargetPoints {
+      get { return targetPoints_; }
+    }
+
+    /// <summary>Field number for the "case_id" field.</summary>
+    public const int CaseIdFieldNumber = 5;
+    private int caseId_;
+    /// <summary>
+    /// represents the case id for fetching case content
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CaseId {
+      get { return caseId_; }
+      set {
+        caseId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "case_guid" field.</summary>
+    public const int CaseGuidFieldNumber = 6;
+    private string caseGuid_ = "";
+    /// <summary>
+    /// represents the case guid for fetching case content
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string CaseGuid {
+      get { return caseGuid_; }
+      set {
+        caseGuid_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Converge3DRegestrationReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Converge3DRegestrationReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!models_.Equals(other.models_)) return false;
+      if(!direction_.Equals(other.direction_)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
+      if(!targetPoints_.Equals(other.targetPoints_)) return false;
+      if (CaseId != other.CaseId) return false;
+      if (CaseGuid != other.CaseGuid) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= models_.GetHashCode();
+      hash ^= direction_.GetHashCode();
+      if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
+      hash ^= targetPoints_.GetHashCode();
+      if (CaseId != 0) hash ^= CaseId.GetHashCode();
+      if (CaseGuid.Length != 0) hash ^= CaseGuid.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      models_.WriteTo(output, _repeated_models_codec);
+      direction_.WriteTo(output, _repeated_direction_codec);
+      if (Radius != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Radius);
+      }
+      targetPoints_.WriteTo(output, _repeated_targetPoints_codec);
+      if (CaseId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(CaseId);
+      }
+      if (CaseGuid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(CaseGuid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      models_.WriteTo(ref output, _repeated_models_codec);
+      direction_.WriteTo(ref output, _repeated_direction_codec);
+      if (Radius != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Radius);
+      }
+      targetPoints_.WriteTo(ref output, _repeated_targetPoints_codec);
+      if (CaseId != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(CaseId);
+      }
+      if (CaseGuid.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(CaseGuid);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += models_.CalculateSize(_repeated_models_codec);
+      size += direction_.CalculateSize(_repeated_direction_codec);
+      if (Radius != 0F) {
+        size += 1 + 4;
+      }
+      size += targetPoints_.CalculateSize(_repeated_targetPoints_codec);
+      if (CaseId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CaseId);
+      }
+      if (CaseGuid.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(CaseGuid);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Converge3DRegestrationReq other) {
+      if (other == null) {
+        return;
+      }
+      models_.Add(other.models_);
+      direction_.Add(other.direction_);
+      if (other.Radius != 0F) {
+        Radius = other.Radius;
+      }
+      targetPoints_.Add(other.targetPoints_);
+      if (other.CaseId != 0) {
+        CaseId = other.CaseId;
+      }
+      if (other.CaseGuid.Length != 0) {
+        CaseGuid = other.CaseGuid;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            models_.AddEntriesFrom(input, _repeated_models_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            direction_.AddEntriesFrom(input, _repeated_direction_codec);
+            break;
+          }
+          case 29: {
+            Radius = input.ReadFloat();
+            break;
+          }
+          case 34:
+          case 37: {
+            targetPoints_.AddEntriesFrom(input, _repeated_targetPoints_codec);
+            break;
+          }
+          case 40: {
+            CaseId = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            CaseGuid = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            models_.AddEntriesFrom(ref input, _repeated_models_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            direction_.AddEntriesFrom(ref input, _repeated_direction_codec);
+            break;
+          }
+          case 29: {
+            Radius = input.ReadFloat();
+            break;
+          }
+          case 34:
+          case 37: {
+            targetPoints_.AddEntriesFrom(ref input, _repeated_targetPoints_codec);
+            break;
+          }
+          case 40: {
+            CaseId = input.ReadInt32();
+            break;
+          }
+          case 50: {
+            CaseGuid = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class RegestrationResp : pb::IMessage<RegestrationResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RegestrationResp> _parser = new pb::MessageParser<RegestrationResp>(() => new RegestrationResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RegestrationResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RegestrationResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RegestrationResp(RegestrationResp other) : this() {
       transformMatrix_ = other.transformMatrix_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public PointCloudCaptureResp Clone() {
-      return new PointCloudCaptureResp(this);
+    public RegestrationResp Clone() {
+      return new RegestrationResp(this);
     }
 
     /// <summary>Field number for the "transform_matrix" field.</summary>
@@ -4047,12 +4417,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as PointCloudCaptureResp);
+      return Equals(other as RegestrationResp);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(PointCloudCaptureResp other) {
+    public bool Equals(RegestrationResp other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -4117,7 +4487,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(PointCloudCaptureResp other) {
+    public void MergeFrom(RegestrationResp other) {
       if (other == null) {
         return;
       }
