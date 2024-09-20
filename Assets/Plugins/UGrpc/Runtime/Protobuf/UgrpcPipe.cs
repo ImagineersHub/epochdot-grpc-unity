@@ -70,26 +70,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSLwAQoZ",
+            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSLxAQoZ",
             "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIPCgdjYXNlX2lkGAEgASgFEhEK",
             "CWNhc2VfZ3VpZBgCIAEoCRIOCgZ0YXJnZXQYAyABKAkSDgoGbW9kZWxzGAQg",
             "AygJEh0KFWNlbnRlcl9wb2ludF9wb3NpdGlvbhgFIAMoAhIXCg9jYW1lcmFf",
             "cG9zaXRpb24YBiADKAISDgoGcmFkaXVzGAcgASgCEhwKFG1vZGVsX3RyYW5z",
-            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISEgoKY2h1",
-            "bmtfc2l6ZRgKIAMoBSJAChBSZWdpc3RyYXRpb25SZXNwEhgKEHRyYW5zZm9y",
-            "bV9tYXRyaXgYASADKAISEgoKaXNfc3VjY2VzcxgCIAEoCDLrAwoJVUdycGNQ",
-            "aXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJz",
-            "ZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0KEFJlbmRlckltYWdl",
-            "Qnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaHC51Z3JwY19waXBl",
-            "LlJlbmRlckJ5dGVzUmVwbHkiABJKCg9Sb3V0ZUltYWdlQnl0ZXMSHC51Z3Jw",
-            "Y19waXBlLlJlbmRlckJ5dGVzUmVwbHkaFy51Z3JwY19waXBlLkdlbmVyaWNS",
-            "ZXNwIgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVl",
-            "c3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENh",
-            "cHR1cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdy",
-            "cGNfcGlwZS5SZWdpc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2lz",
-            "dHJhdGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlvblJl",
-            "cRocLnVncnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAQh2qAhpVR3JwYy5Q",
-            "aXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
+            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISEwoLY2h1",
+            "bmtfc2l6ZXMYCiADKAUiQAoQUmVnaXN0cmF0aW9uUmVzcBIYChB0cmFuc2Zv",
+            "cm1fbWF0cml4GAEgAygCEhIKCmlzX3N1Y2Nlc3MYAiABKAgy6wMKCVVHcnBj",
+            "UGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFy",
+            "c2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJNChBSZW5kZXJJbWFn",
+            "ZUJ5dGVzEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhwudWdycGNfcGlw",
+            "ZS5SZW5kZXJCeXRlc1JlcGx5IgASSgoPUm91dGVJbWFnZUJ5dGVzEhwudWdy",
+            "cGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5GhcudWdycGNfcGlwZS5HZW5lcmlj",
+            "UmVzcCIAEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1",
+            "ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAElUKEVBvaW50Q2xvdWRD",
+            "YXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRocLnVn",
+            "cnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAEl8KFkNvbnZlcmdlM0RSZWdp",
+            "c3RyYXRpb24SJS51Z3JwY19waXBlLkNvbnZlcmdlM0RSZWdpc3RyYXRpb25S",
+            "ZXEaHC51Z3JwY19waXBlLlJlZ2lzdHJhdGlvblJlc3AiAEIdqgIaVUdycGMu",
+            "UGlwZWxpbmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -105,7 +105,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "ChunkSize" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "ChunkSizes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix", "IsSuccess" }, null, null, null, null)
           }));
     }
@@ -4041,7 +4041,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       radius_ = other.radius_;
       modelTransformation_ = other.modelTransformation_.Clone();
       targetPoints_ = other.targetPoints_.Clone();
-      chunkSize_ = other.chunkSize_.Clone();
+      chunkSizes_ = other.chunkSizes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4179,18 +4179,18 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return targetPoints_; }
     }
 
-    /// <summary>Field number for the "chunk_size" field.</summary>
-    public const int ChunkSizeFieldNumber = 10;
-    private static readonly pb::FieldCodec<int> _repeated_chunkSize_codec
+    /// <summary>Field number for the "chunk_sizes" field.</summary>
+    public const int ChunkSizesFieldNumber = 10;
+    private static readonly pb::FieldCodec<int> _repeated_chunkSizes_codec
         = pb::FieldCodec.ForInt32(82);
-    private readonly pbc::RepeatedField<int> chunkSize_ = new pbc::RepeatedField<int>();
+    private readonly pbc::RepeatedField<int> chunkSizes_ = new pbc::RepeatedField<int>();
     /// <summary>
     /// target_points contains might contains multiple chunks, use this property to specify the length for each chunk
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<int> ChunkSize {
-      get { return chunkSize_; }
+    public pbc::RepeatedField<int> ChunkSizes {
+      get { return chunkSizes_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4217,7 +4217,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
       if(!modelTransformation_.Equals(other.modelTransformation_)) return false;
       if(!targetPoints_.Equals(other.targetPoints_)) return false;
-      if(!chunkSize_.Equals(other.chunkSize_)) return false;
+      if(!chunkSizes_.Equals(other.chunkSizes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4234,7 +4234,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
       hash ^= modelTransformation_.GetHashCode();
       hash ^= targetPoints_.GetHashCode();
-      hash ^= chunkSize_.GetHashCode();
+      hash ^= chunkSizes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4274,7 +4274,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.WriteTo(output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(output, _repeated_targetPoints_codec);
-      chunkSize_.WriteTo(output, _repeated_chunkSize_codec);
+      chunkSizes_.WriteTo(output, _repeated_chunkSizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4306,7 +4306,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.WriteTo(ref output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(ref output, _repeated_targetPoints_codec);
-      chunkSize_.WriteTo(ref output, _repeated_chunkSize_codec);
+      chunkSizes_.WriteTo(ref output, _repeated_chunkSizes_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4334,7 +4334,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       size += modelTransformation_.CalculateSize(_repeated_modelTransformation_codec);
       size += targetPoints_.CalculateSize(_repeated_targetPoints_codec);
-      size += chunkSize_.CalculateSize(_repeated_chunkSize_codec);
+      size += chunkSizes_.CalculateSize(_repeated_chunkSizes_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4364,7 +4364,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.Add(other.modelTransformation_);
       targetPoints_.Add(other.targetPoints_);
-      chunkSize_.Add(other.chunkSize_);
+      chunkSizes_.Add(other.chunkSizes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4422,7 +4422,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 82:
           case 80: {
-            chunkSize_.AddEntriesFrom(input, _repeated_chunkSize_codec);
+            chunkSizes_.AddEntriesFrom(input, _repeated_chunkSizes_codec);
             break;
           }
         }
@@ -4482,7 +4482,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 82:
           case 80: {
-            chunkSize_.AddEntriesFrom(ref input, _repeated_chunkSize_codec);
+            chunkSizes_.AddEntriesFrom(ref input, _repeated_chunkSizes_codec);
             break;
           }
         }
