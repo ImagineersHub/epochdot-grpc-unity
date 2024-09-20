@@ -70,26 +70,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSL1AQoZ",
+            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSLzAQoZ",
             "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIPCgdjYXNlX2lkGAEgASgFEhEK",
             "CWNhc2VfZ3VpZBgCIAEoCRIOCgZ0YXJnZXQYAyABKAkSDgoGbW9kZWxzGAQg",
             "AygJEh0KFWNlbnRlcl9wb2ludF9wb3NpdGlvbhgFIAMoAhIXCg9jYW1lcmFf",
             "cG9zaXRpb24YBiADKAISDgoGcmFkaXVzGAcgASgCEhwKFG1vZGVsX3RyYW5z",
-            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISFwoPZGF0",
-            "YXNldF9udW1iZXJzGAogASgFIkAKEFJlZ2lzdHJhdGlvblJlc3ASGAoQdHJh",
-            "bnNmb3JtX21hdHJpeBgBIAMoAhISCgppc19zdWNjZXNzGAIgASgIMusDCglV",
-            "R3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFu",
-            "ZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASTQoQUmVuZGVy",
-            "SW1hZ2VCeXRlcxIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBocLnVncnBj",
-            "X3BpcGUuUmVuZGVyQnl0ZXNSZXBseSIAEkoKD1JvdXRlSW1hZ2VCeXRlcxIc",
-            "LnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNSZXBseRoXLnVncnBjX3BpcGUuR2Vu",
-            "ZXJpY1Jlc3AiABJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVy",
-            "UmVxdWVzdBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiABJVChFQb2ludENs",
-            "b3VkQ2FwdHVyZRIgLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEa",
-            "HC51Z3JwY19waXBlLlJlZ2lzdHJhdGlvblJlc3AiABJfChZDb252ZXJnZTNE",
-            "UmVnaXN0cmF0aW9uEiUudWdycGNfcGlwZS5Db252ZXJnZTNEUmVnaXN0cmF0",
-            "aW9uUmVxGhwudWdycGNfcGlwZS5SZWdpc3RyYXRpb25SZXNwIgBCHaoCGlVH",
-            "cnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
+            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISFQoNZGF0",
+            "YXNldF9jb3VudBgKIAEoBSJAChBSZWdpc3RyYXRpb25SZXNwEhgKEHRyYW5z",
+            "Zm9ybV9tYXRyaXgYASADKAISEgoKaXNfc3VjY2VzcxgCIAEoCDLrAwoJVUdy",
+            "cGNQaXBlEkYKDUNvbW1hbmRQYXJzZXISHC51Z3JwY19waXBlLkNvbW1hbmRQ",
+            "YXJzZXJSZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwEk0KEFJlbmRlcklt",
+            "YWdlQnl0ZXMSGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaHC51Z3JwY19w",
+            "aXBlLlJlbmRlckJ5dGVzUmVwbHkiABJKCg9Sb3V0ZUltYWdlQnl0ZXMSHC51",
+            "Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHkaFy51Z3JwY19waXBlLkdlbmVy",
+            "aWNSZXNwIgASQwoLUmVuZGVySW1hZ2USGS51Z3JwY19waXBlLlJlbmRlclJl",
+            "cXVlc3QaFy51Z3JwY19waXBlLlJlbmRlclJlcGx5IgASVQoRUG9pbnRDbG91",
+            "ZENhcHR1cmUSIC51Z3JwY19waXBlLlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwu",
+            "dWdycGNfcGlwZS5SZWdpc3RyYXRpb25SZXNwIgASXwoWQ29udmVyZ2UzRFJl",
+            "Z2lzdHJhdGlvbhIlLnVncnBjX3BpcGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlv",
+            "blJlcRocLnVncnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAQh2qAhpVR3Jw",
+            "Yy5QaXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -105,7 +105,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "DatasetNumbers" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "DatasetCount" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix", "IsSuccess" }, null, null, null, null)
           }));
     }
@@ -4041,7 +4041,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       radius_ = other.radius_;
       modelTransformation_ = other.modelTransformation_.Clone();
       targetPoints_ = other.targetPoints_.Clone();
-      datasetNumbers_ = other.datasetNumbers_;
+      datasetCount_ = other.datasetCount_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4179,19 +4179,19 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return targetPoints_; }
     }
 
-    /// <summary>Field number for the "dataset_numbers" field.</summary>
-    public const int DatasetNumbersFieldNumber = 10;
-    private int datasetNumbers_;
+    /// <summary>Field number for the "dataset_count" field.</summary>
+    public const int DatasetCountFieldNumber = 10;
+    private int datasetCount_;
     /// <summary>
     /// target_points datasset contains multiple point clouds captured
     ///from different timestamps. dataset_numbers represents the total numbers
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int DatasetNumbers {
-      get { return datasetNumbers_; }
+    public int DatasetCount {
+      get { return datasetCount_; }
       set {
-        datasetNumbers_ = value;
+        datasetCount_ = value;
       }
     }
 
@@ -4219,7 +4219,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
       if(!modelTransformation_.Equals(other.modelTransformation_)) return false;
       if(!targetPoints_.Equals(other.targetPoints_)) return false;
-      if (DatasetNumbers != other.DatasetNumbers) return false;
+      if (DatasetCount != other.DatasetCount) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4236,7 +4236,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
       hash ^= modelTransformation_.GetHashCode();
       hash ^= targetPoints_.GetHashCode();
-      if (DatasetNumbers != 0) hash ^= DatasetNumbers.GetHashCode();
+      if (DatasetCount != 0) hash ^= DatasetCount.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4276,9 +4276,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.WriteTo(output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(output, _repeated_targetPoints_codec);
-      if (DatasetNumbers != 0) {
+      if (DatasetCount != 0) {
         output.WriteRawTag(80);
-        output.WriteInt32(DatasetNumbers);
+        output.WriteInt32(DatasetCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4311,9 +4311,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.WriteTo(ref output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(ref output, _repeated_targetPoints_codec);
-      if (DatasetNumbers != 0) {
+      if (DatasetCount != 0) {
         output.WriteRawTag(80);
-        output.WriteInt32(DatasetNumbers);
+        output.WriteInt32(DatasetCount);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4342,8 +4342,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       size += modelTransformation_.CalculateSize(_repeated_modelTransformation_codec);
       size += targetPoints_.CalculateSize(_repeated_targetPoints_codec);
-      if (DatasetNumbers != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DatasetNumbers);
+      if (DatasetCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DatasetCount);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4374,8 +4374,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       modelTransformation_.Add(other.modelTransformation_);
       targetPoints_.Add(other.targetPoints_);
-      if (other.DatasetNumbers != 0) {
-        DatasetNumbers = other.DatasetNumbers;
+      if (other.DatasetCount != 0) {
+        DatasetCount = other.DatasetCount;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4433,7 +4433,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 80: {
-            DatasetNumbers = input.ReadInt32();
+            DatasetCount = input.ReadInt32();
             break;
           }
         }
@@ -4492,7 +4492,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             break;
           }
           case 80: {
-            DatasetNumbers = input.ReadInt32();
+            DatasetCount = input.ReadInt32();
             break;
           }
         }
