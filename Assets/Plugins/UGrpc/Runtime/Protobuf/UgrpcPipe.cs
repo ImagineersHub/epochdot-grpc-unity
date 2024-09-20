@@ -70,26 +70,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
             "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
             "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSLcAQoZ",
-            "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIOCgZtb2RlbHMYASADKAkSHQoV",
-            "Y2VudGVyX3BvaW50X3Bvc2l0aW9uGAIgAygCEhcKD2NhbWVyYV9wb3NpdGlv",
-            "bhgDIAMoAhIOCgZyYWRpdXMYBCABKAISHAoUbW9kZWxfdHJhbnNmb3JtYXRp",
-            "b24YBSADKAISFQoNdGFyZ2V0X3BvaW50cxgGIAMoAhIPCgdjYXNlX2lkGAcg",
-            "ASgFEhEKCWNhc2VfZ3VpZBgIIAEoCRIOCgZ0YXJnZXQYCSABKAkiQAoQUmVn",
-            "aXN0cmF0aW9uUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCEhIKCmlz",
-            "X3N1Y2Nlc3MYAiABKAgy6wMKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2Vy",
-            "EhwudWdycGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5H",
-            "ZW5lcmljUmVzcBJNChBSZW5kZXJJbWFnZUJ5dGVzEhkudWdycGNfcGlwZS5S",
-            "ZW5kZXJSZXF1ZXN0GhwudWdycGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5IgAS",
-            "SgoPUm91dGVJbWFnZUJ5dGVzEhwudWdycGNfcGlwZS5SZW5kZXJCeXRlc1Jl",
-            "cGx5GhcudWdycGNfcGlwZS5HZW5lcmljUmVzcCIAEkMKC1JlbmRlckltYWdl",
-            "EhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5SZW5k",
-            "ZXJSZXBseSIAElUKEVBvaW50Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlwZS5Q",
-            "b2ludENsb3VkQ2FwdHVyZVJlcRocLnVncnBjX3BpcGUuUmVnaXN0cmF0aW9u",
-            "UmVzcCIAEl8KFkNvbnZlcmdlM0RSZWdpc3RyYXRpb24SJS51Z3JwY19waXBl",
-            "LkNvbnZlcmdlM0RSZWdpc3RyYXRpb25SZXEaHC51Z3JwY19waXBlLlJlZ2lz",
-            "dHJhdGlvblJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUuVjFi",
-            "BnByb3RvMw=="));
+            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSL1AQoZ",
+            "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIPCgdjYXNlX2lkGAEgASgFEhEK",
+            "CWNhc2VfZ3VpZBgCIAEoCRIOCgZ0YXJnZXQYAyABKAkSDgoGbW9kZWxzGAQg",
+            "AygJEh0KFWNlbnRlcl9wb2ludF9wb3NpdGlvbhgFIAMoAhIXCg9jYW1lcmFf",
+            "cG9zaXRpb24YBiADKAISDgoGcmFkaXVzGAcgASgCEhwKFG1vZGVsX3RyYW5z",
+            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISFwoPZGF0",
+            "YXNldF9udW1iZXJzGAogASgFIkAKEFJlZ2lzdHJhdGlvblJlc3ASGAoQdHJh",
+            "bnNmb3JtX21hdHJpeBgBIAMoAhISCgppc19zdWNjZXNzGAIgASgIMusDCglV",
+            "R3JwY1BpcGUSRgoNQ29tbWFuZFBhcnNlchIcLnVncnBjX3BpcGUuQ29tbWFu",
+            "ZFBhcnNlclJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3ASTQoQUmVuZGVy",
+            "SW1hZ2VCeXRlcxIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdBocLnVncnBj",
+            "X3BpcGUuUmVuZGVyQnl0ZXNSZXBseSIAEkoKD1JvdXRlSW1hZ2VCeXRlcxIc",
+            "LnVncnBjX3BpcGUuUmVuZGVyQnl0ZXNSZXBseRoXLnVncnBjX3BpcGUuR2Vu",
+            "ZXJpY1Jlc3AiABJDCgtSZW5kZXJJbWFnZRIZLnVncnBjX3BpcGUuUmVuZGVy",
+            "UmVxdWVzdBoXLnVncnBjX3BpcGUuUmVuZGVyUmVwbHkiABJVChFQb2ludENs",
+            "b3VkQ2FwdHVyZRIgLnVncnBjX3BpcGUuUG9pbnRDbG91ZENhcHR1cmVSZXEa",
+            "HC51Z3JwY19waXBlLlJlZ2lzdHJhdGlvblJlc3AiABJfChZDb252ZXJnZTNE",
+            "UmVnaXN0cmF0aW9uEiUudWdycGNfcGlwZS5Db252ZXJnZTNEUmVnaXN0cmF0",
+            "aW9uUmVxGhwudWdycGNfcGlwZS5SZWdpc3RyYXRpb25SZXNwIgBCHaoCGlVH",
+            "cnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -105,7 +105,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "CaseId", "CaseGuid", "Target" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "DatasetNumbers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix", "IsSuccess" }, null, null, null, null)
           }));
     }
@@ -4032,15 +4032,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Converge3DRegistrationReq(Converge3DRegistrationReq other) : this() {
+      caseId_ = other.caseId_;
+      caseGuid_ = other.caseGuid_;
+      target_ = other.target_;
       models_ = other.models_.Clone();
       centerPointPosition_ = other.centerPointPosition_.Clone();
       cameraPosition_ = other.cameraPosition_.Clone();
       radius_ = other.radius_;
       modelTransformation_ = other.modelTransformation_.Clone();
       targetPoints_ = other.targetPoints_.Clone();
-      caseId_ = other.caseId_;
-      caseGuid_ = other.caseGuid_;
-      target_ = other.target_;
+      datasetNumbers_ = other.datasetNumbers_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4050,97 +4051,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       return new Converge3DRegistrationReq(this);
     }
 
-    /// <summary>Field number for the "models" field.</summary>
-    public const int ModelsFieldNumber = 1;
-    private static readonly pb::FieldCodec<string> _repeated_models_codec
-        = pb::FieldCodec.ForString(10);
-    private readonly pbc::RepeatedField<string> models_ = new pbc::RepeatedField<string>();
+    /// <summary>Field number for the "case_id" field.</summary>
+    public const int CaseIdFieldNumber = 1;
+    private int caseId_;
     /// <summary>
     /// Scan point cloud data from the models by giving ray casting direction
     /// and radius region
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<string> Models {
-      get { return models_; }
-    }
-
-    /// <summary>Field number for the "center_point_position" field.</summary>
-    public const int CenterPointPositionFieldNumber = 2;
-    private static readonly pb::FieldCodec<float> _repeated_centerPointPosition_codec
-        = pb::FieldCodec.ForFloat(18);
-    private readonly pbc::RepeatedField<float> centerPointPosition_ = new pbc::RepeatedField<float>();
-    /// <summary>
-    /// represents the center point of the region
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> CenterPointPosition {
-      get { return centerPointPosition_; }
-    }
-
-    /// <summary>Field number for the "camera_position" field.</summary>
-    public const int CameraPositionFieldNumber = 3;
-    private static readonly pb::FieldCodec<float> _repeated_cameraPosition_codec
-        = pb::FieldCodec.ForFloat(26);
-    private readonly pbc::RepeatedField<float> cameraPosition_ = new pbc::RepeatedField<float>();
-    /// <summary>
-    /// represents the camera position
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> CameraPosition {
-      get { return cameraPosition_; }
-    }
-
-    /// <summary>Field number for the "radius" field.</summary>
-    public const int RadiusFieldNumber = 4;
-    private float radius_;
-    /// <summary>
-    /// represents the radius region
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public float Radius {
-      get { return radius_; }
-      set {
-        radius_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "model_transformation" field.</summary>
-    public const int ModelTransformationFieldNumber = 5;
-    private static readonly pb::FieldCodec<float> _repeated_modelTransformation_codec
-        = pb::FieldCodec.ForFloat(42);
-    private readonly pbc::RepeatedField<float> modelTransformation_ = new pbc::RepeatedField<float>();
-    /// <summary>
-    /// represents the model initial transformation
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> ModelTransformation {
-      get { return modelTransformation_; }
-    }
-
-    /// <summary>Field number for the "target_points" field.</summary>
-    public const int TargetPointsFieldNumber = 6;
-    private static readonly pb::FieldCodec<float> _repeated_targetPoints_codec
-        = pb::FieldCodec.ForFloat(50);
-    private readonly pbc::RepeatedField<float> targetPoints_ = new pbc::RepeatedField<float>();
-    /// <summary>
-    /// represents the target points
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<float> TargetPoints {
-      get { return targetPoints_; }
-    }
-
-    /// <summary>Field number for the "case_id" field.</summary>
-    public const int CaseIdFieldNumber = 7;
-    private int caseId_;
-    /// <summary>
-    /// represents the case id for fetching case content
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4152,7 +4068,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "case_guid" field.</summary>
-    public const int CaseGuidFieldNumber = 8;
+    public const int CaseGuidFieldNumber = 2;
     private string caseGuid_ = "";
     /// <summary>
     /// represents the case guid for fetching case content
@@ -4167,7 +4083,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     }
 
     /// <summary>Field number for the "target" field.</summary>
-    public const int TargetFieldNumber = 9;
+    public const int TargetFieldNumber = 3;
     private string target_ = "";
     /// <summary>
     /// represents the IP address of the target machine
@@ -4178,6 +4094,104 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       get { return target_; }
       set {
         target_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "models" field.</summary>
+    public const int ModelsFieldNumber = 4;
+    private static readonly pb::FieldCodec<string> _repeated_models_codec
+        = pb::FieldCodec.ForString(34);
+    private readonly pbc::RepeatedField<string> models_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Models {
+      get { return models_; }
+    }
+
+    /// <summary>Field number for the "center_point_position" field.</summary>
+    public const int CenterPointPositionFieldNumber = 5;
+    private static readonly pb::FieldCodec<float> _repeated_centerPointPosition_codec
+        = pb::FieldCodec.ForFloat(42);
+    private readonly pbc::RepeatedField<float> centerPointPosition_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the center point of the region
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> CenterPointPosition {
+      get { return centerPointPosition_; }
+    }
+
+    /// <summary>Field number for the "camera_position" field.</summary>
+    public const int CameraPositionFieldNumber = 6;
+    private static readonly pb::FieldCodec<float> _repeated_cameraPosition_codec
+        = pb::FieldCodec.ForFloat(50);
+    private readonly pbc::RepeatedField<float> cameraPosition_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the camera position
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> CameraPosition {
+      get { return cameraPosition_; }
+    }
+
+    /// <summary>Field number for the "radius" field.</summary>
+    public const int RadiusFieldNumber = 7;
+    private float radius_;
+    /// <summary>
+    /// represents the radius region
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Radius {
+      get { return radius_; }
+      set {
+        radius_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "model_transformation" field.</summary>
+    public const int ModelTransformationFieldNumber = 8;
+    private static readonly pb::FieldCodec<float> _repeated_modelTransformation_codec
+        = pb::FieldCodec.ForFloat(66);
+    private readonly pbc::RepeatedField<float> modelTransformation_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the model initial transformation
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> ModelTransformation {
+      get { return modelTransformation_; }
+    }
+
+    /// <summary>Field number for the "target_points" field.</summary>
+    public const int TargetPointsFieldNumber = 9;
+    private static readonly pb::FieldCodec<float> _repeated_targetPoints_codec
+        = pb::FieldCodec.ForFloat(74);
+    private readonly pbc::RepeatedField<float> targetPoints_ = new pbc::RepeatedField<float>();
+    /// <summary>
+    /// represents the target points
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> TargetPoints {
+      get { return targetPoints_; }
+    }
+
+    /// <summary>Field number for the "dataset_numbers" field.</summary>
+    public const int DatasetNumbersFieldNumber = 10;
+    private int datasetNumbers_;
+    /// <summary>
+    /// target_points datasset contains multiple point clouds captured
+    ///from different timestamps. dataset_numbers represents the total numbers
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int DatasetNumbers {
+      get { return datasetNumbers_; }
+      set {
+        datasetNumbers_ = value;
       }
     }
 
@@ -4196,15 +4210,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (CaseId != other.CaseId) return false;
+      if (CaseGuid != other.CaseGuid) return false;
+      if (Target != other.Target) return false;
       if(!models_.Equals(other.models_)) return false;
       if(!centerPointPosition_.Equals(other.centerPointPosition_)) return false;
       if(!cameraPosition_.Equals(other.cameraPosition_)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
       if(!modelTransformation_.Equals(other.modelTransformation_)) return false;
       if(!targetPoints_.Equals(other.targetPoints_)) return false;
-      if (CaseId != other.CaseId) return false;
-      if (CaseGuid != other.CaseGuid) return false;
-      if (Target != other.Target) return false;
+      if (DatasetNumbers != other.DatasetNumbers) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4212,15 +4227,16 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (CaseId != 0) hash ^= CaseId.GetHashCode();
+      if (CaseGuid.Length != 0) hash ^= CaseGuid.GetHashCode();
+      if (Target.Length != 0) hash ^= Target.GetHashCode();
       hash ^= models_.GetHashCode();
       hash ^= centerPointPosition_.GetHashCode();
       hash ^= cameraPosition_.GetHashCode();
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
       hash ^= modelTransformation_.GetHashCode();
       hash ^= targetPoints_.GetHashCode();
-      if (CaseId != 0) hash ^= CaseId.GetHashCode();
-      if (CaseGuid.Length != 0) hash ^= CaseGuid.GetHashCode();
-      if (Target.Length != 0) hash ^= Target.GetHashCode();
+      if (DatasetNumbers != 0) hash ^= DatasetNumbers.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4239,26 +4255,30 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (CaseId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(CaseId);
+      }
+      if (CaseGuid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CaseGuid);
+      }
+      if (Target.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Target);
+      }
       models_.WriteTo(output, _repeated_models_codec);
       centerPointPosition_.WriteTo(output, _repeated_centerPointPosition_codec);
       cameraPosition_.WriteTo(output, _repeated_cameraPosition_codec);
       if (Radius != 0F) {
-        output.WriteRawTag(37);
+        output.WriteRawTag(61);
         output.WriteFloat(Radius);
       }
       modelTransformation_.WriteTo(output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(output, _repeated_targetPoints_codec);
-      if (CaseId != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(CaseId);
-      }
-      if (CaseGuid.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(CaseGuid);
-      }
-      if (Target.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Target);
+      if (DatasetNumbers != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(DatasetNumbers);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -4270,26 +4290,30 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CaseId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(CaseId);
+      }
+      if (CaseGuid.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(CaseGuid);
+      }
+      if (Target.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Target);
+      }
       models_.WriteTo(ref output, _repeated_models_codec);
       centerPointPosition_.WriteTo(ref output, _repeated_centerPointPosition_codec);
       cameraPosition_.WriteTo(ref output, _repeated_cameraPosition_codec);
       if (Radius != 0F) {
-        output.WriteRawTag(37);
+        output.WriteRawTag(61);
         output.WriteFloat(Radius);
       }
       modelTransformation_.WriteTo(ref output, _repeated_modelTransformation_codec);
       targetPoints_.WriteTo(ref output, _repeated_targetPoints_codec);
-      if (CaseId != 0) {
-        output.WriteRawTag(56);
-        output.WriteInt32(CaseId);
-      }
-      if (CaseGuid.Length != 0) {
-        output.WriteRawTag(66);
-        output.WriteString(CaseGuid);
-      }
-      if (Target.Length != 0) {
-        output.WriteRawTag(74);
-        output.WriteString(Target);
+      if (DatasetNumbers != 0) {
+        output.WriteRawTag(80);
+        output.WriteInt32(DatasetNumbers);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -4301,14 +4325,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      size += models_.CalculateSize(_repeated_models_codec);
-      size += centerPointPosition_.CalculateSize(_repeated_centerPointPosition_codec);
-      size += cameraPosition_.CalculateSize(_repeated_cameraPosition_codec);
-      if (Radius != 0F) {
-        size += 1 + 4;
-      }
-      size += modelTransformation_.CalculateSize(_repeated_modelTransformation_codec);
-      size += targetPoints_.CalculateSize(_repeated_targetPoints_codec);
       if (CaseId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(CaseId);
       }
@@ -4317,6 +4333,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (Target.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Target);
+      }
+      size += models_.CalculateSize(_repeated_models_codec);
+      size += centerPointPosition_.CalculateSize(_repeated_centerPointPosition_codec);
+      size += cameraPosition_.CalculateSize(_repeated_cameraPosition_codec);
+      if (Radius != 0F) {
+        size += 1 + 4;
+      }
+      size += modelTransformation_.CalculateSize(_repeated_modelTransformation_codec);
+      size += targetPoints_.CalculateSize(_repeated_targetPoints_codec);
+      if (DatasetNumbers != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(DatasetNumbers);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -4330,14 +4357,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (other == null) {
         return;
       }
-      models_.Add(other.models_);
-      centerPointPosition_.Add(other.centerPointPosition_);
-      cameraPosition_.Add(other.cameraPosition_);
-      if (other.Radius != 0F) {
-        Radius = other.Radius;
-      }
-      modelTransformation_.Add(other.modelTransformation_);
-      targetPoints_.Add(other.targetPoints_);
       if (other.CaseId != 0) {
         CaseId = other.CaseId;
       }
@@ -4346,6 +4365,17 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (other.Target.Length != 0) {
         Target = other.Target;
+      }
+      models_.Add(other.models_);
+      centerPointPosition_.Add(other.centerPointPosition_);
+      cameraPosition_.Add(other.cameraPosition_);
+      if (other.Radius != 0F) {
+        Radius = other.Radius;
+      }
+      modelTransformation_.Add(other.modelTransformation_);
+      targetPoints_.Add(other.targetPoints_);
+      if (other.DatasetNumbers != 0) {
+        DatasetNumbers = other.DatasetNumbers;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -4362,44 +4392,48 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
+          case 8: {
+            CaseId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            CaseGuid = input.ReadString();
+            break;
+          }
+          case 26: {
+            Target = input.ReadString();
+            break;
+          }
+          case 34: {
             models_.AddEntriesFrom(input, _repeated_models_codec);
-            break;
-          }
-          case 18:
-          case 21: {
-            centerPointPosition_.AddEntriesFrom(input, _repeated_centerPointPosition_codec);
-            break;
-          }
-          case 26:
-          case 29: {
-            cameraPosition_.AddEntriesFrom(input, _repeated_cameraPosition_codec);
-            break;
-          }
-          case 37: {
-            Radius = input.ReadFloat();
             break;
           }
           case 42:
           case 45: {
-            modelTransformation_.AddEntriesFrom(input, _repeated_modelTransformation_codec);
+            centerPointPosition_.AddEntriesFrom(input, _repeated_centerPointPosition_codec);
             break;
           }
           case 50:
           case 53: {
+            cameraPosition_.AddEntriesFrom(input, _repeated_cameraPosition_codec);
+            break;
+          }
+          case 61: {
+            Radius = input.ReadFloat();
+            break;
+          }
+          case 66:
+          case 69: {
+            modelTransformation_.AddEntriesFrom(input, _repeated_modelTransformation_codec);
+            break;
+          }
+          case 74:
+          case 77: {
             targetPoints_.AddEntriesFrom(input, _repeated_targetPoints_codec);
             break;
           }
-          case 56: {
-            CaseId = input.ReadInt32();
-            break;
-          }
-          case 66: {
-            CaseGuid = input.ReadString();
-            break;
-          }
-          case 74: {
-            Target = input.ReadString();
+          case 80: {
+            DatasetNumbers = input.ReadInt32();
             break;
           }
         }
@@ -4417,44 +4451,48 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
+          case 8: {
+            CaseId = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            CaseGuid = input.ReadString();
+            break;
+          }
+          case 26: {
+            Target = input.ReadString();
+            break;
+          }
+          case 34: {
             models_.AddEntriesFrom(ref input, _repeated_models_codec);
-            break;
-          }
-          case 18:
-          case 21: {
-            centerPointPosition_.AddEntriesFrom(ref input, _repeated_centerPointPosition_codec);
-            break;
-          }
-          case 26:
-          case 29: {
-            cameraPosition_.AddEntriesFrom(ref input, _repeated_cameraPosition_codec);
-            break;
-          }
-          case 37: {
-            Radius = input.ReadFloat();
             break;
           }
           case 42:
           case 45: {
-            modelTransformation_.AddEntriesFrom(ref input, _repeated_modelTransformation_codec);
+            centerPointPosition_.AddEntriesFrom(ref input, _repeated_centerPointPosition_codec);
             break;
           }
           case 50:
           case 53: {
+            cameraPosition_.AddEntriesFrom(ref input, _repeated_cameraPosition_codec);
+            break;
+          }
+          case 61: {
+            Radius = input.ReadFloat();
+            break;
+          }
+          case 66:
+          case 69: {
+            modelTransformation_.AddEntriesFrom(ref input, _repeated_modelTransformation_codec);
+            break;
+          }
+          case 74:
+          case 77: {
             targetPoints_.AddEntriesFrom(ref input, _repeated_targetPoints_codec);
             break;
           }
-          case 56: {
-            CaseId = input.ReadInt32();
-            break;
-          }
-          case 66: {
-            CaseGuid = input.ReadString();
-            break;
-          }
-          case 74: {
-            Target = input.ReadString();
+          case 80: {
+            DatasetNumbers = input.ReadInt32();
             break;
           }
         }
