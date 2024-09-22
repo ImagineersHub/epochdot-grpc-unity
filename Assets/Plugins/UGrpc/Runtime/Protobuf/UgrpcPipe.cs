@@ -38,7 +38,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "eRABEgoKBnVucmVhbBACQgkKB19zdGF0dXMiIwoQQ29tbWFuZFBhcnNlclJl",
             "cRIPCgdwYXlsb2FkGAEgASgJIlgKC0dlbmVyaWNSZXNwEiIKBnN0YXR1cxgB",
             "IAEoCzISLnVncnBjX3BpcGUuU3RhdHVzEiUKB3BheWxvYWQYAiABKAsyFC5n",
-            "b29nbGUucHJvdG9idWYuQW55IrgGCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
+            "b29nbGUucHJvdG9idWYuQW55ItMGCg1SZW5kZXJSZXF1ZXN0EhIKCnNjZW5l",
             "X25hbWUYASABKAkSEwoLb3V0cHV0X3BhdGgYAiABKAkSHQoVY2FtZXJhX3Ry",
             "YW5zZm9ybWF0aW9uGAMgAygCEhIKCmNhbWVyYV9mb3YYBCABKAISGQoRY2Ft",
             "ZXJhX3Jlc29sdXRpb24YBSADKAUSFgoOcmVuZGVyX3BhdHRlcm4YBiABKAkS",
@@ -52,44 +52,45 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "EjkKC3JlbmRlcl9tb2RlGBIgASgOMiQudWdycGNfcGlwZS5SZW5kZXJSZXF1",
             "ZXN0LlJlbmRlck1vZGUSIAoYY2xpcHBpbmdfc3BoZXJlX3Bvc2l0aW9uGBMg",
             "AygCEg4KBnRhcmdldBgUIAEoCRIXCg9jYW1lcmFfZGlzdGFuY2UYFSABKAIS",
-            "GAoQaXNfZW5oYW5jZV9pbWFnZRgWIAEoCCIlCgdRdWFsaXR5EgcKA0xPVxAA",
-            "EgcKA01FRBABEggKBEhJR0gQAiI5CgpDYW1lcmFNb2RlEggKBE1BSU4QABIP",
-            "CgtTVEVSRU9fTEVGVBABEhAKDFNURVJFT19SSUdIVBACIloKClJlbmRlck1v",
-            "ZGUSCwoHRGVmYXVsdBAAEhMKD1NpbmdsZV9Nb2RhbGl0eRABEhMKD1NwaGVy",
-            "ZV9jbGlwcGluZxACEhUKEU1vZGFsaXR5X2NsaXBwaW5nEAMiPgoNSW1hZ2VN",
-            "ZXRhZGF0YRINCgV3aWR0aBgBIAEoBRIOCgZoZWlnaHQYAiABKAUSDgoGZm9y",
-            "bWF0GAMgASgJItABChBSZW5kZXJCeXRlc1JlcGx5EhcKD21haW5faW1hZ2Vf",
-            "ZGF0YRgBIAEoDBIeChZzdGVyZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgMEh8K",
-            "F3N0ZXJlb19yaWdodF9pbWFnZV9kYXRhGAMgASgMEiIKBnN0YXR1cxgEIAEo",
-            "CzISLnVncnBjX3BpcGUuU3RhdHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3Jw",
-            "Y19waXBlLlJlbmRlclJlcXVlc3QSEgoKaXBkX29mZnNldBgGIAEoAiK3AQoL",
-            "UmVuZGVyUmVwbHkSFwoPbWFpbl9pbWFnZV9wYXRoGAEgASgJEh4KFnN0ZXJl",
-            "b19sZWZ0X2ltYWdlX3BhdGgYAiABKAkSHwoXc3RlcmVvX3JpZ2h0X2ltYWdl",
-            "X3BhdGgYAyABKAkSIgoGc3RhdHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0",
-            "dXMSKgoHcmVxdWVzdBgFIAEoCzIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVz",
-            "dCKrAQoUUG9pbnRDbG91ZENhcHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9y",
-            "bWF0aW9uGAEgAygCEiIKGnByb3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIg",
-            "AygCEhoKEnRhcmdldF9wb2ludF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9p",
-            "bnRfY2xvdWQYBCADKAISGAoQcHJveHlfbW9kZWxfbmFtZRgFIAEoCSLxAQoZ",
-            "Q29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRIPCgdjYXNlX2lkGAEgASgFEhEK",
-            "CWNhc2VfZ3VpZBgCIAEoCRIOCgZ0YXJnZXQYAyABKAkSDgoGbW9kZWxzGAQg",
-            "AygJEh0KFWNlbnRlcl9wb2ludF9wb3NpdGlvbhgFIAMoAhIXCg9jYW1lcmFf",
-            "cG9zaXRpb24YBiADKAISDgoGcmFkaXVzGAcgASgCEhwKFG1vZGVsX3RyYW5z",
-            "Zm9ybWF0aW9uGAggAygCEhUKDXRhcmdldF9wb2ludHMYCSADKAISEwoLY2h1",
-            "bmtfc2l6ZXMYCiADKAUiQAoQUmVnaXN0cmF0aW9uUmVzcBIYChB0cmFuc2Zv",
-            "cm1fbWF0cml4GAEgAygCEhIKCmlzX3N1Y2Nlc3MYAiABKAgy6wMKCVVHcnBj",
-            "UGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFy",
-            "c2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJNChBSZW5kZXJJbWFn",
-            "ZUJ5dGVzEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhwudWdycGNfcGlw",
-            "ZS5SZW5kZXJCeXRlc1JlcGx5IgASSgoPUm91dGVJbWFnZUJ5dGVzEhwudWdy",
-            "cGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5GhcudWdycGNfcGlwZS5HZW5lcmlj",
-            "UmVzcCIAEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1",
-            "ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAElUKEVBvaW50Q2xvdWRD",
-            "YXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRocLnVn",
-            "cnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAEl8KFkNvbnZlcmdlM0RSZWdp",
-            "c3RyYXRpb24SJS51Z3JwY19waXBlLkNvbnZlcmdlM0RSZWdpc3RyYXRpb25S",
-            "ZXEaHC51Z3JwY19waXBlLlJlZ2lzdHJhdGlvblJlc3AiAEIdqgIaVUdycGMu",
-            "UGlwZWxpbmUuR3JwY1BpcGUuVjFiBnByb3RvMw=="));
+            "GAoQaXNfZW5oYW5jZV9pbWFnZRgWIAEoCBIZChFpc19pbnN0YW50X3JlbmRl",
+            "chgXIAEoCCIlCgdRdWFsaXR5EgcKA0xPVxAAEgcKA01FRBABEggKBEhJR0gQ",
+            "AiI5CgpDYW1lcmFNb2RlEggKBE1BSU4QABIPCgtTVEVSRU9fTEVGVBABEhAK",
+            "DFNURVJFT19SSUdIVBACIloKClJlbmRlck1vZGUSCwoHRGVmYXVsdBAAEhMK",
+            "D1NpbmdsZV9Nb2RhbGl0eRABEhMKD1NwaGVyZV9jbGlwcGluZxACEhUKEU1v",
+            "ZGFsaXR5X2NsaXBwaW5nEAMiPgoNSW1hZ2VNZXRhZGF0YRINCgV3aWR0aBgB",
+            "IAEoBRIOCgZoZWlnaHQYAiABKAUSDgoGZm9ybWF0GAMgASgJItABChBSZW5k",
+            "ZXJCeXRlc1JlcGx5EhcKD21haW5faW1hZ2VfZGF0YRgBIAEoDBIeChZzdGVy",
+            "ZW9fbGVmdF9pbWFnZV9kYXRhGAIgASgMEh8KF3N0ZXJlb19yaWdodF9pbWFn",
+            "ZV9kYXRhGAMgASgMEiIKBnN0YXR1cxgEIAEoCzISLnVncnBjX3BpcGUuU3Rh",
+            "dHVzEioKB3JlcXVlc3QYBSABKAsyGS51Z3JwY19waXBlLlJlbmRlclJlcXVl",
+            "c3QSEgoKaXBkX29mZnNldBgGIAEoAiK3AQoLUmVuZGVyUmVwbHkSFwoPbWFp",
+            "bl9pbWFnZV9wYXRoGAEgASgJEh4KFnN0ZXJlb19sZWZ0X2ltYWdlX3BhdGgY",
+            "AiABKAkSHwoXc3RlcmVvX3JpZ2h0X2ltYWdlX3BhdGgYAyABKAkSIgoGc3Rh",
+            "dHVzGAQgASgLMhIudWdycGNfcGlwZS5TdGF0dXMSKgoHcmVxdWVzdBgFIAEo",
+            "CzIZLnVncnBjX3BpcGUuUmVuZGVyUmVxdWVzdCKrAQoUUG9pbnRDbG91ZENh",
+            "cHR1cmVSZXESHQoVY2FtZXJhX3RyYW5zZm9ybWF0aW9uGAEgAygCEiIKGnBy",
+            "b3h5X21vZGVsX3RyYW5zZm9ybWF0aW9uGAIgAygCEhoKEnRhcmdldF9wb2lu",
+            "dF9jbG91ZBgDIAMoAhIaChJzb3VyY2VfcG9pbnRfY2xvdWQYBCADKAISGAoQ",
+            "cHJveHlfbW9kZWxfbmFtZRgFIAEoCSLxAQoZQ29udmVyZ2UzRFJlZ2lzdHJh",
+            "dGlvblJlcRIPCgdjYXNlX2lkGAEgASgFEhEKCWNhc2VfZ3VpZBgCIAEoCRIO",
+            "CgZ0YXJnZXQYAyABKAkSDgoGbW9kZWxzGAQgAygJEh0KFWNlbnRlcl9wb2lu",
+            "dF9wb3NpdGlvbhgFIAMoAhIXCg9jYW1lcmFfcG9zaXRpb24YBiADKAISDgoG",
+            "cmFkaXVzGAcgASgCEhwKFG1vZGVsX3RyYW5zZm9ybWF0aW9uGAggAygCEhUK",
+            "DXRhcmdldF9wb2ludHMYCSADKAISEwoLY2h1bmtfc2l6ZXMYCiADKAUiQAoQ",
+            "UmVnaXN0cmF0aW9uUmVzcBIYChB0cmFuc2Zvcm1fbWF0cml4GAEgAygCEhIK",
+            "CmlzX3N1Y2Nlc3MYAiABKAgy6wMKCVVHcnBjUGlwZRJGCg1Db21tYW5kUGFy",
+            "c2VyEhwudWdycGNfcGlwZS5Db21tYW5kUGFyc2VyUmVxGhcudWdycGNfcGlw",
+            "ZS5HZW5lcmljUmVzcBJNChBSZW5kZXJJbWFnZUJ5dGVzEhkudWdycGNfcGlw",
+            "ZS5SZW5kZXJSZXF1ZXN0GhwudWdycGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5",
+            "IgASSgoPUm91dGVJbWFnZUJ5dGVzEhwudWdycGNfcGlwZS5SZW5kZXJCeXRl",
+            "c1JlcGx5GhcudWdycGNfcGlwZS5HZW5lcmljUmVzcCIAEkMKC1JlbmRlcklt",
+            "YWdlEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5S",
+            "ZW5kZXJSZXBseSIAElUKEVBvaW50Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlw",
+            "ZS5Qb2ludENsb3VkQ2FwdHVyZVJlcRocLnVncnBjX3BpcGUuUmVnaXN0cmF0",
+            "aW9uUmVzcCIAEl8KFkNvbnZlcmdlM0RSZWdpc3RyYXRpb24SJS51Z3JwY19w",
+            "aXBlLkNvbnZlcmdlM0RSZWdpc3RyYXRpb25SZXEaHC51Z3JwY19waXBlLlJl",
+            "Z2lzdHJhdGlvblJlc3AiAEIdqgIaVUdycGMuUGlwZWxpbmUuR3JwY1BpcGUu",
+            "VjFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -100,7 +101,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp), global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Parser, new[]{ "Status", "Platform", "DataPath", "ProjectRoot", "BuildVersion" }, new[]{ "Status" }, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ProjectInfoResp.Types.PlatformCode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq), global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq.Parser, new[]{ "Payload" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp), global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp.Parser, new[]{ "Status", "Payload" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition", "Target", "CameraDistance", "IsEnhanceImage" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest), global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Parser, new[]{ "SceneName", "OutputPath", "CameraTransformation", "CameraFov", "CameraResolution", "RenderPattern", "ClipRange", "VdbPath", "ProxyModelTransformation", "Spacing", "Quality", "ActiveCamera", "CameraMode", "ClipAxial", "ClipSagittal", "ClipCoronal", "VolumeDimension", "RenderMode", "ClippingSpherePosition", "Target", "CameraDistance", "IsEnhanceImage", "IsInstantRender" }, null, new[]{ typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.Quality), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.CameraMode), typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest.Types.RenderMode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata), global::UGrpc.Pipeline.GrpcPipe.V1.ImageMetadata.Parser, new[]{ "Width", "Height", "Format" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderBytesReply.Parser, new[]{ "MainImageData", "StereoLeftImageData", "StereoRightImageData", "Status", "Request", "IpdOffset" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
@@ -1754,6 +1755,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       target_ = other.target_;
       cameraDistance_ = other.cameraDistance_;
       isEnhanceImage_ = other.isEnhanceImage_;
+      isInstantRender_ = other.isInstantRender_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2038,6 +2040,22 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
     }
 
+    /// <summary>Field number for the "is_instant_render" field.</summary>
+    public const int IsInstantRenderFieldNumber = 23;
+    private bool isInstantRender_;
+    /// <summary>
+    /// represents whether to render the image instantly or not. If rendering with
+    /// the same color pattern, it would perform instant rendering
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsInstantRender {
+      get { return isInstantRender_; }
+      set {
+        isInstantRender_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2075,6 +2093,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Target != other.Target) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(CameraDistance, other.CameraDistance)) return false;
       if (IsEnhanceImage != other.IsEnhanceImage) return false;
+      if (IsInstantRender != other.IsInstantRender) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2104,6 +2123,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       if (Target.Length != 0) hash ^= Target.GetHashCode();
       if (CameraDistance != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(CameraDistance);
       if (IsEnhanceImage != false) hash ^= IsEnhanceImage.GetHashCode();
+      if (IsInstantRender != false) hash ^= IsInstantRender.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2195,6 +2215,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(176, 1);
         output.WriteBool(IsEnhanceImage);
       }
+      if (IsInstantRender != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(IsInstantRender);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2278,6 +2302,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         output.WriteRawTag(176, 1);
         output.WriteBool(IsEnhanceImage);
       }
+      if (IsInstantRender != false) {
+        output.WriteRawTag(184, 1);
+        output.WriteBool(IsInstantRender);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2342,6 +2370,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         size += 2 + 4;
       }
       if (IsEnhanceImage != false) {
+        size += 2 + 1;
+      }
+      if (IsInstantRender != false) {
         size += 2 + 1;
       }
       if (_unknownFields != null) {
@@ -2411,6 +2442,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
       if (other.IsEnhanceImage != false) {
         IsEnhanceImage = other.IsEnhanceImage;
+      }
+      if (other.IsInstantRender != false) {
+        IsInstantRender = other.IsInstantRender;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2520,6 +2554,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             IsEnhanceImage = input.ReadBool();
             break;
           }
+          case 184: {
+            IsInstantRender = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -2626,6 +2664,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 176: {
             IsEnhanceImage = input.ReadBool();
+            break;
+          }
+          case 184: {
+            IsInstantRender = input.ReadBool();
             break;
           }
         }
