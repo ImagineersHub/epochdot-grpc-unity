@@ -61,6 +61,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp> __Marshaller_ugrpc_pipe_RegistrationResp = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq> __Marshaller_ugrpc_pipe_Converge3DRegistrationReq = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest> __Marshaller_ugrpc_pipe_HealthCheckRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::UGrpc.Pipeline.GrpcPipe.V1.Status> __Marshaller_ugrpc_pipe_Status = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::UGrpc.Pipeline.GrpcPipe.V1.Status.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_CommandParser = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.CommandParserReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
@@ -110,6 +114,14 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         __Marshaller_ugrpc_pipe_Converge3DRegistrationReq,
         __Marshaller_ugrpc_pipe_RegistrationResp);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest, global::UGrpc.Pipeline.GrpcPipe.V1.Status> __Method_HealthCheck = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest, global::UGrpc.Pipeline.GrpcPipe.V1.Status>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "HealthCheck",
+        __Marshaller_ugrpc_pipe_HealthCheckRequest,
+        __Marshaller_ugrpc_pipe_Status);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -152,6 +164,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp> Converge3DRegistration(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.Status> HealthCheck(global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -305,6 +323,26 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_Converge3DRegistration, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.Status HealthCheck(global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return HealthCheck(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::UGrpc.Pipeline.GrpcPipe.V1.Status HealthCheck(global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_HealthCheck, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.Status> HealthCheckAsync(global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return HealthCheckAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::UGrpc.Pipeline.GrpcPipe.V1.Status> HealthCheckAsync(global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_HealthCheck, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override UGrpcPipeClient NewInstance(ClientBaseConfiguration configuration)
@@ -324,7 +362,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           .AddMethod(__Method_RouteImageBytes, serviceImpl.RouteImageBytes)
           .AddMethod(__Method_RenderImage, serviceImpl.RenderImage)
           .AddMethod(__Method_PointCloudCapture, serviceImpl.PointCloudCapture)
-          .AddMethod(__Method_Converge3DRegistration, serviceImpl.Converge3DRegistration).Build();
+          .AddMethod(__Method_Converge3DRegistration, serviceImpl.Converge3DRegistration)
+          .AddMethod(__Method_HealthCheck, serviceImpl.HealthCheck).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -340,6 +379,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       serviceBinder.AddMethod(__Method_RenderImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.RenderRequest, global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply>(serviceImpl.RenderImage));
       serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp>(serviceImpl.PointCloudCapture));
       serviceBinder.AddMethod(__Method_Converge3DRegistration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp>(serviceImpl.Converge3DRegistration));
+      serviceBinder.AddMethod(__Method_HealthCheck, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest, global::UGrpc.Pipeline.GrpcPipe.V1.Status>(serviceImpl.HealthCheck));
     }
 
   }
