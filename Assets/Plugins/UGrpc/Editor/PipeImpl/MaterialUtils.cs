@@ -16,16 +16,20 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
 
             // Set the shader
-            var shader = Shader.Find(shaderName);
-            if (shader != null && shader.name != materialAsset.shader.name)
+            if (shaderName == null)
             {
-                materialAsset.shader = shader;
+                var shader = Shader.Find(shaderName);
+                if (shader != null && shader.name != materialAsset.shader.name)
+                {
+                    materialAsset.shader = shader;
+                }
+                else
+                {
+                    Debug.LogError($"Shader '{shaderName}' not found. Make sure it's included in your project.");
+                    return;
+                }
             }
-            else
-            {
-                Debug.LogError($"Shader '{shaderName}' not found. Make sure it's included in your project.");
-                return;
-            }
+
 
             // Set main texture (albedo)
             var diffuseTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(diffuse);
