@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Grpc.Core;
@@ -14,7 +15,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public virtual int DefaultPort => DEFAULT_GRPC_PORT;
 
-        public bool IsRunning => mGrpcServer != null && mGrpcServer.Ports.Count > 0;
+        public bool IsRunning => mGrpcServer != null && mGrpcServer.Ports.Count() > 0;
 
         private bool disposedValue;
 
