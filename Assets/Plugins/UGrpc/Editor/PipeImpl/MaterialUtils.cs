@@ -17,7 +17,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             // Set the shader
             var shader = Shader.Find(shaderName);
-            if (shader != null)
+            if (shader != null && shader.name != materialAsset.shader.name)
             {
                 materialAsset.shader = shader;
             }
