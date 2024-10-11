@@ -6,7 +6,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 {
     public class MaterialUtils
     {
-        public static void UpdateTextures(string source, string shaderName, string diffuse, string channel, string normal = null, string emission = null)
+        public static void UpdateTextures(string source, string diffuse, string channel, string normal = null, string emission = null)
         {
             var materialAsset = AssetDatabase.LoadAssetAtPath<Material>(source);
             if (materialAsset == null)
@@ -14,22 +14,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 Debug.LogError($"Material not found at path: {source}");
                 return;
             }
-
-            // Set the shader
-            if (shaderName == null)
-            {
-                var shader = Shader.Find(shaderName);
-                if (shader != null && shader.name != materialAsset.shader.name)
-                {
-                    materialAsset.shader = shader;
-                }
-                else
-                {
-                    Debug.LogError($"Shader '{shaderName}' not found. Make sure it's included in your project.");
-                    return;
-                }
-            }
-
 
             // Set main texture (albedo)
             var diffuseTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(diffuse);
