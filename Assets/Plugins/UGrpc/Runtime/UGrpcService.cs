@@ -19,6 +19,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         private bool disposedValue;
 
+        public int CurrentPort => IsRunning ? mGrpcServer.Ports.First().BoundPort : -1;
+
         public void StartCommandServer(UGrpcPipeImpl impl, int startPort = -1, bool autoFindPort = true)
         {
             if (IsRunning)
