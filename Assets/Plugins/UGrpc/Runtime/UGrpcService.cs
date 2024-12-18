@@ -21,7 +21,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         public int CurrentPort => IsRunning ? mGrpcServer.Ports.First().BoundPort : -1;
 
-        public void StartCommandServer(UGrpcPipeImpl impl, int startPort = -1, bool autoFindPort = true)
+        public void StartCommandServer(UGrpcPipeImpl impl, int port = -1)
         {
             if (IsRunning)
             {
@@ -31,25 +31,25 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
             try
             {
-                if (startPort == -1)
+                if (port == -1)
                 {
-                    startPort = DefaultPort;
+                    port = DefaultPort;
                 }
 
-                if (autoFindPort)
+                if (UGrpcPipeImpl.CheckPortValid(port) == false)
                 {
-                    startPort = UGrpcPipeImpl.GetValidPort(startPort: startPort);
+                    throw new ArgumentException($"Port {port} is not valid or already in use.");
                 }
 
                 mGrpcServer = new Server
                 {
                     Services = { UGrpcPipe.BindService(impl) },
-                    Ports = { new ServerPort("0.0.0.0", startPort, ServerCredentials.Insecure) }
+                    Ports = { new ServerPort("0.0.0.0", port, ServerCredentials.Insecure) }
                 };
 
                 mGrpcServer.Start();
 
-                Debug.Log($"gRPC service is running on port: {startPort}");
+                Debug.Log($"gRPC service is running on port: {port}");
             }
             catch (Exception ex)
             {

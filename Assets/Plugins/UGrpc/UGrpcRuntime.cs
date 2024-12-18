@@ -20,7 +20,7 @@ namespace UGrpc.Runtime
 
         void Start()
         {
-            Service.StartCommandServer(PipeImpl, autoFindPort: false);
+            Service.StartCommandServer(PipeImpl);
         }
 
         void OnDestroy()
