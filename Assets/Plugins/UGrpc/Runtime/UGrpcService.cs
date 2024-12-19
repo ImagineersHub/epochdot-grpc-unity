@@ -36,11 +36,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                     port = DefaultPort;
                 }
 
-                if (UGrpcPipeImpl.CheckPortValid(port) == false)
-                {
-                    throw new ArgumentException($"Port {port} is not valid or already in use.");
-                }
-
                 mGrpcServer = new Server
                 {
                     Services = { UGrpcPipe.BindService(impl) },
@@ -53,8 +48,9 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
             catch (Exception ex)
             {
-                Debug.LogError($"Failed to start gRPC service: {ex.Message}");
                 mGrpcServer = null;
+                throw ex;
+
             }
         }
 

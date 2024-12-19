@@ -57,37 +57,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
             }
         }
 
-        public static bool CheckPortValid(int port, int retry = 10)
-        {
-            IPGlobalProperties properties = IPGlobalProperties.GetIPGlobalProperties();
-            IPEndPoint[] tcpEndPoints = properties.GetActiveTcpListeners();
-            List<int> usedPorts = tcpEndPoints.Select(p => p.Port).ToList<int>();
-
-            // use task run to check if the port is available
-            Task<bool> task = Task.Run(() =>
-            {
-                if (!usedPorts.Contains(port))
-                {
-                    return true;
-                }
-
-                for (int i = 1; i <= retry; i++)
-                {
-                    int newPort = port + i;
-                    if (!usedPorts.Contains(newPort))
-                    {
-                        return true;
-                    }
-                    // wait for 100ms before next check
-                    Thread.Sleep(100);
-                }
-
-                return false;
-            });
-
-            return task.Result;
-        }
-
         private object[] ResolveCommandParameters(string[] parameters, MethodInfo method)
         {
             /* It's aimed to convert the request method name chain and payload string into the commandParserParam
