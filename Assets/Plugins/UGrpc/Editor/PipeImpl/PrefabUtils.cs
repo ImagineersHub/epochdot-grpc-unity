@@ -451,11 +451,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
 
         static void ApplyMaterials(GameObject target, string[] materialAssetPaths)
         {
-            var totalMaterialNumbers = GetTotalMaterialCount(target);
-            if (materialAssetPaths.Length != 0 && totalMaterialNumbers != materialAssetPaths.Length) throw new Exception(
-                "The specified material list don't match the total materials of the gameobject renderers" +
-                $"{totalMaterialNumbers} : {materialAssetPaths.Length}");
-
             // resolve the material path to object
             List<Material> materialList = new();
             foreach (var materialPath in materialAssetPaths)
@@ -464,18 +459,49 @@ namespace UGrpc.Pipeline.GrpcPipe.V1
                 materialList.Add(mat);
             }
 
-            var renderers = target.GetComponentsInChildren<MeshRenderer>();
-            var matIndex = 0;
-            foreach (var meshRenderer in renderers)
+            var totalMaterialNumbers = GetTotalMaterialCount(target);
+            var is_segment_mesh = target.GetComponent<MeshRenderer>() == null;
+            Debug.Log($"is_segment_mesh: {is_segment_mesh}, totalMaterialNumbers: {totalMaterialNumbers}, materialAssetPaths.Length: {materialAssetPaths.Length}");
+            if (is_segment_mesh && totalMaterialNumbers % materialAssetPaths.Length == 0 && totalMaterialNumbers / materialAssetPaths.Length >=2)
             {
-                // skip the material assignment if the specified material list was empty
-                if (materialList.Count > 0)
+                // process segment mesh
+                foreach(Transform child in target.transform)
                 {
-                    var matLength = meshRenderer.sharedMaterials.Count();
-                    meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
-                    matIndex += matLength;
+                    var renderers = child.gameObject.GetComponentsInChildren<MeshRenderer>();
+                    var matIndex = 0;
+                    foreach (var meshRenderer in renderers)
+                    {
+                        if (materialList.Count > 0)
+                        {
+                            var matLength = meshRenderer.sharedMaterials.Count();
+                            meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
+                            matIndex += matLength;
+                        }
+                    }
                 }
             }
+            else
+            {
+                // process standalone mesh
+
+                if (materialAssetPaths.Length != 0 && totalMaterialNumbers != materialAssetPaths.Length) throw new Exception(
+                    "The specified material list don't match the total materials of the gameobject renderers" +
+                    $"{totalMaterialNumbers} : {materialAssetPaths.Length}");
+
+                var renderers = target.GetComponentsInChildren<MeshRenderer>();
+                var matIndex = 0;
+                foreach (var meshRenderer in renderers)
+                {
+                    // skip the material assignment if the specified material list was empty
+                    if (materialList.Count > 0)
+                    {
+                        var matLength = meshRenderer.sharedMaterials.Count();
+                        meshRenderer.sharedMaterials = materialList.Skip(matIndex).Take(matLength).ToArray();
+                        matIndex += matLength;
+                    }
+                }
+            }
+
         }
 
         public static void SetActive(string source, string[] children, bool isActive)
