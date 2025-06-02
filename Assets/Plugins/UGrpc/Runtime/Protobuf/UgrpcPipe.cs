@@ -80,20 +80,32 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             "YWRpdXMYByABKAISHAoUbW9kZWxfdHJhbnNmb3JtYXRpb24YCCADKAISFQoN",
             "dGFyZ2V0X3BvaW50cxgJIAMoAhITCgtjaHVua19zaXplcxgKIAMoBSJAChBS",
             "ZWdpc3RyYXRpb25SZXNwEhgKEHRyYW5zZm9ybV9tYXRyaXgYASADKAISEgoK",
-            "aXNfc3VjY2VzcxgCIAEoCDKwBAoJVUdycGNQaXBlEkYKDUNvbW1hbmRQYXJz",
-            "ZXISHC51Z3JwY19waXBlLkNvbW1hbmRQYXJzZXJSZXEaFy51Z3JwY19waXBl",
-            "LkdlbmVyaWNSZXNwEk0KEFJlbmRlckltYWdlQnl0ZXMSGS51Z3JwY19waXBl",
-            "LlJlbmRlclJlcXVlc3QaHC51Z3JwY19waXBlLlJlbmRlckJ5dGVzUmVwbHki",
-            "ABJKCg9Sb3V0ZUltYWdlQnl0ZXMSHC51Z3JwY19waXBlLlJlbmRlckJ5dGVz",
-            "UmVwbHkaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwIgASQwoLUmVuZGVySW1h",
-            "Z2USGS51Z3JwY19waXBlLlJlbmRlclJlcXVlc3QaFy51Z3JwY19waXBlLlJl",
-            "bmRlclJlcGx5IgASVQoRUG9pbnRDbG91ZENhcHR1cmUSIC51Z3JwY19waXBl",
-            "LlBvaW50Q2xvdWRDYXB0dXJlUmVxGhwudWdycGNfcGlwZS5SZWdpc3RyYXRp",
-            "b25SZXNwIgASXwoWQ29udmVyZ2UzRFJlZ2lzdHJhdGlvbhIlLnVncnBjX3Bp",
-            "cGUuQ29udmVyZ2UzRFJlZ2lzdHJhdGlvblJlcRocLnVncnBjX3BpcGUuUmVn",
-            "aXN0cmF0aW9uUmVzcCIAEkMKC0hlYWx0aENoZWNrEh4udWdycGNfcGlwZS5I",
-            "ZWFsdGhDaGVja1JlcXVlc3QaEi51Z3JwY19waXBlLlN0YXR1cyIAQh2qAhpV",
-            "R3JwYy5QaXBlbGluZS5HcnBjUGlwZS5WMWIGcHJvdG8z"));
+            "aXNfc3VjY2VzcxgCIAEoCCIpChdUcmFja2luZ1NlbnNvckNsaWVudFJlcRIO",
+            "CgZ0YXJnZXQYASABKAkiRgoaUG9zaXRpb25pbmdTZW5zb3JUcmFuc2Zvcm0S",
+            "EwoLdHJhbnNsYXRpb24YASADKAISEwoLb3JpZW50YXRpb24YAiADKAIiWAob",
+            "VHJhY2tpbmdTZW5zb3JUcmFuc2Zvcm1SZXNwEjkKCXRyYW5zZm9ybRgBIAMo",
+            "CzImLnVncnBjX3BpcGUuUG9zaXRpb25pbmdTZW5zb3JUcmFuc2Zvcm0y4wYK",
+            "CVVHcnBjUGlwZRJGCg1Db21tYW5kUGFyc2VyEhwudWdycGNfcGlwZS5Db21t",
+            "YW5kUGFyc2VyUmVxGhcudWdycGNfcGlwZS5HZW5lcmljUmVzcBJNChBSZW5k",
+            "ZXJJbWFnZUJ5dGVzEhkudWdycGNfcGlwZS5SZW5kZXJSZXF1ZXN0GhwudWdy",
+            "cGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5IgASSgoPUm91dGVJbWFnZUJ5dGVz",
+            "EhwudWdycGNfcGlwZS5SZW5kZXJCeXRlc1JlcGx5GhcudWdycGNfcGlwZS5H",
+            "ZW5lcmljUmVzcCIAEkMKC1JlbmRlckltYWdlEhkudWdycGNfcGlwZS5SZW5k",
+            "ZXJSZXF1ZXN0GhcudWdycGNfcGlwZS5SZW5kZXJSZXBseSIAElUKEVBvaW50",
+            "Q2xvdWRDYXB0dXJlEiAudWdycGNfcGlwZS5Qb2ludENsb3VkQ2FwdHVyZVJl",
+            "cRocLnVncnBjX3BpcGUuUmVnaXN0cmF0aW9uUmVzcCIAEl8KFkNvbnZlcmdl",
+            "M0RSZWdpc3RyYXRpb24SJS51Z3JwY19waXBlLkNvbnZlcmdlM0RSZWdpc3Ry",
+            "YXRpb25SZXEaHC51Z3JwY19waXBlLlJlZ2lzdHJhdGlvblJlc3AiABJDCgtI",
+            "ZWFsdGhDaGVjaxIeLnVncnBjX3BpcGUuSGVhbHRoQ2hlY2tSZXF1ZXN0GhIu",
+            "dWdycGNfcGlwZS5TdGF0dXMiABJkCiBTdWJzY3JpYmVUcmFja2luZ1NlbnNv",
+            "clRyYW5zZm9ybRIjLnVncnBjX3BpcGUuVHJhY2tpbmdTZW5zb3JDbGllbnRS",
+            "ZXEaFy51Z3JwY19waXBlLkdlbmVyaWNSZXNwIgAwARJkCiJVbnN1YnNjcmli",
+            "ZVRyYWNraW5nU2Vuc29yVHJhbnNmb3JtEiMudWdycGNfcGlwZS5UcmFja2lu",
+            "Z1NlbnNvckNsaWVudFJlcRoXLnVncnBjX3BpcGUuR2VuZXJpY1Jlc3AiABJl",
+            "Ch1TdHJlYW1UcmFja2luZ1NlbnNvclRyYW5zZm9ybRInLnVncnBjX3BpcGUu",
+            "VHJhY2tpbmdTZW5zb3JUcmFuc2Zvcm1SZXNwGhcudWdycGNfcGlwZS5HZW5l",
+            "cmljUmVzcCIAMAFCHaoCGlVHcnBjLlBpcGVsaW5lLkdycGNQaXBlLlYxYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -111,7 +123,10 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply), global::UGrpc.Pipeline.GrpcPipe.V1.RenderReply.Parser, new[]{ "MainImagePath", "StereoLeftImagePath", "StereoRightImagePath", "Status", "Request" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq), global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq.Parser, new[]{ "CameraTransformation", "ProxyModelTransformation", "TargetPointCloud", "SourcePointCloud", "ProxyModelName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq), global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq.Parser, new[]{ "CaseId", "CaseGuid", "Target", "Models", "CenterPointPosition", "CameraPosition", "Radius", "ModelTransformation", "TargetPoints", "ChunkSizes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix", "IsSuccess" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp), global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp.Parser, new[]{ "TransformMatrix", "IsSuccess" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq), global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq.Parser, new[]{ "Target" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform), global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform.Parser, new[]{ "Translation", "Orientation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp), global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp.Parser, new[]{ "Transform" }, null, null, null, null)
           }));
     }
     #endregion
@@ -5048,6 +5063,581 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           }
           case 16: {
             IsSuccess = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TrackingSensorClientReq : pb::IMessage<TrackingSensorClientReq>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TrackingSensorClientReq> _parser = new pb::MessageParser<TrackingSensorClientReq>(() => new TrackingSensorClientReq());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TrackingSensorClientReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorClientReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorClientReq(TrackingSensorClientReq other) : this() {
+      target_ = other.target_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorClientReq Clone() {
+      return new TrackingSensorClientReq(this);
+    }
+
+    /// <summary>Field number for the "target" field.</summary>
+    public const int TargetFieldNumber = 1;
+    private string target_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Target {
+      get { return target_; }
+      set {
+        target_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TrackingSensorClientReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TrackingSensorClientReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Target != other.Target) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Target.Length != 0) hash ^= Target.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Target.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Target);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Target.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Target);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Target.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Target);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TrackingSensorClientReq other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Target.Length != 0) {
+        Target = other.Target;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Target = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Target = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class PositioningSensorTransform : pb::IMessage<PositioningSensorTransform>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PositioningSensorTransform> _parser = new pb::MessageParser<PositioningSensorTransform>(() => new PositioningSensorTransform());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PositioningSensorTransform> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PositioningSensorTransform() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PositioningSensorTransform(PositioningSensorTransform other) : this() {
+      translation_ = other.translation_.Clone();
+      orientation_ = other.orientation_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PositioningSensorTransform Clone() {
+      return new PositioningSensorTransform(this);
+    }
+
+    /// <summary>Field number for the "translation" field.</summary>
+    public const int TranslationFieldNumber = 1;
+    private static readonly pb::FieldCodec<float> _repeated_translation_codec
+        = pb::FieldCodec.ForFloat(10);
+    private readonly pbc::RepeatedField<float> translation_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> Translation {
+      get { return translation_; }
+    }
+
+    /// <summary>Field number for the "orientation" field.</summary>
+    public const int OrientationFieldNumber = 2;
+    private static readonly pb::FieldCodec<float> _repeated_orientation_codec
+        = pb::FieldCodec.ForFloat(18);
+    private readonly pbc::RepeatedField<float> orientation_ = new pbc::RepeatedField<float>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<float> Orientation {
+      get { return orientation_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PositioningSensorTransform);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PositioningSensorTransform other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!translation_.Equals(other.translation_)) return false;
+      if(!orientation_.Equals(other.orientation_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= translation_.GetHashCode();
+      hash ^= orientation_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      translation_.WriteTo(output, _repeated_translation_codec);
+      orientation_.WriteTo(output, _repeated_orientation_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      translation_.WriteTo(ref output, _repeated_translation_codec);
+      orientation_.WriteTo(ref output, _repeated_orientation_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += translation_.CalculateSize(_repeated_translation_codec);
+      size += orientation_.CalculateSize(_repeated_orientation_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PositioningSensorTransform other) {
+      if (other == null) {
+        return;
+      }
+      translation_.Add(other.translation_);
+      orientation_.Add(other.orientation_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 13: {
+            translation_.AddEntriesFrom(input, _repeated_translation_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            orientation_.AddEntriesFrom(input, _repeated_orientation_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 13: {
+            translation_.AddEntriesFrom(ref input, _repeated_translation_codec);
+            break;
+          }
+          case 18:
+          case 21: {
+            orientation_.AddEntriesFrom(ref input, _repeated_orientation_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TrackingSensorTransformResp : pb::IMessage<TrackingSensorTransformResp>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TrackingSensorTransformResp> _parser = new pb::MessageParser<TrackingSensorTransformResp>(() => new TrackingSensorTransformResp());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<TrackingSensorTransformResp> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::UGrpc.Pipeline.GrpcPipe.V1.UgrpcPipeReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorTransformResp() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorTransformResp(TrackingSensorTransformResp other) : this() {
+      transform_ = other.transform_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public TrackingSensorTransformResp Clone() {
+      return new TrackingSensorTransformResp(this);
+    }
+
+    /// <summary>Field number for the "transform" field.</summary>
+    public const int TransformFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform> _repeated_transform_codec
+        = pb::FieldCodec.ForMessage(10, global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform.Parser);
+    private readonly pbc::RepeatedField<global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform> transform_ = new pbc::RepeatedField<global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::UGrpc.Pipeline.GrpcPipe.V1.PositioningSensorTransform> Transform {
+      get { return transform_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as TrackingSensorTransformResp);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(TrackingSensorTransformResp other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!transform_.Equals(other.transform_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= transform_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      transform_.WriteTo(output, _repeated_transform_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      transform_.WriteTo(ref output, _repeated_transform_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += transform_.CalculateSize(_repeated_transform_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(TrackingSensorTransformResp other) {
+      if (other == null) {
+        return;
+      }
+      transform_.Add(other.transform_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            transform_.AddEntriesFrom(input, _repeated_transform_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            transform_.AddEntriesFrom(ref input, _repeated_transform_codec);
             break;
           }
         }
