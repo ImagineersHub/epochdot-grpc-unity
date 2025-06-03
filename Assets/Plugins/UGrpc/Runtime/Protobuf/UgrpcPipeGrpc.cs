@@ -127,12 +127,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         __Marshaller_ugrpc_pipe_Status);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_SubscribeTrackingSensorTransform = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
+    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp> __Method_SubscribeTrackingSensorTransform = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp>(
         grpc::MethodType.ServerStreaming,
         __ServiceName,
         "SubscribeTrackingSensorTransform",
         __Marshaller_ugrpc_pipe_TrackingSensorClientReq,
-        __Marshaller_ugrpc_pipe_GenericResp);
+        __Marshaller_ugrpc_pipe_TrackingSensorTransformResp);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_UnsubscribeTrackingSensorTransform = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
@@ -140,14 +140,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         __ServiceName,
         "UnsubscribeTrackingSensorTransform",
         __Marshaller_ugrpc_pipe_TrackingSensorClientReq,
-        __Marshaller_ugrpc_pipe_GenericResp);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> __Method_StreamTrackingSensorTransform = new grpc::Method<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(
-        grpc::MethodType.ServerStreaming,
-        __ServiceName,
-        "StreamTrackingSensorTransform",
-        __Marshaller_ugrpc_pipe_TrackingSensorTransformResp,
         __Marshaller_ugrpc_pipe_GenericResp);
 
     /// <summary>Service descriptor</summary>
@@ -203,19 +195,13 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::IServerStreamWriter<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> responseStream, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::IServerStreamWriter<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> UnsubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task StreamTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp request, grpc::IServerStreamWriter<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> responseStream, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -390,12 +376,12 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_HealthCheck, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp> SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return SubscribeTrackingSensorTransform(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::CallOptions options)
+      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp> SubscribeTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncServerStreamingCall(__Method_SubscribeTrackingSensorTransform, null, options, request);
       }
@@ -419,16 +405,6 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       {
         return CallInvoker.AsyncUnaryCall(__Method_UnsubscribeTrackingSensorTransform, null, options, request);
       }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> StreamTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return StreamTrackingSensorTransform(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncServerStreamingCall<global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp> StreamTrackingSensorTransform(global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncServerStreamingCall(__Method_StreamTrackingSensorTransform, null, options, request);
-      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override UGrpcPipeClient NewInstance(ClientBaseConfiguration configuration)
@@ -451,8 +427,7 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
           .AddMethod(__Method_Converge3DRegistration, serviceImpl.Converge3DRegistration)
           .AddMethod(__Method_HealthCheck, serviceImpl.HealthCheck)
           .AddMethod(__Method_SubscribeTrackingSensorTransform, serviceImpl.SubscribeTrackingSensorTransform)
-          .AddMethod(__Method_UnsubscribeTrackingSensorTransform, serviceImpl.UnsubscribeTrackingSensorTransform)
-          .AddMethod(__Method_StreamTrackingSensorTransform, serviceImpl.StreamTrackingSensorTransform).Build();
+          .AddMethod(__Method_UnsubscribeTrackingSensorTransform, serviceImpl.UnsubscribeTrackingSensorTransform).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -469,9 +444,8 @@ namespace UGrpc.Pipeline.GrpcPipe.V1 {
       serviceBinder.AddMethod(__Method_PointCloudCapture, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.PointCloudCaptureReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp>(serviceImpl.PointCloudCapture));
       serviceBinder.AddMethod(__Method_Converge3DRegistration, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.Converge3DRegistrationReq, global::UGrpc.Pipeline.GrpcPipe.V1.RegistrationResp>(serviceImpl.Converge3DRegistration));
       serviceBinder.AddMethod(__Method_HealthCheck, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.HealthCheckRequest, global::UGrpc.Pipeline.GrpcPipe.V1.Status>(serviceImpl.HealthCheck));
-      serviceBinder.AddMethod(__Method_SubscribeTrackingSensorTransform, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.SubscribeTrackingSensorTransform));
+      serviceBinder.AddMethod(__Method_SubscribeTrackingSensorTransform, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp>(serviceImpl.SubscribeTrackingSensorTransform));
       serviceBinder.AddMethod(__Method_UnsubscribeTrackingSensorTransform, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorClientReq, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.UnsubscribeTrackingSensorTransform));
-      serviceBinder.AddMethod(__Method_StreamTrackingSensorTransform, serviceImpl == null ? null : new grpc::ServerStreamingServerMethod<global::UGrpc.Pipeline.GrpcPipe.V1.TrackingSensorTransformResp, global::UGrpc.Pipeline.GrpcPipe.V1.GenericResp>(serviceImpl.StreamTrackingSensorTransform));
     }
 
   }
